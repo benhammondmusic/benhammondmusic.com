@@ -1,5 +1,7 @@
 # benhammondmusic.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/94c78b60-60ad-43a3-b858-77ff688e9ba5/deploy-status)](https://app.netlify.com/sites/benhammondmusicdotcom/deploys)
+
 Codebase for [benhammondmusic.com](https://benhammondmusic.com), Songbuilder && Developer in Denver, CO.
 
 From [benhammond.tech](https://benhammond.tech)
