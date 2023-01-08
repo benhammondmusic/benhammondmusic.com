@@ -1,3 +1,11 @@
+<script>
+	import CountUp from '../lib/CountUp.svelte';
+	import MusicNotes from '$lib/icons/MusicNotes.svelte';
+	import Diamond from '$lib/icons/Diamond.svelte';
+	import OldMic from '$lib/icons/OldMic.svelte';
+	import CD from '$lib/icons/CD.svelte';
+</script>
+
 <section class="py-10">
 	<h2 class="text-3xl">Ben Hammond</h2>
 	<h3 class="text-xl">Singer-Songbuilder</h3>
@@ -19,3 +27,18 @@
 		and uses his guitar, voice and gadgets to create a sound that you want to keep hearing."
 	</p>
 </section>
+
+<aside>
+	<CountUp targetCount={100} interval={30} suffix={'0+'} textLabel={'Songs in Repertoire'}>
+		<MusicNotes />
+	</CountUp>
+	<CountUp targetCount={40} interval={100} suffix={'0+'} textLabel={'Weddings and Private Events'}>
+		<Diamond />
+	</CountUp>
+	<CountUp targetCount={3} interval={1000} suffix={'k'} textLabel={'Public Gigs'}>
+		<OldMic />
+	</CountUp>
+	<CountUp targetCount={14} interval={300} suffix={'k'} textLabel={'Discs Sold'}>
+		<CD />
+	</CountUp>
+</aside>
