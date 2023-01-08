@@ -4,9 +4,9 @@
 	import Footer from '../lib/Footer.svelte';
 </script>
 
-<div class="bg-bhm-gray text-white p-5">
+<div class="bg-bhm-gray text-white ">
 	<Navbar />
-	<main>
+	<main class="p-5">
 		<slot />
 	</main>
 	<Footer />
