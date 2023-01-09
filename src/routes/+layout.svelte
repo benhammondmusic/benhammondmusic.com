@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	import Navbar from '$lib/components/Navbar.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import Navbar from '$lib/Components/pppNavbar.svelte';
+	import Footer from '$lib/Components/Footer.svelte';
 </script>
 
 <div class="bg-bhm-gray text-white font-light">
