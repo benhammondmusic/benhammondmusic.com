@@ -1,0 +1,3072 @@
+{
+	"songs": [
+		{
+			"artistArray": ["4 Non Blondes"],
+			"title": "What's Up"
+		},
+		{
+			"artistArray": ["311", "The Cure"],
+			"title": "Love Song"
+		},
+		{
+			"artistArray": ["ABBA"],
+			"title": "Dancing Queen"
+		},
+		{
+			"artistArray": ["Ace of Base"],
+			"title": "The Sign"
+		},
+		{
+			"artistArray": ["Adam Sandler"],
+			"title": "I Wanna Grow Old with You"
+		},
+		{
+			"artistArray": ["Adele"],
+			"title": "One and Only"
+		},
+		{
+			"artistArray": ["Adele"],
+			"title": "Rolling in the Deep"
+		},
+		{
+			"artistArray": ["Adele", "Bob Dylan"],
+			"title": "To Make You Feel My Love"
+		},
+		{
+			"artistArray": ["Al Green"],
+			"title": "Let's Stay Together"
+		},
+		{
+			"artistArray": ["Al Green"],
+			"title": "Love and Happiness"
+		},
+		{
+			"artistArray": ["Alabama Shakes"],
+			"title": "Don't Wanna Fight"
+		},
+		{
+			"artistArray": ["Alanis Morissette"],
+			"title": "All I Really Want"
+		},
+		{
+			"artistArray": ["Alanis Morissette"],
+			"title": "You Oughta Know"
+		},
+		{
+			"artistArray": ["Alex Clare"],
+			"title": "Too Close"
+		},
+		{
+			"artistArray": ["American Authors"],
+			"title": "Best Day of My Life"
+		},
+		{
+			"artistArray": ["Amos Lee"],
+			"title": "Arms of a Woman"
+		},
+		{
+			"artistArray": ["Amos Lee"],
+			"title": "Keep It Loose Keep It Tight"
+		},
+		{
+			"artistArray": ["Amos Lee"],
+			"title": "Simple Things"
+		},
+		{
+			"artistArray": ["Amos Lee"],
+			"title": "Sweet Pea"
+		},
+		{
+			"artistArray": ["Amos Lee"],
+			"title": "Sympathize"
+		},
+		{
+			"artistArray": ["Amy Winehouse"],
+			"title": "Back to Black"
+		},
+		{
+			"artistArray": ["Amy Winehouse"],
+			"title": "Just Friends"
+		},
+		{
+			"artistArray": ["Amy Winehouse"],
+			"title": "Rehab"
+		},
+		{
+			"artistArray": ["Amy Winehouse"],
+			"title": "You Know I'm No Good"
+		},
+		{
+			"artistArray": ["Amy Winehouse", "Mark Ronson"],
+			"title": "Valerie"
+		},
+		{
+			"artistArray": ["Anderson .Paak"],
+			"title": "Come Down"
+		},
+		{
+			"artistArray": ["Andy Samberg", "T-Pain"],
+			"title": "Lonely Island (On A Boat)"
+		},
+		{
+			"artistArray": ["Ani Difranco"],
+			"title": "32 Flavors"
+		},
+		{
+			"artistArray": ["Ani Difranco"],
+			"title": "Both Hands"
+		},
+		{
+			"artistArray": ["Ani Difranco"],
+			"title": "Little Plastic Castle"
+		},
+		{
+			"artistArray": ["Ani DiFranco"],
+			"title": "Untouchable Face"
+		},
+		{
+			"artistArray": ["Ani Difranco"],
+			"title": "You Had Time"
+		},
+		{
+			"artistArray": ["Animals"],
+			"title": "House of the Rising Sun"
+		},
+		{
+			"artistArray": ["Anne Murray"],
+			"title": "Could I Have This Dance"
+		},
+		{
+			"artistArray": ["Anouk"],
+			"title": "Sacrifice Me"
+		},
+		{
+			"artistArray": ["Backstreet Boys"],
+			"title": "I Want It That Way"
+		},
+		{
+			"artistArray": ["The Band"],
+			"title": "Cripple Creek"
+		},
+		{
+			"artistArray": ["The Band"],
+			"title": "The Weight"
+		},
+		{
+			"artistArray": ["Bangles"],
+			"title": "Walk Like an Egyptian"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Across the Universe"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "All You Need Is Love"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Because"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Blackbird"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Abbey Road (Entire Album)"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Come Together"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Dear Prudence"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Something"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Maxwell's Silver Hammer"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Oh! Darling"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Octopus's Garden"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "I Want You (She's So Heavy)"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Here Comes the Sun"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Because"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley:You Never Give Me Your Money"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: Sun King"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: Mean Mr. Mustard"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: Polythene Pam"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: She Came In Through The Bathroom Window"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: Golden Slumbers"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: Carry That Weight"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: The End"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "B-Side Medley: Her Majesty"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Help!"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Don't Let Me Down"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "When I Saw Her Standing There"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Yesterday"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Hey Jude"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "I Saw Her Standing There"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "I Wanna Hold Your Hand"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "In My Life"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Let It Be"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Obladi Oblada"
+		},
+		{
+			"artistArray": ["Beatles"],
+			"title": "Rocky Raccoon"
+		},
+		{
+			"artistArray": ["Beatles", "Stevie Wonder"],
+			"title": "We Can Work It Out"
+		},
+		{
+			"artistArray": ["Beatles", "George Harrison"],
+			"title": "While My Guitar Gently Weeps"
+		},
+		{
+			"artistArray": ["Bee-Gees"],
+			"title": "Stayin' Alive"
+		},
+		{
+			"artistArray": ["Beck"],
+			"title": "Girl"
+		},
+		{
+			"artistArray": ["Beck"],
+			"title": "Where It's At"
+		},
+		{
+			"artistArray": ["Ben Harper"],
+			"title": "Happy Ever After Is In Your Eyes"
+		},
+		{
+			"artistArray": ["Ben Harper"],
+			"title": "Sexual Healing"
+		},
+		{
+			"artistArray": ["Ben Harper"],
+			"title": "Steal My Kisses"
+		},
+		{
+			"artistArray": ["Ben E. King"],
+			"title": "Stand By Me"
+		},
+		{
+			"artistArray": ["Beres Hammond"],
+			"title": "I Could Beat Myself"
+		},
+		{
+			"artistArray": ["Beyonce", "Jay-Z"],
+			"title": "Crazy in Love"
+		},
+		{
+			"artistArray": ["Beyonce"],
+			"title": "Single Ladies"
+		},
+		{
+			"artistArray": ["Big Wild", "Rationale"],
+			"title": "Sixes to Nines"
+		},
+		{
+			"artistArray": ["Bill Withers"],
+			"title": "Ain't No Sunshine"
+		},
+		{
+			"artistArray": ["Bill Withers"],
+			"title": "Just the Two of Us"
+		},
+		{
+			"artistArray": ["Bill Withers"],
+			"title": "Lean on Me"
+		},
+		{
+			"artistArray": ["Bill Withers"],
+			"title": "Use Me Up"
+		},
+		{
+			"artistArray": ["Billy Joel"],
+			"title": "Piano Man"
+		},
+		{
+			"artistArray": ["Billy Joel"],
+			"title": "She's Got a Way"
+		},
+		{
+			"artistArray": ["Biz Markie"],
+			"title": "Just a Friend"
+		},
+		{
+			"artistArray": ["Black Eyed Peas"],
+			"title": "Boom Boom Pow"
+		},
+		{
+			"artistArray": ["The Black Keys"],
+			"title": "Tighten Up"
+		},
+		{
+			"artistArray": ["Blackstreet", "Dr Dre"],
+			"title": "No Diggity"
+		},
+		{
+			"artistArray": ["Blondie"],
+			"title": "Heart of Glass"
+		},
+		{
+			"artistArray": ["Blood Sweat and Tears"],
+			"title": "Spinning Wheel"
+		},
+		{
+			"artistArray": ["Blue Swede"],
+			"title": "Hooked on a Feelin'"
+		},
+		{
+			"artistArray": ["Blues Traveler"],
+			"title": "But Anyway"
+		},
+		{
+			"artistArray": ["Blues Traveler"],
+			"title": "Run Around"
+		},
+		{
+			"artistArray": ["Bob Carlisle"],
+			"title": "Butterfly Kisses"
+		},
+		{
+			"artistArray": ["Bob Dylan"],
+			"title": "All Along The Watchtower"
+		},
+		{
+			"artistArray": ["Bob Dylan"],
+			"title": "Forever Young"
+		},
+		{
+			"artistArray": ["Bob Dylan"],
+			"title": "To Make You Feel My Love"
+		},
+		{
+			"artistArray": ["Bob Marley"],
+			"title": "I Shot the Sheriff"
+		},
+		{
+			"artistArray": ["Bob Marley"],
+			"title": "Jammin'"
+		},
+		{
+			"artistArray": ["Bob Marley"],
+			"title": "No Woman No Cry"
+		},
+		{
+			"artistArray": ["Bob Marley"],
+			"title": "Redemption Song"
+		},
+		{
+			"artistArray": ["Bob Marley"],
+			"title": "Stir It Up"
+		},
+		{
+			"artistArray": ["Bob Marley"],
+			"title": "Three Little Birds"
+		},
+		{
+			"artistArray": ["Bob Marley"],
+			"title": "Waiting in Vain"
+		},
+		{
+			"artistArray": ["Bob Seger"],
+			"title": "Old Time Rock n Roll"
+		},
+		{
+			"artistArray": ["Bob Seger"],
+			"title": "Hollywood Nights"
+		},
+		{
+			"artistArray": ["Bobby McFerrin"],
+			"title": "Don't Worry Be Happy"
+		},
+		{
+			"artistArray": ["Bon Iver"],
+			"title": "Holocene"
+		},
+		{
+			"artistArray": ["Bon Jovi"],
+			"title": "Wanted (Dead or Alive)"
+		},
+		{
+			"artistArray": ["Bonnie Rait"],
+			"title": "I Can't Make You Love Me"
+		},
+		{
+			"artistArray": ["Bonnie Rait"],
+			"title": "Something To Talk About"
+		},
+		{
+			"artistArray": ["Boyz II Men"],
+			"title": "I'll Make Love to You"
+		},
+		{
+			"artistArray": ["Boyz II Men"],
+			"title": "If I Ever Fall In Love Again"
+		},
+		{
+			"artistArray": ["Brad Paisley"],
+			"title": "Alcohol"
+		},
+		{
+			"artistArray": ["Brad Paisley"],
+			"title": "World"
+		},
+		{
+			"artistArray": ["Brett Young", "Boyce Avenue"],
+			"title": "In Case You Didn't Know"
+		},
+		{
+			"artistArray": ["Bright Eyes"],
+			"title": "First Day of My Life"
+		},
+		{
+			"artistArray": ["Brothers Osbourne"],
+			"title": "Pushin' Up Daisies"
+		},
+		{
+			"artistArray": ["Bruce Springsteen"],
+			"title": "Dancing in the Dark"
+		},
+		{
+			"artistArray": ["Bruce Springsteen"],
+			"title": "Glory Days"
+		},
+		{
+			"artistArray": ["Bruno Mars"],
+			"title": "Grenade"
+		},
+		{
+			"artistArray": ["Bruno Mars"],
+			"title": "Locked Out Of Heaven"
+		},
+		{
+			"artistArray": ["Bruno Mars"],
+			"title": "Marry You"
+		},
+		{
+			"artistArray": ["Bruno Mars", "Mark Ronson"],
+			"title": "Uptown Funk"
+		},
+		{
+			"artistArray": ["Bruno Mars"],
+			"title": "When I Was Your Man"
+		},
+		{
+			"artistArray": ["Bryan Adams"],
+			"title": "Everything I Do"
+		},
+		{
+			"artistArray": ["Bryan Adams"],
+			"title": "Summer of '69"
+		},
+		{
+			"artistArray": ["Buddy Holly"],
+			"title": "Everyday"
+		},
+		{
+			"artistArray": ["Buffalo Springfield"],
+			"title": "For What It's Worth"
+		},
+		{
+			"artistArray": ["Cake"],
+			"title": "Stickshifts and Safety Belts"
+		},
+		{
+			"artistArray": ["Cage the Elephant"],
+			"title": "Ain't No Rest for the Wicked"
+		},
+		{
+			"artistArray": ["Carly Ray Jepsen"],
+			"title": "Call Me Maybe"
+		},
+		{
+			"artistArray": ["Cary Brothers"],
+			"title": "Blue Eyes"
+		},
+		{
+			"artistArray": ["Cat Power"],
+			"title": "Sea of Love"
+		},
+		{
+			"artistArray": ["Cat Stevens"],
+			"title": "Cat Stevens"
+		},
+		{
+			"artistArray": ["Cat Stevens"],
+			"title": "Wild World"
+		},
+		{
+			"artistArray": ["CCR"],
+			"title": "Green River"
+		},
+		{
+			"artistArray": ["CCR", "Screamin Jay Hawkins", "Nina Simone"],
+			"title": "I Put A Spell On You"
+		},
+		{
+			"artistArray": ["CCR", "Tina Turner"],
+			"title": "Proud Mary (Rollin on the River)"
+		},
+		{
+			"artistArray": ["CCR"],
+			"title": "Suzie-Q"
+		},
+		{
+			"artistArray": ["Celine Dion"],
+			"title": "Because You Loved Me"
+		},
+		{
+			"artistArray": ["The Chainsmokers ft Halsey"],
+			"title": "Closer"
+		},
+		{
+			"artistArray": ["Cheap Trick"],
+			"title": "I Want You To Want Me"
+		},
+		{
+			"artistArray": ["Chris Brown"],
+			"title": "Yeah 3x"
+		},
+		{
+			"artistArray": ["Christina Perry"],
+			"title": "A Thousand Years"
+		},
+		{
+			"artistArray": ["Cee-Lo"],
+			"title": "F*** You! (Forget You!)"
+		},
+		{
+			"artistArray": ["Chris Isaac"],
+			"title": "Wicked Game"
+		},
+		{
+			"artistArray": ["Chris Stapleton"],
+			"title": "Tennessee Whiskey"
+		},
+		{
+			"artistArray": ["Chuck Berry"],
+			"title": "Cest la Vie"
+		},
+		{
+			"artistArray": ["Coldplay"],
+			"title": "Don't Panic"
+		},
+		{
+			"artistArray": ["Coldplay", "Boyce Avenue"],
+			"title": "Sky Full Of Stars"
+		},
+		{
+			"artistArray": ["Coldplay"],
+			"title": "Yellow"
+		},
+		{
+			"artistArray": ["Collective Soul"],
+			"title": "Shine"
+		},
+		{
+			"artistArray": ["Coolio"],
+			"title": "Gangsta's Paradise"
+		},
+		{
+			"artistArray": ["Counting Crows"],
+			"title": "Mr Jones"
+		},
+		{
+			"artistArray": ["The Cowsills"],
+			"title": "The Rain The Park And Other Things"
+		},
+		{
+			"artistArray": ["Cranberries"],
+			"title": "Linger"
+		},
+		{
+			"artistArray": ["Cranberries"],
+			"title": "Zombie"
+		},
+		{
+			"artistArray": ["The Cure", "311"],
+			"title": "Love Song"
+		},
+		{
+			"artistArray": ["Cyndi Lauper"],
+			"title": "Time After Time"
+		},
+		{
+			"artistArray": ["Daft Punk"],
+			"title": "Get Lucky"
+		},
+		{
+			"artistArray": ["Damien Rice"],
+			"title": "Amie"
+		},
+		{
+			"artistArray": ["Damien Rice"],
+			"title": "Blower's Daughter"
+		},
+		{
+			"artistArray": ["Damien Rice"],
+			"title": "Cannonball"
+		},
+		{
+			"artistArray": ["Dan and Shay"],
+			"title": "From the Ground Up"
+		},
+		{
+			"artistArray": ["Dave Matthews"],
+			"title": "#41"
+		},
+		{
+			"artistArray": ["Dave Matthews"],
+			"title": "Ants Marching"
+		},
+		{
+			"artistArray": ["Dave Matthews"],
+			"title": "Satellite"
+		},
+		{
+			"artistArray": ["Dave Matthews"],
+			"title": "So Much To Say"
+		},
+		{
+			"artistArray": ["Dave Matthews"],
+			"title": "Crash Into Me"
+		},
+		{
+			"artistArray": ["Dave Matthews"],
+			"title": "Tripping Billies"
+		},
+		{
+			"artistArray": ["Dave Matthews"],
+			"title": "You and Me"
+		},
+		{
+			"artistArray": ["David Bowie"],
+			"title": "Dance Magic Dance (Labyrinth)"
+		},
+		{
+			"artistArray": ["David Bowie"],
+			"title": "Changes"
+		},
+		{
+			"artistArray": ["David Bowie"],
+			"title": "Heroes"
+		},
+		{
+			"artistArray": ["David Bowie", "Stevie Ray Vaughn"],
+			"title": "Let's Dance"
+		},
+		{
+			"artistArray": ["David Bowie", "Nirvana"],
+			"title": "Man Who Sold the World"
+		},
+		{
+			"artistArray": ["David Bowie"],
+			"title": "Space Oddity"
+		},
+		{
+			"artistArray": ["David Essex"],
+			"title": "Rock On"
+		},
+		{
+			"artistArray": ["David Gray"],
+			"title": "Babylon"
+		},
+		{
+			"artistArray": ["Death Cab for Cutie"],
+			"title": "I Will Follow You Into the Dark"
+		},
+		{
+			"artistArray": ["Death Cab for Cutie"],
+			"title": "We Looked Like Giants"
+		},
+		{
+			"artistArray": ["Devil Makes Three"],
+			"title": "All Hail"
+		},
+		{
+			"artistArray": ["Dexy"],
+			"title": "Come On Eileen"
+		},
+		{
+			"artistArray": ["Dido"],
+			"title": "Thank You"
+		},
+		{
+			"artistArray": ["Dion"],
+			"title": "Wanderer"
+		},
+		{
+			"artistArray": ["Dion"],
+			"title": "Runaround Sue"
+		},
+		{
+			"artistArray": ["Dire Straits", "Indigo Girls"],
+			"title": "Romeo and Juliet"
+		},
+		{
+			"artistArray": ["Dire Straits"],
+			"title": "Sultans of Swing"
+		},
+		{
+			"artistArray": ["Dirty Heads", "Rome"],
+			"title": "Lay Me Down"
+		},
+		{
+			"artistArray": ["Don Mclean"],
+			"title": "American Pie"
+		},
+		{
+			"artistArray": ["Donny Hathaway"],
+			"title": "Someday We'll All Be Free"
+		},
+		{
+			"artistArray": ["Doobie Brothers (Michael MacDonald)"],
+			"title": "Taking It To The Streets"
+		},
+		{
+			"artistArray": ["Doors"],
+			"title": "Light My Fire"
+		},
+		{
+			"artistArray": ["Doors"],
+			"title": "People are Strange"
+		},
+		{
+			"artistArray": ["Drifters"],
+			"title": "Under the Boardwalk"
+		},
+		{
+			"artistArray": ["Dylan"],
+			"title": "Rainy Day Women 'Stone Ya'"
+		},
+		{
+			"artistArray": ["Dylan", "Hendrix"],
+			"title": "All Along the Watchtower"
+		},
+		{
+			"artistArray": ["Eagles"],
+			"title": "Hotel California"
+		},
+		{
+			"artistArray": ["Eagles"],
+			"title": "Love Will Keep Us Alive"
+		},
+		{
+			"artistArray": ["Eagles"],
+			"title": "Take it to the Limit"
+		},
+		{
+			"artistArray": ["Ed Sheeran"],
+			"title": "Don't"
+		},
+		{
+			"artistArray": ["Ed Sheeran"],
+			"title": "Perfect"
+		},
+		{
+			"artistArray": ["Ed Sheeran"],
+			"title": "Shape of You"
+		},
+		{
+			"artistArray": ["Ed Sheeran"],
+			"title": "Tenerife Sea (So In Love)"
+		},
+		{
+			"artistArray": ["Ed Sheeran"],
+			"title": "Thinking Out Loud"
+		},
+		{
+			"artistArray": ["Ed Sharpe and the Magnetic Zeros"],
+			"title": "Home"
+		},
+		{
+			"artistArray": ["Eddie Money"],
+			"title": "Two Tickets To Paradise"
+		},
+		{
+			"artistArray": ["Eels"],
+			"title": "P.S. You Rock My World"
+		},
+		{
+			"artistArray": ["Elle King"],
+			"title": "Ex's and Oh's"
+		},
+		{
+			"artistArray": ["Elton John", "Disney"],
+			"title": "Circle of Life"
+		},
+		{
+			"artistArray": ["Elton John"],
+			"title": "Rocketman"
+		},
+		{
+			"artistArray": ["Elton John"],
+			"title": "Tiny Dancer"
+		},
+		{
+			"artistArray": ["Elton John"],
+			"title": "Your Song"
+		},
+		{
+			"artistArray": ["Elvis"],
+			"title": "Blue Suede Shoes"
+		},
+		{
+			"artistArray": ["Elvis", "Kina Grannis"],
+			"title": "Can't Help Falling In Love"
+		},
+		{
+			"artistArray": ["Elvis"],
+			"title": "Hound Dog"
+		},
+		{
+			"artistArray": ["Elvis"],
+			"title": "Jailhouse Rock"
+		},
+		{
+			"artistArray": ["Eric Clapton"],
+			"title": "After Midnight"
+		},
+		{
+			"artistArray": ["Eric Clapton"],
+			"title": "Change The World"
+		},
+		{
+			"artistArray": ["Eric Clapton"],
+			"title": "Lay Down Sally"
+		},
+		{
+			"artistArray": ["Eric Clapton"],
+			"title": "Layla"
+		},
+		{
+			"artistArray": ["Eric Clapton"],
+			"title": "Wonderful Tonite"
+		},
+		{
+			"artistArray": ["Eric Hutchinson"],
+			"title": "OK It's Alright"
+		},
+		{
+			"artistArray": ["Etta James"],
+			"title": "At Last"
+		},
+		{
+			"artistArray": ["Eurythmics", "Marilyn Manson"],
+			"title": "Sweet Dreams (Are Made of This)"
+		},
+		{
+			"artistArray": ["Extreme"],
+			"title": "More Than Words"
+		},
+		{
+			"artistArray": ["Fat Freddy's Drop"],
+			"title": "Boondigga"
+		},
+		{
+			"artistArray": ["Fat Freddy's Drop"],
+			"title": "Roady"
+		},
+		{
+			"artistArray": ["Fat Freddy's Drop"],
+			"title": "Wandering Eye"
+		},
+		{
+			"artistArray": ["Feist"],
+			"title": "I Feel It All"
+		},
+		{
+			"artistArray": ["Feist"],
+			"title": "1234"
+		},
+		{
+			"artistArray": ["Fiona Apple"],
+			"title": "Criminal"
+		},
+		{
+			"artistArray": ["Flaming Lips"],
+			"title": "Do You Realize???"
+		},
+		{
+			"artistArray": ["Flight of the Conchords"],
+			"title": "Most Beautiful Girl Room"
+		},
+		{
+			"artistArray": ["Flight of the Conchords"],
+			"title": "Business Time"
+		},
+		{
+			"artistArray": ["Florida Georgia Line"],
+			"title": "H.O.L.Y."
+		},
+		{
+			"artistArray": ["Foy Vance", "Ed Sheeran"],
+			"title": "Guiding Light"
+		},
+		{
+			"artistArray": ["Foy Vance"],
+			"title": "Homebird Sing"
+		},
+		{
+			"artistArray": ["Foo Fighters"],
+			"title": "Big Me"
+		},
+		{
+			"artistArray": ["Foo Fighters"],
+			"title": "Everlong"
+		},
+		{
+			"artistArray": ["Frankie Valli"],
+			"title": "Oh What A Night!"
+		},
+		{
+			"artistArray": ["Garth Brooks"],
+			"title": "Friends in Low Places"
+		},
+		{
+			"artistArray": ["Garth Brooks"],
+			"title": "Papa Loved Mama"
+		},
+		{
+			"artistArray": ["Garth Brooks"],
+			"title": "Rodeo"
+		},
+		{
+			"artistArray": ["Garth Brooks"],
+			"title": "The Dance"
+		},
+		{
+			"artistArray": ["Garth Brooks"],
+			"title": "The River"
+		},
+		{
+			"artistArray": ["George Baker"],
+			"title": "Little Green Bag"
+		},
+		{
+			"artistArray": ["George Ezra"],
+			"title": "Blame It On Me"
+		},
+		{
+			"artistArray": ["George Michael"],
+			"title": "Faith"
+		},
+		{
+			"artistArray": ["George Michael"],
+			"title": "Freedom 90"
+		},
+		{
+			"artistArray": ["George Straight"],
+			"title": "Cross My Heart"
+		},
+		{
+			"artistArray": ["George Straight"],
+			"title": "She Thinks I Still Care"
+		},
+		{
+			"artistArray": ["Gerry Rafferty"],
+			"title": "Right Down the Line"
+		},
+		{
+			"artistArray": ["Ginuine"],
+			"title": "Pony (Ride It)"
+		},
+		{
+			"artistArray": ["Gladys Knight and the Pips"],
+			"title": "Midnight Train to Georgia"
+		},
+		{
+			"artistArray": ["Gloria Gaynor"],
+			"title": "I Will Survive"
+		},
+		{
+			"artistArray": ["Gnarls Barkley"],
+			"title": "Crazy"
+		},
+		{
+			"artistArray": ["Goo Goo Dolls"],
+			"title": "Iris"
+		},
+		{
+			"artistArray": ["Gorillaz"],
+			"title": "Clint Eastwood"
+		},
+		{
+			"artistArray": ["Gorillaz"],
+			"title": "Feel Good Inc."
+		},
+		{
+			"artistArray": ["Gotye"],
+			"title": "Heart's A Mess"
+		},
+		{
+			"artistArray": ["Gotye", "Kimbra"],
+			"title": "Somebody That I Used To Know"
+		},
+		{
+			"artistArray": ["Grateful Dead"],
+			"title": "Casey Jones"
+		},
+		{
+			"artistArray": ["Grateful Dead"],
+			"title": "Fire on the Mountain"
+		},
+		{
+			"artistArray": ["Grateful Dead"],
+			"title": "Ripple"
+		},
+		{
+			"artistArray": ["Grateful Dead", "Simon and Garfunkel", "Bob Dylan", "Traditional"],
+			"title": "Peggy-O"
+		},
+		{
+			"artistArray": ["Great Big Sea"],
+			"title": "General Taylor"
+		},
+		{
+			"artistArray": ["Green Day"],
+			"title": "Longview"
+		},
+		{
+			"artistArray": ["Hall And Oates"],
+			"title": "You Make My Dreams Come True"
+		},
+		{
+			"artistArray": ["Harry Belafonte"],
+			"title": "Jamaica Farewell"
+		},
+		{
+			"artistArray": ["Harry Belafonte"],
+			"title": "Jump in the Line"
+		},
+		{
+			"artistArray": ["Harry Belafonte"],
+			"title": "Man Smart, Woman Smarter"
+		},
+		{
+			"artistArray": ["Harry Chapin"],
+			"title": "All My Life's A Circle"
+		},
+		{
+			"artistArray": ["Harry Chapin"],
+			"title": "Cat's in the Cradle"
+		},
+		{
+			"artistArray": ["Harry Nillson"],
+			"title": "Lime in the Coconut"
+		},
+		{
+			"artistArray": ["Hawksley Workman"],
+			"title": "Smoke Baby"
+		},
+		{
+			"artistArray": ["Hawksley Workman"],
+			"title": "Stop Joking Around"
+		},
+		{
+			"artistArray": ["Heartland"],
+			"title": "I Love Her First"
+		},
+		{
+			"artistArray": ["Hootie and Blowfish"],
+			"title": "Let Her Cry"
+		},
+		{
+			"artistArray": ["Hot Chelle Rae"],
+			"title": "Tonight Tonight"
+		},
+		{
+			"artistArray": ["Hozier"],
+			"title": "Cherry Wine"
+		},
+		{
+			"artistArray": ["Huey Lewis"],
+			"title": "Power Of Love"
+		},
+		{
+			"artistArray": ["Hunter Hayes"],
+			"title": "Wanted"
+		},
+		{
+			"artistArray": ["INXS"],
+			"title": "I Need You Tonight"
+		},
+		{
+			"artistArray": ["Jack Johnson"],
+			"title": "Banana Pancakes"
+		},
+		{
+			"artistArray": ["Jack Johnson"],
+			"title": "Better Together"
+		},
+		{
+			"artistArray": ["Jack Johnson"],
+			"title": "Do You Remember"
+		},
+		{
+			"artistArray": ["Jack Johnson"],
+			"title": "Flake"
+		},
+		{
+			"artistArray": ["Jack Johnson"],
+			"title": "Fortunate Fool"
+		},
+		{
+			"artistArray": ["Jack Johnson"],
+			"title": "Sitting Waiting Wishing"
+		},
+		{
+			"artistArray": ["Jackson 5"],
+			"title": "I Want You Back"
+		},
+		{
+			"artistArray": ["Jackson 5", "Mariah Carey"],
+			"title": "I'll Be There"
+		},
+		{
+			"artistArray": ["James Arthur"],
+			"title": "Say You Won't Let Go"
+		},
+		{
+			"artistArray": ["James Blunt"],
+			"title": "You're Beautiful"
+		},
+		{
+			"artistArray": ["James Taylor"],
+			"title": "Fire and Rain"
+		},
+		{
+			"artistArray": ["James Taylor"],
+			"title": "You've Got A Friend"
+		},
+		{
+			"artistArray": ["Jamie Lidell"],
+			"title": "Multiply"
+		},
+		{
+			"artistArray": ["Jason Mraz"],
+			"title": "Beautiful Mess"
+		},
+		{
+			"artistArray": ["Jason Mraz"],
+			"title": "Butterfly"
+		},
+		{
+			"artistArray": ["Jason Mraz"],
+			"title": "I'm Yours"
+		},
+		{
+			"artistArray": ["Jeff Buckley", "Leonard Cohen"],
+			"title": "Hallelujah"
+		},
+		{
+			"artistArray": ["Jeff Buckley"],
+			"title": "Last Goodbye"
+		},
+		{
+			"artistArray": ["Jill Scott"],
+			"title": "Long Walk"
+		},
+		{
+			"artistArray": ["Jimmy Buffet"],
+			"title": "Breathe In Breathe Out Move On"
+		},
+		{
+			"artistArray": ["Jimmy Buffet"],
+			"title": "Cheeseburger in Paradise"
+		},
+		{
+			"artistArray": ["Jimmy Buffet"],
+			"title": "Margaritaville"
+		},
+		{
+			"artistArray": ["Jimmy Buffet", "Dave Matthews and Jack Johnson"],
+			"title": "Pirate Looks At 40"
+		},
+		{
+			"artistArray": ["Jim Croce"],
+			"title": "Bad Bad Leroy Brown"
+		},
+		{
+			"artistArray": ["Jim Croce"],
+			"title": "Time In A Bottle"
+		},
+		{
+			"artistArray": ["Jimi Hendrix"],
+			"title": "Bold As Love"
+		},
+		{
+			"artistArray": ["Jimi Hendrix"],
+			"title": "Wind Cries Mary"
+		},
+		{
+			"artistArray": ["Jimi Hendrix", "Bob Dylan"],
+			"title": "All Along the Watchtower"
+		},
+		{
+			"artistArray": ["Joe Cocker", "The Beatles", "Martin Sexton"],
+			"title": "With A Little Help From My Friends"
+		},
+		{
+			"artistArray": ["Joe Jackson"],
+			"title": "Is She Really Going Out with Him?"
+		},
+		{
+			"artistArray": ["John Denver"],
+			"title": "Annie's Song"
+		},
+		{
+			"artistArray": ["John Denver"],
+			"title": "Country Roads"
+		},
+		{
+			"artistArray": ["John Hiatt"],
+			"title": "Have A Little Faith In Me"
+		},
+		{
+			"artistArray": ["John Legend"],
+			"title": "Ordinary People"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "Belief"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "Comfortable"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "Gravity"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "I Don't Trust Myself With Loving You"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "I'm Gonna Find Another You"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "My Stupid Mouth"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "Sucker"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "Slow Dancing in a Burning Room"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "Why Did You Mess with Forever?"
+		},
+		{
+			"artistArray": ["John Mayer"],
+			"title": "Your Body Is A Wonderland"
+		},
+		{
+			"artistArray": ["John Mellencamp"],
+			"title": "Jack and Diane"
+		},
+		{
+			"artistArray": ["John Prine"],
+			"title": "Angel From Montgomery"
+		},
+		{
+			"artistArray": ["John Prine"],
+			"title": "Spanish Pipedream (Blow Up Your TV)"
+		},
+		{
+			"artistArray": ["Johnny Cash"],
+			"title": "Folsom Prison Blues"
+		},
+		{
+			"artistArray": ["Johnny Cash"],
+			"title": "Jackson"
+		},
+		{
+			"artistArray": ["Johnny Cash"],
+			"title": "Ring of Fire"
+		},
+		{
+			"artistArray": ["Jose Gonzales", "The Knife"],
+			"title": "Heartbeats"
+		},
+		{
+			"artistArray": ["Joss Stone", "White Stripes"],
+			"title": "Fell in Love with a Girl"
+		},
+		{
+			"artistArray": ["Journey"],
+			"title": "Don't Stop Believing"
+		},
+		{
+			"artistArray": ["Journey"],
+			"title": "Faithfully"
+		},
+		{
+			"artistArray": ["Justin Bieber"],
+			"title": "Love Yourself"
+		},
+		{
+			"artistArray": ["Justin Bieber"],
+			"title": "Sorry"
+		},
+		{
+			"artistArray": ["Justin Timberlake"],
+			"title": "Can't Stop the Feeling"
+		},
+		{
+			"artistArray": ["Justin Timberlake"],
+			"title": "SexyBack"
+		},
+		{
+			"artistArray": ["Katy Perry"],
+			"title": "Firework"
+		},
+		{
+			"artistArray": ["Katy Perry"],
+			"title": "I Kissed A Girl"
+		},
+		{
+			"artistArray": ["Katy Perry"],
+			"title": "Last Friday Night"
+		},
+		{
+			"artistArray": ["Kci & Jojoe"],
+			"title": "All My Life"
+		},
+		{
+			"artistArray": ["Keb' Mo"],
+			"title": "Life Is Beautiful"
+		},
+		{
+			"artistArray": ["Keith Urban"],
+			"title": "Somebody Like You"
+		},
+		{
+			"artistArray": ["Kenny Chesney"],
+			"title": "Don't Blink"
+		},
+		{
+			"artistArray": ["Kermit the Frog"],
+			"title": "Bein' Green"
+		},
+		{
+			"artistArray": ["The Killers"],
+			"title": "Mr Brightside"
+		},
+		{
+			"artistArray": ["Kina Grannis"],
+			"title": "I Found You"
+		},
+		{
+			"artistArray": ["King Floyd", "Angie Stone"],
+			"title": "Groove Me"
+		},
+		{
+			"artistArray": ["Kingston Trio"],
+			"title": "Tom Dooley"
+		},
+		{
+			"artistArray": ["Kip Moore"],
+			"title": "Hey Pretty Girl"
+		},
+		{
+			"artistArray": ["Kodaline"],
+			"title": "The One"
+		},
+		{
+			"artistArray": ["KT Tunstall"],
+			"title": "Black Horse Cherry Tree"
+		},
+		{
+			"artistArray": ["Lady Gaga"],
+			"title": "Poker Face"
+		},
+		{
+			"artistArray": ["Lana Del Ray"],
+			"title": "Blue Jeans"
+		},
+		{
+			"artistArray": ["Lana Del Ray"],
+			"title": "Love"
+		},
+		{
+			"artistArray": ["Lauryn Hill", "Frankie Valli"],
+			"title": "Can't Take My Eyes Off You"
+		},
+		{
+			"artistArray": ["Lauryn Hill"],
+			"title": "Ex-Factor"
+		},
+		{
+			"artistArray": ["Led Zeppelin"],
+			"title": "All My Love"
+		},
+		{
+			"artistArray": ["Led Zeppelin"],
+			"title": "Battle Of Evermore"
+		},
+		{
+			"artistArray": ["Led Zeppelin"],
+			"title": "Dyer Maker"
+		},
+		{
+			"artistArray": ["Led Zeppelin"],
+			"title": "Thank You"
+		},
+		{
+			"artistArray": ["Lee Anne Womack"],
+			"title": "I Hope You Dance"
+		},
+		{
+			"artistArray": ["Lenny Kravitz"],
+			"title": "It Ain't Over Til It's Over"
+		},
+		{
+			"artistArray": ["Leon Bridges"],
+			"title": "Comin' Home"
+		},
+		{
+			"artistArray": ["Leon Bridges"],
+			"title": "River"
+		},
+		{
+			"artistArray": ["Lionel Ritchie", "Enrique Iglesias"],
+			"title": "All Night Long"
+		},
+		{
+			"artistArray": ["Lord Huron"],
+			"title": "Fool For Love"
+		},
+		{
+			"artistArray": ["Lord Huron"],
+			"title": "Night We Met"
+		},
+		{
+			"artistArray": ["Lorde"],
+			"title": "Royals"
+		},
+		{
+			"artistArray": ["Lorde"],
+			"title": "Team"
+		},
+		{
+			"artistArray": ["Lou Bega"],
+			"title": "Mambo #5"
+		},
+		{
+			"artistArray": ["Lumineers"],
+			"title": "Flowers In Your Hair"
+		},
+		{
+			"artistArray": ["Lumineers"],
+			"title": "Ho Hey (I Belong With You)"
+		},
+		{
+			"artistArray": ["Macklemore and Kesha"],
+			"title": "Good Old Days"
+		},
+		{
+			"artistArray": ["Mamas and Papas"],
+			"title": "Monday Monday"
+		},
+		{
+			"artistArray": ["Mamas Papas"],
+			"title": "Dream a Little Dream"
+		},
+		{
+			"artistArray": ["Marc Cohn"],
+			"title": "Walking in Memphis"
+		},
+		{
+			"artistArray": ["Mark Ronson", "Bruno Mars"],
+			"title": "Uptown Funk"
+		},
+		{
+			"artistArray": ["Maroon 5"],
+			"title": "One More Night"
+		},
+		{
+			"artistArray": ["Maroon 5"],
+			"title": "Wake Up Call"
+		},
+		{
+			"artistArray": ["Martin Sexton"],
+			"title": "Boom Sh-Boom"
+		},
+		{
+			"artistArray": ["Martin Sexton"],
+			"title": "Diggin' You"
+		},
+		{
+			"artistArray": ["Martin Sexton"],
+			"title": "Freedom of the Road"
+		},
+		{
+			"artistArray": ["Martin Sexton"],
+			"title": "Happy"
+		},
+		{
+			"artistArray": ["Martin Sexton"],
+			"title": "Way I Am"
+		},
+		{
+			"artistArray": ["Marvin Gaye", "CCR", "Tina Turner"],
+			"title": "Heard It Grapevine"
+		},
+		{
+			"artistArray": ["Marvin Gaye"],
+			"title": "What's Goin On"
+		},
+		{
+			"artistArray": ["Matisyahu"],
+			"title": "One Day"
+		},
+		{
+			"artistArray": ["Matt Gerhardt"],
+			"title": "Gone to California"
+		},
+		{
+			"artistArray": ["Metallica"],
+			"title": "Enter Sandman"
+		},
+		{
+			"artistArray": ["Max"],
+			"title": "Lights Down Low"
+		},
+		{
+			"artistArray": ["Men At Work", "Colin Haye"],
+			"title": "Down Under"
+		},
+		{
+			"artistArray": ["Michael Buble"],
+			"title": "Everything"
+		},
+		{
+			"artistArray": ["Michael Buble"],
+			"title": "Home"
+		},
+		{
+			"artistArray": ["Michael Buble", "The Drifters"],
+			"title": "Save The Last Dance For Me"
+		},
+		{
+			"artistArray": ["Michael Franti and Spearhead"],
+			"title": "Life Is Better With You"
+		},
+		{
+			"artistArray": ["Michael Franti and Spearhead"],
+			"title": "Say Hey"
+		},
+		{
+			"artistArray": ["Michael Jackson"],
+			"title": "Billie Jean"
+		},
+		{
+			"artistArray": ["Michael Jackson"],
+			"title": "Black or White"
+		},
+		{
+			"artistArray": ["Michael Jackson"],
+			"title": "Man in the Mirror"
+		},
+		{
+			"artistArray": ["Michael Jackson"],
+			"title": "The Way You Make Me Feel"
+		},
+		{
+			"artistArray": ["Milky Chance"],
+			"title": "Stolen Dance"
+		},
+		{
+			"artistArray": ["Monkees", "Smash Mouth"],
+			"title": "I'm A Believer"
+		},
+		{
+			"artistArray": ["Montell Jordan"],
+			"title": "This Is How We Do It"
+		},
+		{
+			"artistArray": ["Moody Blues"],
+			"title": "Nights in White Satin"
+		},
+		{
+			"artistArray": ["Movies"],
+			"title": "Ghostbusters"
+		},
+		{
+			"artistArray": ["Mungo Jerry"],
+			"title": "In The Summertime"
+		},
+		{
+			"artistArray": ["Natalie Cole"],
+			"title": "This Will Be (An Everlasting Love)"
+		},
+		{
+			"artistArray": ["The National"],
+			"title": "I Need My Girl"
+		},
+		{
+			"artistArray": ["Ne-Yo"],
+			"title": "Closer"
+		},
+		{
+			"artistArray": ["Nelly"],
+			"title": "Hot in Herre"
+		},
+		{
+			"artistArray": ["Neil Diamond"],
+			"title": "Sweet Caroline"
+		},
+		{
+			"artistArray": ["Neil Young"],
+			"title": "Harvest Moon"
+		},
+		{
+			"artistArray": ["Neil Young"],
+			"title": "Heart of Gold"
+		},
+		{
+			"artistArray": ["Nikka Costa"],
+			"title": "Everybody Got Their Somethin'"
+		},
+		{
+			"artistArray": ["Nina Simone", "Michael Buble"],
+			"title": "Feelin Good"
+		},
+		{
+			"artistArray": ["Nine Inch Nails"],
+			"title": "Closer"
+		},
+		{
+			"artistArray": ["Nirvana"],
+			"title": "All Apologies"
+		},
+		{
+			"artistArray": ["Notorious B.I.G."],
+			"title": "Big Poppa"
+		},
+		{
+			"artistArray": ["Oasis"],
+			"title": "Champagne Supernova"
+		},
+		{
+			"artistArray": ["Oasis"],
+			"title": "Wonderwall"
+		},
+		{
+			"artistArray": ["Old Crow Medicine Show", "Dylan", "Darius Rucker"],
+			"title": "Wagon Wheel"
+		},
+		{
+			"artistArray": ["Old Dominion"],
+			"title": "Snapback"
+		},
+		{
+			"artistArray": ["One Direction"],
+			"title": "What Makes You Beautiful"
+		},
+		{
+			"artistArray": ["Otis Redding"],
+			"title": "Sittin on the Dock of the Bay"
+		},
+		{
+			"artistArray": ["Otis Redding"],
+			"title": "These Arms of Mine"
+		},
+		{
+			"artistArray": ["Otis Redding"],
+			"title": "Your Precious Love"
+		},
+		{
+			"artistArray": ["Outkast"],
+			"title": "Hey Ya"
+		},
+		{
+			"artistArray": ["Outkast"],
+			"title": "I Like The Way You Move"
+		},
+		{
+			"artistArray": ["Outkast"],
+			"title": "Roses"
+		},
+		{
+			"artistArray": ["Paolo Nutini"],
+			"title": "New Shoes"
+		},
+		{
+			"artistArray": ["Paper Kites"],
+			"title": "Bloom"
+		},
+		{
+			"artistArray": ["Passenger"],
+			"title": "Let Her Go"
+		},
+		{
+			"artistArray": ["Paul McCartney Solo", "Wings"],
+			"title": "Maybe I'm Amazed"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "50 Ways"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "Diamonds on the Soles of Her Shoes"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "Father and Daughter"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "Graceland"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "I Know What I Know"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "Late in the Evening"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "Loves Me Like A Rock"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "Me and Julio Down By the Schoolyard"
+		},
+		{
+			"artistArray": ["Paul Simon"],
+			"title": "You Can Call Me Al"
+		},
+		{
+			"artistArray": ["Paula Abdul"],
+			"title": "Straight Up"
+		},
+		{
+			"artistArray": ["Pearl Jam"],
+			"title": "Better Man"
+		},
+		{
+			"artistArray": ["Pearl Jam"],
+			"title": "Black"
+		},
+		{
+			"artistArray": ["Pearl Jam"],
+			"title": "Jeremy"
+		},
+		{
+			"artistArray": ["Peter Gabriel"],
+			"title": "In Your Eyes"
+		},
+		{
+			"artistArray": ["Peter Gabriel"],
+			"title": "Sledgehammer"
+		},
+		{
+			"artistArray": ["Peter Gabriel"],
+			"title": "Solsbury Hill"
+		},
+		{
+			"artistArray": ["Pharrell", "Jamie Cullum"],
+			"title": "Frontin'"
+		},
+		{
+			"artistArray": ["Pharrell"],
+			"title": "Happy"
+		},
+		{
+			"artistArray": ["Phil Collins"],
+			"title": "Against All Odds"
+		},
+		{
+			"artistArray": ["Phillip Phillips"],
+			"title": "Gone Gone Gone"
+		},
+		{
+			"artistArray": ["Phillip Phillips"],
+			"title": "Home"
+		},
+		{
+			"artistArray": ["Pink Floyd"],
+			"title": "Money"
+		},
+		{
+			"artistArray": ["Pink Floyd"],
+			"title": "Wish You Were Here"
+		},
+		{
+			"artistArray": ["Plain White T's"],
+			"title": "Hey There Delilah"
+		},
+		{
+			"artistArray": ["The Police"],
+			"title": "Don't Stand So Close To Me"
+		},
+		{
+			"artistArray": ["The Police"],
+			"title": "Message in a Bottle"
+		},
+		{
+			"artistArray": ["The Police"],
+			"title": "Roxanne"
+		},
+		{
+			"artistArray": ["The Police"],
+			"title": "Walking on the Moon"
+		},
+		{
+			"artistArray": ["Portugal. The Man."],
+			"title": "Feel It Still"
+		},
+		{
+			"artistArray": ["Postal Service", "Iron Wine"],
+			"title": "Such Great Heights"
+		},
+		{
+			"artistArray": ["Prince"],
+			"title": "Cream"
+		},
+		{
+			"artistArray": ["Prince"],
+			"title": "Kiss"
+		},
+		{
+			"artistArray": ["Prince"],
+			"title": "Purple Rain"
+		},
+		{
+			"artistArray": ["Prince"],
+			"title": "When Doves Cry"
+		},
+		{
+			"artistArray": ["The Proclaimers"],
+			"title": "500 Miles"
+		},
+		{
+			"artistArray": ["Queen"],
+			"title": "Crazy Little Thing Called Love"
+		},
+		{
+			"artistArray": ["Queen"],
+			"title": "Under Pressure"
+		},
+		{
+			"artistArray": ["Rachel Platten"],
+			"title": "Better Place"
+		},
+		{
+			"artistArray": ["Rachel Platten"],
+			"title": "Stand By You"
+		},
+		{
+			"artistArray": ["Radiohead"],
+			"title": "All I Need"
+		},
+		{
+			"artistArray": ["Radiohead"],
+			"title": "Creep"
+		},
+		{
+			"artistArray": ["Radiohead"],
+			"title": "Paranoid Android"
+		},
+		{
+			"artistArray": ["Rage Against the Machine"],
+			"title": "Killing in the Name Of"
+		},
+		{
+			"artistArray": ["Randy Newman"],
+			"title": "You've Got a Friend in Me"
+		},
+		{
+			"artistArray": ["Randy Travis"],
+			"title": "Deeper Than The Holler"
+		},
+		{
+			"artistArray": ["Randy Travis"],
+			"title": "Forever and Ever Amen"
+		},
+		{
+			"artistArray": ["Rascal Flatts"],
+			"title": "My Wish"
+		},
+		{
+			"artistArray": ["Ray Charles"],
+			"title": "Georgia"
+		},
+		{
+			"artistArray": ["Ray Charles"],
+			"title": "Hallelujah I Love Her So"
+		},
+		{
+			"artistArray": ["Ray Charles"],
+			"title": "Hit the Road Jack"
+		},
+		{
+			"artistArray": ["Ray Charles"],
+			"title": "I Got A Woman"
+		},
+		{
+			"artistArray": ["Ray Charles"],
+			"title": "You Don't Know Me"
+		},
+		{
+			"artistArray": ["Ray La Montagne"],
+			"title": "Such A Simple Thing"
+		},
+		{
+			"artistArray": ["Ray La Montagne"],
+			"title": "Shelter"
+		},
+		{
+			"artistArray": ["Ray LaMontagne"],
+			"title": "Jolene"
+		},
+		{
+			"artistArray": ["Ray LaMontagne"],
+			"title": "Trouble"
+		},
+		{
+			"artistArray": ["Ray La Montagne"],
+			"title": "You Are The Best Thing"
+		},
+		{
+			"artistArray": ["Red Hot Chili Peppers"],
+			"title": "Under the Bridge"
+		},
+		{
+			"artistArray": ["RHCP"],
+			"title": "Aeroplane"
+		},
+		{
+			"artistArray": ["REM"],
+			"title": "Losing My Religion"
+		},
+		{
+			"artistArray": ["REM"],
+			"title": "Man on the Moon"
+		},
+		{
+			"artistArray": ["Robin Thicke"],
+			"title": "Blurred Lines"
+		},
+		{
+			"artistArray": ["Rod Stewart"],
+			"title": "Forever Young"
+		},
+		{
+			"artistArray": ["Rod Stewart"],
+			"title": "Maggie May"
+		},
+		{
+			"artistArray": ["Rod Stewart"],
+			"title": "Reason to Believe"
+		},
+		{
+			"artistArray": ["Rod Stewart"],
+			"title": "You're In My Heart"
+		},
+		{
+			"artistArray": ["Roger Miller"],
+			"title": "King of the Road"
+		},
+		{
+			"artistArray": ["Rolling Stones"],
+			"title": "Satisfaction"
+		},
+		{
+			"artistArray": ["Romantics"],
+			"title": "What I Like"
+		},
+		{
+			"artistArray": ["Roo Panes"],
+			"title": "Know Me Well"
+		},
+		{
+			"artistArray": ["Roots"],
+			"title": "Seed 2.0"
+		},
+		{
+			"artistArray": ["Roy Orbison"],
+			"title": "You Got It"
+		},
+		{
+			"artistArray": ["Rufus Wainwright"],
+			"title": "Cigarettes and Chocolate Milk"
+		},
+		{
+			"artistArray": ["Rufus Wainwright"],
+			"title": "Instant Pleasure"
+		},
+		{
+			"artistArray": ["Rufus Wainwright"],
+			"title": "Vibrate"
+		},
+		{
+			"artistArray": ["Rupert Holmes"],
+			"title": "(Escape) If You Like Pina Coladas"
+		},
+		{
+			"artistArray": ["Rusted Root"],
+			"title": "Send Me on my Way"
+		},
+		{
+			"artistArray": ["Ryan Adams"],
+			"title": "Come Pick Me Up"
+		},
+		{
+			"artistArray": ["Ryan Adams"],
+			"title": "To Be Young"
+		},
+		{
+			"artistArray": ["Ryan Adams"],
+			"title": "Winding Wheel"
+		},
+		{
+			"artistArray": ["Sam Cooke"],
+			"title": "Don't Know Much About History"
+		},
+		{
+			"artistArray": ["Sam Smith"],
+			"title": "Latch (Acoustic Version)"
+		},
+		{
+			"artistArray": ["Sarah McLachlan"],
+			"title": "Ice Cream"
+		},
+		{
+			"artistArray": ["Sara Bareilles"],
+			"title": "Brave"
+		},
+		{
+			"artistArray": ["Scott Keo"],
+			"title": "Owe It All To You (Mother Son Wedding Song)"
+		},
+		{
+			"artistArray": ["Scott McReery"],
+			"title": "This Is It"
+		},
+		{
+			"artistArray": ["Screamin' Jay Hawkins", "CCR", "Nina Simone"],
+			"title": "I Put A Spell On You"
+		},
+		{
+			"artistArray": ["Script"],
+			"title": "Breakeven (Falling To Pieces)"
+		},
+		{
+			"artistArray": ["Seal"],
+			"title": "Kiss From A Rose"
+		},
+		{
+			"artistArray": ["Shaggy"],
+			"title": "Wasn't Me"
+		},
+		{
+			"artistArray": ["Sheryl Crow"],
+			"title": "All I Wanna Do"
+		},
+		{
+			"artistArray": ["Sheryl Crow"],
+			"title": "Strong Enough"
+		},
+		{
+			"artistArray": ["Simon and Garfunkel"],
+			"title": "Cecilia"
+		},
+		{
+			"artistArray": ["Simon and Garfunkel"],
+			"title": "Homeward Bound"
+		},
+		{
+			"artistArray": ["Simon and Garfunkel"],
+			"title": "Only Living Boy In New York"
+		},
+		{
+			"artistArray": ["Simple Minds (Breakfast Club Soundtrack)"],
+			"title": "Don't You Forget About Me"
+		},
+		{
+			"artistArray": ["Sinead O'Connor"],
+			"title": "Nothing Compares 2 U"
+		},
+		{
+			"artistArray": ["Sly Stone"],
+			"title": "If You Want Me To Stay"
+		},
+		{
+			"artistArray": ["Smashing Pumkins"],
+			"title": "1979"
+		},
+		{
+			"artistArray": ["Smashmouth"],
+			"title": "All Star"
+		},
+		{
+			"artistArray": ["Snoop Dogg"],
+			"title": "Gin and Juice"
+		},
+		{
+			"artistArray": ["Soft Cell"],
+			"title": "Tainted Love"
+		},
+		{
+			"artistArray": ["Soundgarden"],
+			"title": "Black Hole Sun"
+		},
+		{
+			"artistArray": ["Spin Doctors"],
+			"title": "Two Princes"
+		},
+		{
+			"artistArray": ["Squeeze"],
+			"title": "Tempted"
+		},
+		{
+			"artistArray": ["Squirrel Nut Zippers"],
+			"title": "Got My Own Thing Now"
+		},
+		{
+			"artistArray": ["Stealer's Wheel"],
+			"title": "Stuck in the Middle with You"
+		},
+		{
+			"artistArray": ["Steve Earle"],
+			"title": "Galway Girl"
+		},
+		{
+			"artistArray": ["Steve Earle"],
+			"title": "Lonelier Than This"
+		},
+		{
+			"artistArray": ["Steve Miller Band"],
+			"title": "Joker"
+		},
+		{
+			"artistArray": ["Steve Miller Band"],
+			"title": "Rock N Me"
+		},
+		{
+			"artistArray": ["Stevie Nicks"],
+			"title": "Landslide"
+		},
+		{
+			"artistArray": ["Stevie Ray Vaughn"],
+			"title": "Pride N Joy"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Another Star"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Boogie On Reggae Woman"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "I Wish"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Lately"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Livin' For The City"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Signed Sealed Delivered"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Sir Duke"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Superstition"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "Uptight"
+		},
+		{
+			"artistArray": ["Stevie Wonder"],
+			"title": "You Are Sunshine Life"
+		},
+		{
+			"artistArray": ["Sting"],
+			"title": "Seven Days"
+		},
+		{
+			"artistArray": ["Sting", "Eva Cassidy"],
+			"title": "Fields of Gold"
+		},
+		{
+			"artistArray": ["Stone Temple Pilots"],
+			"title": "Interstate Love Song"
+		},
+		{
+			"artistArray": ["The Strokes"],
+			"title": "Last Night (Last Nite)"
+		},
+		{
+			"artistArray": ["Sublime"],
+			"title": "54/46"
+		},
+		{
+			"artistArray": ["Sublime"],
+			"title": "Doin' Time"
+		},
+		{
+			"artistArray": ["Sublime"],
+			"title": "Santeria"
+		},
+		{
+			"artistArray": ["Sublime"],
+			"title": "Get Ready"
+		},
+		{
+			"artistArray": ["Sublime"],
+			"title": "What I Got"
+		},
+		{
+			"artistArray": ["Sublime"],
+			"title": "Rivers of Babylon"
+		},
+		{
+			"artistArray": ["Sublime"],
+			"title": "Wrong Way"
+		},
+		{
+			"artistArray": ["The Supremes", "Phil Collins"],
+			"title": "You Can't Hurry Love"
+		},
+		{
+			"artistArray": ["Swedish House Mafia"],
+			"title": "Don't You Worry Child"
+		},
+		{
+			"artistArray": ["Talking Heads"],
+			"title": "Burning Down the House"
+		},
+		{
+			"artistArray": ["Talking Heads"],
+			"title": "Once In A Lifetime"
+		},
+		{
+			"artistArray": ["Talking Heads"],
+			"title": "Psycho Killer"
+		},
+		{
+			"artistArray": ["Taylor Swift"],
+			"title": "Shake It Off"
+		},
+		{
+			"artistArray": ["Taylor Swift"],
+			"title": "Trouble"
+		},
+		{
+			"artistArray": ["Taylor Swift"],
+			"title": "You Belong With Me"
+		},
+		{
+			"artistArray": ["Tears for Fears"],
+			"title": "Everybody Wants to Rule the World"
+		},
+		{
+			"artistArray": ["Temptations"],
+			"title": "My Girl"
+		},
+		{
+			"artistArray": ["Terri Clark"],
+			"title": "Now That I Found You"
+		},
+		{
+			"artistArray": ["Three Dog Night", "Randy Newman"],
+			"title": "Mama Told Me Not To Come"
+		},
+		{
+			"artistArray": ["Toadies"],
+			"title": "Possum Kingdom"
+		},
+		{
+			"artistArray": ["Tom Petty"],
+			"title": "American Girl"
+		},
+		{
+			"artistArray": ["Tom Petty"],
+			"title": "Free Fallin"
+		},
+		{
+			"artistArray": ["Tom Petty"],
+			"title": "Mary Jane's Last Dance"
+		},
+		{
+			"artistArray": ["Tom Waits"],
+			"title": "Jockey Full of Bourbon"
+		},
+		{
+			"artistArray": ["Tom Waits"],
+			"title": "Johnsburg, IL"
+		},
+		{
+			"artistArray": ["Tom Waits"],
+			"title": "Swordfish Trombone"
+		},
+		{
+			"artistArray": ["Toto"],
+			"title": "Africa"
+		},
+		{
+			"artistArray": ["Trampled by Turtles"],
+			"title": "Alone"
+		},
+		{
+			"artistArray": ["Tracy Chapman"],
+			"title": "Fast Car"
+		},
+		{
+			"artistArray": ["Tracy Chapman"],
+			"title": "Gimme One Reason"
+		},
+		{
+			"artistArray": ["Tracy Chapman"],
+			"title": "Talkin' 'Bout A Revolution"
+		},
+		{
+			"artistArray": ["trad."],
+			"title": "Wild Rover"
+		},
+		{
+			"artistArray": ["trad.", "Beach Boys"],
+			"title": "Sloop John B"
+		},
+		{
+			"artistArray": ["Train"],
+			"title": "Hey Soul Sister"
+		},
+		{
+			"artistArray": ["Trey Anastasio", "Phish"],
+			"title": "Let Me Lie"
+		},
+		{
+			"artistArray": ["Turtles"],
+			"title": "Happy Together"
+		},
+		{
+			"artistArray": ["U2"],
+			"title": "All I Want Is You"
+		},
+		{
+			"artistArray": ["U2"],
+			"title": "Mysterious Ways"
+		},
+		{
+			"artistArray": ["U2"],
+			"title": "One"
+		},
+		{
+			"artistArray": ["U2"],
+			"title": "Pride"
+		},
+		{
+			"artistArray": ["U2"],
+			"title": "Still Haven't Found What Im Looking"
+		},
+		{
+			"artistArray": ["U2"],
+			"title": "With or Without You"
+		},
+		{
+			"artistArray": ["UB40"],
+			"title": "Red Red Wine"
+		},
+		{
+			"artistArray": ["Van Morrison"],
+			"title": "Brown Eyed Girl"
+		},
+		{
+			"artistArray": ["Van Morrison"],
+			"title": "Crazy Love"
+		},
+		{
+			"artistArray": ["Van Morrison"],
+			"title": "Days Like This"
+		},
+		{
+			"artistArray": ["Van Morrison"],
+			"title": "Into the Mystic"
+		},
+		{
+			"artistArray": ["Van Morrison"],
+			"title": "Moondance"
+		},
+		{
+			"artistArray": ["Van Morrison", "Mellencamp"],
+			"title": "Wild Night"
+		},
+		{
+			"artistArray": ["Vance Joy"],
+			"title": "Riptide"
+		},
+		{
+			"artistArray": ["Violent Femmes"],
+			"title": "36-24-36"
+		},
+		{
+			"artistArray": ["Violent Femmes"],
+			"title": "American Music"
+		},
+		{
+			"artistArray": ["Violent Femmes"],
+			"title": "Blister in the Sun"
+		},
+		{
+			"artistArray": ["Violent Femmes"],
+			"title": "Gimme the Car"
+		},
+		{
+			"artistArray": ["Wailin Jennies"],
+			"title": "One Voice"
+		},
+		{
+			"artistArray": ["Wallflowers"],
+			"title": "One Headlight"
+		},
+		{
+			"artistArray": ["The Weeknd"],
+			"title": "Can't Feel My Face"
+		},
+		{
+			"artistArray": ["Weezer"],
+			"title": "(If You're Wondering If I Want You To) I Want You To"
+		},
+		{
+			"artistArray": ["Weezer"],
+			"title": "Undone/Sweater Song"
+		},
+		{
+			"artistArray": ["Whitley"],
+			"title": "I Remember"
+		},
+		{
+			"artistArray": ["White Stripes", "Jack Johnson"],
+			"title": "We're Going To Be Friends"
+		},
+		{
+			"artistArray": ["Whitney Houston"],
+			"title": "I Will Always Love You"
+		},
+		{
+			"artistArray": ["Whitney Houston"],
+			"title": "I Wanna Dance With Somebody"
+		},
+		{
+			"artistArray": ["Wilco"],
+			"title": "Handshake Drugs"
+		},
+		{
+			"artistArray": ["Wilco"],
+			"title": "Hate It Here"
+		},
+		{
+			"artistArray": ["Wilco"],
+			"title": "Heavy Metal Drummer"
+		},
+		{
+			"artistArray": ["Wilco"],
+			"title": "Hummingbird"
+		},
+		{
+			"artistArray": ["Wilco"],
+			"title": "Jesus Etc..."
+		},
+		{
+			"artistArray": ["Willie Nelson"],
+			"title": "On The Road Again"
+		},
+		{
+			"artistArray": ["Wings", "Paul McCartney"],
+			"title": "Maybe I'm Amazed"
+		},
+		{
+			"artistArray": ["Yael Naim"],
+			"title": "New Soul"
+		},
+		{
+			"artistArray": ["Young the Giant"],
+			"title": "Simplify"
+		},
+		{
+			"artistArray": ["Zac Brown"],
+			"title": "Chicken Fried"
+		},
+		{
+			"artistArray": ["Zac Brown", "Jimmy Buffett"],
+			"title": "Knee Deep"
+		},
+		{
+			"artistArray": ["Zac Brown"],
+			"title": "My Old Man"
+		},
+		{
+			"artistArray": ["Zac Brown"],
+			"title": "Whatever It Is"
+		},
+		{
+			"artistArray": ["Love Actually Soundtrack"],
+			"title": "Glasgow Love Theme"
+		},
+		{
+			"artistArray": ["Pachabel"],
+			"title": "Canon in D"
+		},
+		{
+			"artistArray": ["Wagner"],
+			"title": "Wedding March (Here Comes the Bride)"
+		},
+		{
+			"artistArray": ["Duke Ellington"],
+			"title": "Don't Get Around Much..."
+		},
+		{
+			"artistArray": ["Thelonius Monk"],
+			"title": "Round Midnight"
+		},
+		{
+			"artistArray": ["Antonio Carlos Jobim"],
+			"title": "Desafinado"
+		},
+		{
+			"artistArray": ["Miles Davis"],
+			"title": "All Blues"
+		},
+		{
+			"artistArray": ["Antonio Carlos Jobim"],
+			"title": "Girl From Ipanema"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Ain't Misbehavin'"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "All the Things You Are"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Always (I'll Be Loving You)"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "As Time Goes By"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Autumn Leaves"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Beautiful Love"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Blue Bossa"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Body and Soul"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "But Not For Me"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Bye Bye Blackbird"
+		},
+		{
+			"artistArray": ["Herbie Hancock"],
+			"title": "Chameleon"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Christmas Song"
+		},
+		{
+			"artistArray": ["The Meters", "Standard"],
+			"title": "Cissy Strut"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Darn That Dream"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Detour Ahead"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Fly Me to the Moon"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Gee Baby Ain't I Good to You"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "God Bless the Child"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Good Morning Heartache"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Green Dolphin Street"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Honeysuckle Rose"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "I Got It Bad"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "I'm Beginning to See the Light"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "In the Wee Small Hours"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "It's Only a Paper Moon"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Let's Fall in Love"
+		},
+		{
+			"artistArray": ["Vince Guaraldi"],
+			"title": "Linus and Lucy (Peanuts Charlie Brown Theme)"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Lullabye of Birdland"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Makin Whoopee"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Misty"
+		},
+		{
+			"artistArray": ["Duke Ellington"],
+			"title": "Mood Indigo"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "My One and Only Love"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Nature Boy"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Nearness of You"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Night and Day"
+		},
+		{
+			"artistArray": ["Manhattan Transfer", "Standard"],
+			"title": "Nightengale Sang in Berkelly Sq."
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "No Moon At All"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "On the Sunny Side of the Street"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Over the Rainbow"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Satin Doll"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Solitude"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Spring Can Really Hang You Up"
+		},
+		{
+			"artistArray": ["Standard", "Sonny Rollins"],
+			"title": "St Thomas"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Stella By Starlight"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Stormy Monday"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Stormy Weather"
+		},
+		{
+			"artistArray": ["Standard", "Frank Sinatra"],
+			"title": "Strangers In The Night"
+		},
+		{
+			"artistArray": ["Standard", "Gerswhin"],
+			"title": "Summertime"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Sweet Georgia Brown"
+		},
+		{
+			"artistArray": ["Duke Ellington"],
+			"title": "Take the A Train"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "They Can't Take That Away From Me"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "Till There Was You"
+		},
+		{
+			"artistArray": ["Nat King Cole"],
+			"title": "Unforgettable"
+		},
+		{
+			"artistArray": ["Herbie Hancock"],
+			"title": "Watermelon Man"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "We'll Meet Again"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "What a Difference a Day Made"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "What a Wonderful World"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "What is this Thing Called Love"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "When a Man Loves a Woman"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "When I Look in Your Eyes"
+		},
+		{
+			"artistArray": ["Standard"],
+			"title": "White Christmas"
+		},
+		{
+			"artistArray": ["Frank Sinatra", "Standard"],
+			"title": "Witchcraft"
+		},
+		{
+			"artistArray": ["Ella Fitzgerald", "Standard"],
+			"title": "Summertime"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Another Friend"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Calloused and Curly (Instrumental)"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Constellations"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Can't Dream Without You"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Dance Like His Daddy"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Doctor Girl"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Even Though"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Except for You"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Friction"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Have I Lost You?"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Hipster Juliet (You Can Tell)"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Home"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "It's Ok"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Just Like Me"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Kezar (instrumental)"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Lemme Know"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Let's Get Alone"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "No History"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Perspective"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Something New"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Start Breathing"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Surely (instrumental)"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "The Collector"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Touch"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Umbrella Song"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Wintergreens (Instrumental)"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "When I'm Supposed To"
+		},
+		{
+			"artistArray": ["Ben Hammond"],
+			"title": "Worst Kind of Perfect"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "Happy Christmas (War Is Over) John Lennon"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "The Christmas Song (Chestnuts Roasting)"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "Little Drummer Boy"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "I'm Dreaming of a White Christmas"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "Silent Night"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "Jingle Bell Rock"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "Mary Did You Know?"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "Mele Kalikimaka (Hawaiian Christmas Song)"
+		},
+		{
+			"artistArray": ["Christmas"],
+			"title": "I Wonder As I Wander"
+		},
+		{
+			"artistArray": ["New Year's Eve"],
+			"title": "Auld Lang Syne"
+		},
+		{
+			"artistArray": ["Christian"],
+			"title": "Great Is Thy Faithfulness"
+		},
+		{
+			"artistArray": ["Christian"],
+			"title": "Pass It On"
+		},
+		{
+			"artistArray": ["National Anthem"],
+			"title": "O Canada"
+		},
+		{
+			"artistArray": ["National Anthem"],
+			"title": "The Star-Spangled Banner"
+		},
+		{
+			"artistArray": ["Traditional Jewish Dance", "Yossi Piamenta"],
+			"title": "Hora - Rikud Rishon Medley: Od Yishama, Yasis Alayich, Siman Tov Mazel Tov"
+		},
+		{
+			"artistArray": ["Traditional Jewish Dance"],
+			"title": "Hora - Hava Nagila"
+		},
+		{
+			"artistArray": ["Yossi Piamenta"],
+			"title": "Asher Bara (Hebrew Lyrics for 'Down Under')"
+		}
+	]
+}

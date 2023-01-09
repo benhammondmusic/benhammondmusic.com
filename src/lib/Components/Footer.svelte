@@ -46,7 +46,7 @@
 							value="Join mailing list"
 							name="subscribe"
 							id="mc-embedded-subscribe"
-							class="bg-bhm-blue-200 rounded-sm px-5 py-1 hover:bg-bhm-sky-500"
+							class="hover:bg-bhm-blue-400 hover:cursor-pointer rounded-sm px-5 py-1 bg-bhm-sky-600"
 						/>
 					</div>
 				</form>

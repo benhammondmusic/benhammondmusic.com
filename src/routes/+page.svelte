@@ -7,15 +7,19 @@
 	import FancyHeading from '$lib/Components/FancyHeading.svelte';
 </script>
 
+<svelte:head>
+	<title>Ben Hammond - Singer-Songbuilder</title>
+</svelte:head>
+
 <section class="py-10">
 	<h2 class="text-3xl">Ben Hammond</h2>
 	<h3 class="text-xl">Singer-Songbuilder</h3>
 </section>
 
-<section class="py-10 grid grid-cols-12 gap-10">
+<section class="py-10 grid grid-cols-12 gap-10 items-center">
 	<img
-		class="col-span-5"
-		src="/images/BenHeroSnowyGuitar.jpg"
+		class="col-span-5 "
+		src="/images/BenSnowyVertical.jpg"
 		alt="ben atop a snowy mountain in a dark suit holding a guitar"
 	/>
 	<div class="col-span-6 m-5">

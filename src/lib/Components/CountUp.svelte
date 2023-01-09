@@ -18,6 +18,6 @@
 				loop={false}
 			/>
 		</p>
-		<p class="bg-bhm-copper text-xs w-fit">{textLabel}</p>
+		<p class="bg-bhm-copper bg-opacity-25 text-xs w-fit">{textLabel}</p>
 	</div>
 </div>

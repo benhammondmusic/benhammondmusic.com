@@ -2,6 +2,10 @@
 	import FancyHeading from '$lib/Components/FancyHeading.svelte';
 </script>
 
+<svelte:head>
+	<title>Ben Hammond - Booking Info</title>
+</svelte:head>
+
 <section class="py-10">
 	<h2 class="text-3xl">Booking</h2>
 </section>
@@ -25,9 +29,6 @@
 		planning, please reach out by email for more info. Let's make some music!
 	</p>
 
-	<!-- 		width="533"
-		height="284" -->
-
 	<div class="aspect-w-16 aspect-h-9  flex justify-center my-10 mx-20">
 		<iframe
 			class="rounded-md"
@@ -38,4 +39,38 @@
 			allowfullscreen
 		/>
 	</div>
+</section>
+
+<section class="py-10 px-24 flex flex-col align-center">
+	<FancyHeading text={'Event Services'} />
+
+	<h3 class="text-xl">Packages starting at $1,500</h3>
+	<ul class="list-inside list-disc mb-5 mt-2">
+		<li>
+			live music including romantic acoustic repertoire, upbeat live-looped dance sets, and
+			everything in between
+		</li>
+		<li>additional DJ coverage, split before and after live music</li>
+		<li>unlimited requests from artist’s 1,000+ song repertoire and DJ library</li>
+	</ul>
+
+	<h3 class="text-xl">Additional coverage</h3>
+	<ul class="list-inside list-disc mb-5 mt-2">
+		<li>can be pro-rated in half hour increments of live music and/or DJ coverage</li>
+	</ul>
+
+	<h3 class="text-xl">Expanded ensemble options:</h3>
+	<ul class="list-inside list-disc mb-5 mt-2">
+		<li>cello, percussion, violin, horns, 2nd vocalist, and more</li>
+	</ul>
+
+	<p class="italic text-xs">
+		*discounts may be available for shorter, informal events in the Denver metro, and additional
+		fees may apply for longer events more than 2 hours from Denver; please inquire for a specific
+		quote
+	</p>
+</section>
+
+<section class="py-10 px-24 flex flex-col align-center">
+	<FancyHeading text={'Client Testimonials'} />
 </section>
