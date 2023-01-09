@@ -30,9 +30,9 @@
 		planning, please reach out by email for more info. Let's make some music!
 	</p>
 
-	<div class="aspect-w-16 aspect-h-9  flex justify-center my-10 mx-20">
+	<div class="flex flex-col align-center my-10 mx-24 ">
 		<iframe
-			class="rounded-md"
+			class="rounded-md w-full aspect-video"
 			src="https://www.youtube.com/embed/e50j1oUjbUY"
 			title="Ben Hammond - Live Music Event Booking Sampler Video"
 			frameborder="0"

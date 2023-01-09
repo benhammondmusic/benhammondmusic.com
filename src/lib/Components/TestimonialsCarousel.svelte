@@ -1,4 +1,5 @@
 <script>
+	// @ts-ignore
 	import Carousel from 'svelte-carousel';
 	import reviews from '$lib/data/reviews.json';
 </script>

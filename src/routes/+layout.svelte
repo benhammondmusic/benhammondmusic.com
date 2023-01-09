@@ -4,7 +4,7 @@
 	import Footer from '$lib/Components/Footer.svelte';
 </script>
 
-<div class="bg-bhm-gray text-white font-light">
+<div class="bg-bhm-gray text-white font-light ">
 	<Navbar />
 	<main class="p-5">
 		<slot />
