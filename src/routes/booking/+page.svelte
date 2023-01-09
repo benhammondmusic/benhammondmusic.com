@@ -1,5 +1,6 @@
 <script>
 	import FancyHeading from '$lib/Components/FancyHeading.svelte';
+	import TestimonialsCarousel from '$lib/Components/TestimonialsCarousel.svelte';
 </script>
 
 <svelte:head>
@@ -73,4 +74,5 @@
 
 <section class="py-10 px-24 flex flex-col align-center">
 	<FancyHeading text={'Client Testimonials'} />
+	<TestimonialsCarousel />
 </section>
