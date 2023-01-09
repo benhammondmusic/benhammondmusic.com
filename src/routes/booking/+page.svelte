@@ -1,10 +1,13 @@
+<script>
+	import FancyHeading from '$lib/Components/FancyHeading.svelte';
+</script>
+
 <section class="py-10">
 	<h2 class="text-3xl">Booking</h2>
 </section>
 
 <section class="py-10 flex flex-col align-center">
-	<h2 class="text-3xl text-bhm-sky uppercase font-thin text-center">Booking Info</h2>
-	<hr class="w-24 h-0.5 mx-auto mt-4 mb-8 bg-white border-0 rounded" />
+	<FancyHeading text={'Booking Info'} />
 
 	<p class="py-2">
 		As a solo artist, I specialize in destination- and other intimate events in the state and around
