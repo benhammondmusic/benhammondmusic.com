@@ -30,7 +30,7 @@
 		planning, please reach out by email for more info. Let's make some music!
 	</p>
 
-	<div class="flex flex-col align-center my-10 mx-24 ">
+	<div class="flex flex-col align-center my-10 mx-24 lg:px-48 2xl:px-96 ">
 		<iframe
 			class="rounded-md w-full aspect-video"
 			src="https://www.youtube.com/embed/e50j1oUjbUY"
@@ -42,7 +42,7 @@
 	</div>
 </section>
 
-<section class="py-10 px-24 flex flex-col align-center">
+<section class="py-10 flex flex-col align-center">
 	<FancyHeading text={'Event Services'} />
 
 	<h3 class="text-xl">Packages starting at $1,500</h3>
@@ -65,7 +65,7 @@
 		<li>cello, percussion, violin, horns, 2nd vocalist, and more</li>
 	</ul>
 
-	<p class="italic text-xs">
+	<p class="italic text-sm">
 		*discounts may be available for shorter, informal events in the Denver metro, and additional
 		fees may apply for longer events more than 2 hours from Denver; please inquire for a specific
 		quote

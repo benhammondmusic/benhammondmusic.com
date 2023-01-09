@@ -6,7 +6,7 @@
 
 <div class="bg-bhm-gray text-white font-light ">
 	<Navbar />
-	<main class="p-5">
+	<main class="py-10 px-24 ">
 		<slot />
 	</main>
 	<Footer />
