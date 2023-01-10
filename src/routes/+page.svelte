@@ -11,19 +11,14 @@
 	<title>Ben Hammond - Singer-Songbuilder</title>
 </svelte:head>
 
-<section class="py-10">
-	<h2 class="text-3xl">Ben Hammond</h2>
-	<h3 class="text-xl">Singer-Songbuilder</h3>
-</section>
-
 <section class="py-10 grid grid-cols-12 gap-10 items-center">
 	<img
 		class="col-span-5 "
 		src="/images/BenSnowyVertical.jpg"
 		alt="ben atop a snowy mountain in a dark suit holding a guitar"
 	/>
-	<div class="col-span-6 m-5">
-		<FancyHeading text={'About'} />
+	<div class="col-span-6 m-2">
+		<FancyHeading text={'Singer - Songbuilder'} />
 		<p class="py-2">
 			"Funky… guitar-looping, beat-boxing, soul-singing… powerhouse Ben Hammond" (Sarasota Herald
 			Tribune) performs a wide range of groove-oriented acoustic mashups, original compositions and
@@ -38,20 +33,28 @@
 			someone, and uses his guitar, voice and gadgets to create a sound that you want to keep
 			hearing."
 		</p>
+
+		<p class="py-2 text-xl">
+			<a class="text-bhm-copper hover:text-white hover:bg-bhm-copper-700 underline " href="/booking"
+				>Book music for your event!</a
+			>
+		</p>
 	</div>
 </section>
 
-<aside>
+<aside class="grid grid-cols-4 items-center justify-items-center">
 	<CountUp targetCount={100} interval={30} suffix={'0+'} textLabel={'Songs in Repertoire'}>
 		<MusicNotes />
 	</CountUp>
-	<CountUp targetCount={40} interval={100} suffix={'0+'} textLabel={'Weddings and Private Events'}>
-		<Diamond />
-	</CountUp>
+
 	<CountUp targetCount={3} interval={1000} suffix={'k'} textLabel={'Public Gigs'}>
 		<OldMic />
 	</CountUp>
-	<CountUp targetCount={14} interval={300} suffix={'k'} textLabel={'Discs Sold'}>
+	<CountUp targetCount={40} interval={100} suffix={'0+'} textLabel={'Private Events'}>
+		<Diamond />
+	</CountUp>
+
+	<CountUp targetCount={15} interval={300} suffix={'k'} textLabel={'Albums Sold'}>
 		<CD />
 	</CountUp>
 </aside>

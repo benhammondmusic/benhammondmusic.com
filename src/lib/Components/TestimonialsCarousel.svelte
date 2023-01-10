@@ -9,7 +9,7 @@
 		<div class="bg-white text-bhm-gray-800 flex flex-col align-center justify-center px-10 py-5">
 			<h4 class="text-2xl text-center text-bhm-blue-500">{review.reviewer}</h4>
 			<p class="m-1 italic">
-				<span class="text-xl font-serif">”</span>
+				<span class="text-xl font-serif">“</span>
 				{review.text}
 				<span class="text-xl font-serif">”</span>
 			</p>

@@ -2,9 +2,13 @@
 	// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
 </script>
 
-<footer class="bg-bhm-blue-800 p-5">
-	<div>
-		<div class="">
+<footer class="bg-bhm-blue-800">
+	<section
+		class="w-full bg-cover bg-center h-96"
+		style="background-image: url(/images/BenSkyline.jpg)"
+	/>
+	<div class="p-5">
+		<div>
 			<div class="">
 				<a id="contact_section">&nbsp;</a>
 				<!-- <div class="">Join the Mailing List</div> -->
@@ -56,6 +60,15 @@
 
 		<nav class="flex py-10">
 			<div class="pr-20">
+				<div class="text-2xl py-2">Menu</div>
+				<ul>
+					<li><a class="hover:text-bhm-sky" href="/">Home</a></li>
+					<li><a class="hover:text-bhm-sky" href="/music">Music</a></li>
+					<li><a class="hover:text-bhm-sky" href="/booking">Booking</a></li>
+				</ul>
+			</div>
+
+			<div class="pr-20">
 				<h3 class="text-2xl py-2">Listen</h3>
 				<ul>
 					<li>
@@ -76,27 +89,6 @@
 							>Youtube</a
 						>
 					</li>
-					<li>
-						<a class="hover:text-bhm-sky" href="https://www.amazon.com/Ben-Hammond/e/B001LH7NCY"
-							>Amazon</a
-						>
-					</li>
-					<li>
-						<a class="hover:text-bhm-sky" href="https://deezer.page.link/WB4nhNoi7ZKLAniz7"
-							>Deezer</a
-						>
-					</li>
-				</ul>
-			</div>
-
-			<div class="pr-20">
-				<div class="text-2xl py-2">Menu</div>
-				<ul>
-					<li><a class="hover:text-bhm-sky" href="index.html">Home</a></li>
-					<li><a class="hover:text-bhm-sky" href="shows.html">Shows</a></li>
-					<li><a class="hover:text-bhm-sky" href="music.html">Music</a></li>
-					<li><a class="hover:text-bhm-sky" href="booking.html">Booking</a></li>
-					<li><a class="hover:text-bhm-sky" href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 
@@ -107,8 +99,6 @@
 					<li>
 						<a class="hover:text-bhm-sky" href="https://benhammond.tech">Developer Portfolio</a>
 					</li>
-					<li><a class="hover:text-bhm-sky" href="songlist.html">Song List</a></li>
-					<li><a class="hover:text-bhm-sky" href="faq.html">FAQ</a></li>
 					<li>
 						<a class="hover:text-bhm-sky" href="mailto:hello@benhammondmusic.com">Email Me</a>
 					</li>
@@ -116,7 +106,7 @@
 			</div>
 		</nav>
 	</div>
-	<div>
+	<div class="p-5">
 		<span>
 			<a class="hover:text-bhm-sky" href="https://benhammond.tech">benhammond.tech</a> ©
 			<span id="currentYear">2023</span>
