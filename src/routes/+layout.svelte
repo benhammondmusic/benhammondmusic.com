@@ -4,10 +4,10 @@
 	import Footer from '$lib/Components/Footer.svelte';
 </script>
 
-<div class="bg-bhm-gray text-white font-light flex flex-col items-center ">
-	<div class="max-w-5xl">
+<div class="bg-bhm-gray text-white font-light w-full">
+	<div class="w-full flex flex-col items-center">
 		<Navbar />
-		<main class="py-10 px-20">
+		<main class="py-10 px-20 w-11/12 max-w-8xl ">
 			<slot />
 		</main>
 		<Footer />

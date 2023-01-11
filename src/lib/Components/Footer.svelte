@@ -2,16 +2,17 @@
 	// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
 </script>
 
-<footer class="bg-bhm-blue-800">
+<footer class="bg-bhm-blue-800 w-full ">
 	<section
-		class="w-full bg-cover bg-center h-96"
+		class="w-full bg-cover bg-center h-48 sm:h-64 md:h-72 lg:h-96 2xl:h-[48rem]"
 		style="background-image: url(/images/BenSkyline.jpg)"
-	/>
-	<div class="p-5">
+	>
+		stuff
+	</section>
+	<div class="p-10">
 		<div>
 			<div class="">
 				<a id="contact_section">&nbsp;</a>
-				<!-- <div class="">Join the Mailing List</div> -->
 			</div>
 			<!-- Begin Mailchimp Signup Form -->
 			<div id="mc_embed_signup">

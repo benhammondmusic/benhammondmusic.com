@@ -1,4 +1,4 @@
-<header class="p-5">
+<header class="p-10 w-full">
 	<h1 class="sr-only">Ben Hammond - Singer-Songbuilder from Denver, CO</h1>
 	<div class="flex justify-between">
 		<img src="/images/logo.svg" alt="logo" class="h-20" />

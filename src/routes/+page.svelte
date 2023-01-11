@@ -42,7 +42,7 @@
 	</div>
 </section>
 
-<aside class="grid grid-cols-4 items-center justify-items-center">
+<aside class="grid grid-cols-4 items-center justify-items-center py-10">
 	<CountUp targetCount={100} interval={30} suffix={'0+'} textLabel={'Songs in Repertoire'}>
 		<MusicNotes />
 	</CountUp>
