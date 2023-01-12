@@ -1,64 +1,18 @@
 <script>
 	// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
+	import MailingListForm from '$lib/Components/MailingListForm.svelte';
 </script>
 
 <footer class="bg-bhm-blue-800 w-full ">
 	<section
-		class="w-full bg-cover bg-center h-48 sm:h-64 md:h-72 lg:h-96 2xl:h-[48rem]"
+		class="w-full bg-cover bg-center h-48 sm:h-56 md:h-72 lg:h-[24rem] xl:h-[32rem] 2xl:h-[40rem] flex flex-col items-end justify-end lg:justify-center"
 		style="background-image: url(/images/BenSkyline.jpg)"
 	>
-		stuff
+		<div>
+			<MailingListForm />
+		</div>
 	</section>
 	<div class="p-10">
-		<div>
-			<div class="">
-				<a id="contact_section">&nbsp;</a>
-			</div>
-			<!-- Begin Mailchimp Signup Form -->
-			<div id="mc_embed_signup">
-				<form
-					action="https://benhammondmusic.us6.list-manage.com/subscribe/post?u=24021f91024f3c0e90c50eaf3&amp;id=dc677a6554"
-					method="post"
-					id="mc-embedded-subscribe-form"
-					name="mc-embedded-subscribe-form"
-					class=""
-				>
-					<!-- above form need id="newsletter_form" ?? -->
-					<div id="mc_embed_signup_scroll">
-						<label for="mce-EMAIL">
-							<p class="text-xs">Your Email Address:</p>
-							<input
-								type="email"
-								value=""
-								name="EMAIL"
-								class="rounded-sm p-1 text-bhm-blue-900"
-								id="mce-EMAIL"
-								required={true}
-							/>
-						</label>
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px" aria-hidden="true">
-							<input
-								type="text"
-								name="b_24021f91024f3c0e90c50eaf3_dc677a6554"
-								tabindex="-1"
-								value=""
-							/>
-						</div>
-
-						<input
-							type="submit"
-							value="Join mailing list"
-							name="subscribe"
-							id="mc-embedded-subscribe"
-							class="hover:bg-bhm-blue-400 hover:cursor-pointer rounded-sm px-5 py-1 bg-bhm-sky-600"
-						/>
-					</div>
-				</form>
-			</div>
-			<!--End mc_embed_signup-->
-		</div>
-
 		<nav class="flex py-10">
 			<div class="pr-20">
 				<div class="text-2xl py-2">Menu</div>

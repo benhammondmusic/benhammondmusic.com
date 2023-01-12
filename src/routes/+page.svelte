@@ -18,7 +18,7 @@
 		alt="ben atop a snowy mountain in a dark suit holding a guitar"
 	/>
 	<div class="col-span-6 m-2">
-		<FancyHeading text={'Singer - Songbuilder'} />
+		<FancyHeading text={'Singer Songbuilder'} />
 		<p class="py-2">
 			"Funky… guitar-looping, beat-boxing, soul-singing… powerhouse Ben Hammond" (Sarasota Herald
 			Tribune) performs a wide range of groove-oriented acoustic mashups, original compositions and
