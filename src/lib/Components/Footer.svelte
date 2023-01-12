@@ -1,6 +1,7 @@
 <script>
 	// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
 	import MailingListForm from '$lib/Components/MailingListForm.svelte';
+	import LinkArrow from '$lib/Components/LinkArrow.svelte';
 </script>
 
 <footer class="bg-bhm-blue-800 w-full ">
@@ -30,18 +31,19 @@
 						<a
 							class="hover:text-bhm-sky"
 							href="https://open.spotify.com/artist/1q9zbsAcxs9fP7b9G8Y4Qk?si=GZE5O5EoSaCKM99kfeN79w"
-							>Spotify</a
+							>Spotify<LinkArrow /></a
 						>
 					</li>
 					<li>
 						<a
 							class="hover:text-bhm-sky"
-							href="https://music.apple.com/us/artist/ben-hammond/164875823">Apple Music</a
+							href="https://music.apple.com/us/artist/ben-hammond/164875823"
+							>Apple Music<LinkArrow /></a
 						>
 					</li>
 					<li>
 						<a class="hover:text-bhm-sky" href="https://www.youtube.com/benhammondmusicpage"
-							>Youtube</a
+							>Youtube<LinkArrow /></a
 						>
 					</li>
 				</ul>
@@ -50,9 +52,15 @@
 			<div class="pr-20">
 				<div class="text-2xl py-2">More</div>
 				<ul>
-					<li><a class="hover:text-bhm-sky" href="https://blog.benhammond.tech">Tech Blog</a></li>
 					<li>
-						<a class="hover:text-bhm-sky" href="https://benhammond.tech">Developer Portfolio</a>
+						<a class="hover:text-bhm-sky" href="https://blog.benhammond.tech"
+							>Tech Blog<LinkArrow /></a
+						>
+					</li>
+					<li>
+						<a class="hover:text-bhm-sky" href="https://benhammond.tech"
+							>Developer Portfolio<LinkArrow /></a
+						>
 					</li>
 					<li>
 						<a class="hover:text-bhm-sky" href="mailto:hello@benhammondmusic.com">Email Me</a>
