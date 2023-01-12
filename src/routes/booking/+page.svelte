@@ -72,7 +72,7 @@
 	</p>
 </section>
 
-<section class="py-10 px-24 flex flex-col align-center">
+<section class="py-10 px-1 md:px-10 xl:px-24 flex flex-col align-center">
 	<FancyHeading text={'Client Testimonials'} />
 	<TestimonialsCarousel />
 </section>

@@ -1,4 +1,11 @@
 <script lang="ts">
+	let innerWidth = 0;
+	function calcNumParticles(width: number) {
+		if (width < 960) return 1;
+		if (width < 1280) return 2;
+		return 3;
+	}
+
 	// @ts-ignore
 	import Carousel from 'svelte-carousel';
 	import reviews from '$lib/data/reviews.json';
@@ -12,14 +19,22 @@
 	}
 </script>
 
-<Carousel particlesToShow={2} let:showPrevPage let:showNextPage bind:this={carousel}>
+<svelte:window bind:innerWidth />
+
+<Carousel
+	dots={false}
+	particlesToShow={calcNumParticles(innerWidth)}
+	let:showPrevPage
+	let:showNextPage
+	bind:this={carousel}
+>
 	<div class="flex items-center" slot="prev">
-		<button class="text-5xl m-5 hover:text-bhm-sky hover:cursor-pointer" on:click={goToPrevPage}
+		<button class="text-5xl mr-5 hover:text-bhm-sky hover:cursor-pointer" on:click={goToPrevPage}
 			>◀</button
 		>
 	</div>
 	<div class="flex items-center" slot="next">
-		<button class="text-5xl m-5 hover:text-bhm-sky hover:cursor-pointer" on:click={goToNextPage}
+		<button class="text-5xl ml-5 hover:text-bhm-sky hover:cursor-pointer" on:click={goToNextPage}
 			>▶</button
 		>
 	</div>
