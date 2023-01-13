@@ -3,7 +3,6 @@
 	export let quoteText: string;
 	export let quoteName: string;
 	export let quoteOrg: string;
-	// export let quoteLinkUrl: string;
 </script>
 
 <div
@@ -27,15 +26,10 @@
 	</div>
 	<div class="w-full">
 		<p class="text-md text-center font-bold text-bhm-blue-500">
-			<!-- <a href={quoteLinkUrl}> -->
 			{quoteName}
-			<!-- </a> -->
 		</p>
 		<p class="text-center text-xs text-bhm-gray-500">
-			<!-- <a href={quoteLinkUrl}> -->
 			{quoteOrg}
-			<!-- </a> -->
 		</p>
 	</div>
 </div>
-<!-- </div> -->
