@@ -5,8 +5,8 @@
 	export let quoteOrg: string;
 </script>
 
-<div
-	class="mx-auto mt-24 w-full rounded-lg bg-bhm-sky-50 px-5 pt-5 pb-10 text-bhm-gray-800 shadow-lg"
+<article
+	class="mx-auto w-full rounded-lg bg-bhm-sky-50 py-5 px-5 pb-10 text-bhm-gray-800 shadow-lg"
 	style="max-width: 500px"
 >
 	<div class="w-full pt-1 pb-5">
@@ -19,7 +19,7 @@
 	</div>
 	<div class="mb-10 w-full">
 		<div class="h-3 text-left text-3xl leading-tight text-bhm-blue-500">“</div>
-		<p class="px-5 text-center text-sm text-bhm-gray-600">
+		<p class="px-5 text-center italic text-bhm-gray-600">
 			{quoteText}
 		</p>
 		<div class="-mt-3 h-3 text-right text-3xl leading-tight text-bhm-blue-500">”</div>
@@ -32,4 +32,4 @@
 			{quoteOrg}
 		</p>
 	</div>
-</div>
+</article>
