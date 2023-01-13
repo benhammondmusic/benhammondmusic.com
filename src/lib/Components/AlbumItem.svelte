@@ -18,8 +18,8 @@
 			{src}
 		/>
 		<div class="max-w-xs">
-			<h3>{title}</h3>
-			<span>{subtitle}</span>
+			<h3 class="text-2xl font-bold">{title}</h3>
+			<span class="italic">{subtitle}</span>
 			<slot />
 		</div>
 	</div>
