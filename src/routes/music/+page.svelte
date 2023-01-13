@@ -1,16 +1,17 @@
 <script>
 	import AlbumItem from "$lib/Components/AlbumItem.svelte";
+	import FancyHeading from "$lib/Components/FancyHeading.svelte";
+	import PressQuote from "$lib/Components/PressQuote.svelte";
 </script>
 
 <svelte:head>
 	<title>Ben Hammond - Original Music</title>
 </svelte:head>
 
-<h2 class="text-3xl">Music</h2>
-<h3 class="text-xl">Originals, Covers and More!</h3>
+<FancyHeading text={"Albums"} />
 
 <section
-	class="grid grid-cols-1 items-center justify-items-center gap-10 sm:grid-cols-2 2xl:grid-cols-4"
+	class="grid grid-cols-1 justify-items-center gap-10 align-top sm:grid-cols-2 2xl:grid-cols-4"
 >
 	<AlbumItem
 		title="Gone (To California)"
@@ -89,4 +90,32 @@
 			>, and more.
 		</p>
 	</AlbumItem>
+</section>
+
+<section>
+	<PressQuote
+		quotePic="/images/reviewers/raneelee.jpg"
+		quoteText="His beautiful lyrics, ranging from sensual to exuberance and everything in between come together nicely in a great package of vocal performance and instrumental gifts."
+		quoteName="Ranee Lee"
+		quoteOrg="Award-winning Jazz Vocalist"
+	/>
+	<PressQuote
+		quotePic="/images/reviewers/portlandpressherald.png"
+		quoteText="Hammond is a versatile musician who writes memorable originals, delivers when he decides to cover someone, and uses his guitar, voice and gadgets to create a sound that you want to keep hearing."
+		quoteName="Aimsel Ponti"
+		quoteOrg="Portland Press Herald"
+	/>
+	<PressQuote
+		quotePic="/images/reviewers/moss.jpg"
+		quoteText="He was awesome! His looping and talent with an array of instruments allows him to play anything from background music to dance party... a talented musician and a great guy, highly recommended for a wedding or any other special event."
+		quoteName="Jordan Johnson"
+		quoteOrg="Owner of Moss in Denver"
+	/>
+
+	<PressQuote
+		quotePic="/images/reviewers/ticket.jpg"
+		quoteText="...one minute he's singer-songwriter smooth, the next breaking into rap-jazzy scats, skillfully co-merging genres within songs."
+		quoteName="Dawn Scire"
+		quoteOrg="Sarasota Herald Tribune (Ticket)"
+	/>
 </section>
