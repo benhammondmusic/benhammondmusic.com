@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Ben Hammond - Original Music</title>
+	<title>Ben Hammond - Original Music and More</title>
 </svelte:head>
 
 <section>
@@ -93,7 +93,7 @@
 	</div>
 </section>
 
-<section class="mt-24">
+<section class="my-24">
 	<FancyHeading text={"Press Quotes"} />
 
 	<div class="grid grid-cols-4 gap-5 pt-10">
