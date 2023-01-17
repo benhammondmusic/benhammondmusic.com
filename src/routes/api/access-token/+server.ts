@@ -1,6 +1,7 @@
 import { json, type RequestHandler } from '@sveltejs/kit'
 
 import {VITE_SPOTIFY_CLIENT_ID, VITE_SPOTIFY_CLIENT_SECRET, VITE_SPOTIFY_REFRESH_TOKEN } from '$env/static/private';
+
 import {PUBLIC_BASE_URL} from '$env/static/public'
 
 const token_endpoint = `https://accounts.spotify.com/api/token`;

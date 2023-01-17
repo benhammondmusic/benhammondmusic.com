@@ -2,7 +2,7 @@
 	// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
 	import MailingListForm from "$lib/Components/MailingListForm.svelte";
 	import LinkArrow from "$lib/Components/LinkArrow.svelte";
-	import NowPlaying from "./NowPlaying.svelte";
+	import RecentlyPlayed from "./RecentlyPlayed.svelte";
 </script>
 
 <footer class="mb-20 w-full bg-bhm-blue-800">
@@ -15,7 +15,7 @@
 		</div>
 	</section>
 
-	<NowPlaying />
+	<RecentlyPlayed />
 
 	<div class="p-10">
 		<nav class="flex py-10">

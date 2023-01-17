@@ -2,7 +2,6 @@
 	import { fade } from "svelte/transition";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import songsJson from "$lib/data/songs.json";
-	import NowPlaying from "$lib/Components/NowPlaying.svelte";
 	let songs = songsJson.songs;
 
 	let artistToSongsMap: Record<string, string[]> = {};
@@ -38,8 +37,6 @@
 <svelte:head>
 	<title>Ben Hammond - Original Music and More</title>
 </svelte:head>
-
-<NowPlaying />
 
 <section class="flex flex-col items-center">
 	<FancyHeading text={`Songlist`} />
