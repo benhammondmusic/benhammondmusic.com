@@ -1,31 +1,50 @@
 <script>
 	// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
-	import MailingListForm from '$lib/Components/MailingListForm.svelte';
-	import LinkArrow from '$lib/Components/LinkArrow.svelte';
+	import MailingListForm from "$lib/Components/MailingListForm.svelte";
+	import LinkArrow from "$lib/Components/LinkArrow.svelte";
+	import NowPlaying from "./NowPlaying.svelte";
 </script>
 
-<footer class="bg-bhm-blue-800 w-full ">
+<footer class="w-full bg-bhm-blue-800 ">
 	<section
-		class="w-full bg-cover bg-center h-48 sm:h-56 md:h-72 lg:h-[24rem] xl:h-[32rem] 2xl:h-[40rem] flex flex-col items-end justify-end lg:justify-center"
+		class="flex h-48 w-full flex-col items-end justify-end bg-cover bg-center sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem]"
 		style="background-image: url(/images/BenSkyline.jpg)"
 	>
 		<div>
 			<MailingListForm />
 		</div>
 	</section>
+
+	<NowPlaying />
+
 	<div class="p-10">
 		<nav class="flex py-10">
 			<div class="pr-20">
-				<div class="text-2xl py-2">Menu</div>
+				<div class="py-2 text-2xl">Menu</div>
 				<ul>
-					<li><a class="hover:text-bhm-sky" href="/">Home</a></li>
-					<li><a class="hover:text-bhm-sky" href="/music">Music</a></li>
-					<li><a class="hover:text-bhm-sky" href="/booking">Booking</a></li>
+					<li>
+						<a
+							class="hover:text-bhm-sky"
+							href="/">Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="hover:text-bhm-sky"
+							href="/music">Music</a
+						>
+					</li>
+					<li>
+						<a
+							class="hover:text-bhm-sky"
+							href="/booking">Booking</a
+						>
+					</li>
 				</ul>
 			</div>
 
 			<div class="pr-20">
-				<h3 class="text-2xl py-2">Listen</h3>
+				<h3 class="py-2 text-2xl">Listen</h3>
 				<ul>
 					<li>
 						<a
@@ -42,28 +61,34 @@
 						>
 					</li>
 					<li>
-						<a class="hover:text-bhm-sky" href="https://www.youtube.com/benhammondmusicpage"
-							>Youtube<LinkArrow /></a
+						<a
+							class="hover:text-bhm-sky"
+							href="https://www.youtube.com/benhammondmusicpage">Youtube<LinkArrow /></a
 						>
 					</li>
 				</ul>
 			</div>
 
 			<div class="pr-20">
-				<div class="text-2xl py-2">More</div>
+				<div class="py-2 text-2xl">More</div>
 				<ul>
 					<li>
-						<a class="hover:text-bhm-sky" href="https://blog.benhammond.tech"
-							>Tech Blog<LinkArrow /></a
+						<a
+							class="hover:text-bhm-sky"
+							href="https://blog.benhammond.tech">Tech Blog<LinkArrow /></a
 						>
 					</li>
 					<li>
-						<a class="hover:text-bhm-sky" href="https://benhammond.tech"
-							>Developer Portfolio<LinkArrow /></a
+						<a
+							class="hover:text-bhm-sky"
+							href="https://benhammond.tech">Developer Portfolio<LinkArrow /></a
 						>
 					</li>
 					<li>
-						<a class="hover:text-bhm-sky" href="mailto:hello@benhammondmusic.com">Email Me</a>
+						<a
+							class="hover:text-bhm-sky"
+							href="mailto:hello@benhammondmusic.com">Email Me</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -71,11 +96,15 @@
 	</div>
 	<div class="p-5">
 		<span>
-			<a class="hover:text-bhm-sky" href="https://benhammond.tech">benhammond.tech</a> ©
+			<a
+				class="hover:text-bhm-sky"
+				href="https://benhammond.tech">benhammond.tech</a
+			>
+			©
 			<span id="currentYear">2023</span>
 			<script>
-				document.getElementById('currentYear').innerHTML = new Date().getFullYear();
-			</script>
+				document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+			</script>. <a href="https://github.com/benhammondmusic/benhammondmusic.com">Edit on GitHub</a>
 		</span>
 	</div>
 </footer>

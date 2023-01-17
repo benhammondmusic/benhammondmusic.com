@@ -5,10 +5,6 @@
 			"title": "What's Up"
 		},
 		{
-			"artistArray": ["311", "The Cure"],
-			"title": "Love Song"
-		},
-		{
 			"artistArray": ["ABBA"],
 			"title": "Dancing Queen"
 		},
@@ -408,17 +404,10 @@
 			"artistArray": ["Bob Carlisle"],
 			"title": "Butterfly Kisses"
 		},
-		{
-			"artistArray": ["Bob Dylan"],
-			"title": "All Along The Watchtower"
-		},
+
 		{
 			"artistArray": ["Bob Dylan"],
 			"title": "Forever Young"
-		},
-		{
-			"artistArray": ["Bob Dylan"],
-			"title": "To Make You Feel My Love"
 		},
 		{
 			"artistArray": ["Bob Marley"],
@@ -820,10 +809,7 @@
 			"artistArray": ["Dylan"],
 			"title": "Rainy Day Women 'Stone Ya'"
 		},
-		{
-			"artistArray": ["Dylan", "Hendrix"],
-			"title": "All Along the Watchtower"
-		},
+
 		{
 			"artistArray": ["Eagles"],
 			"title": "Hotel California"
@@ -1281,7 +1267,7 @@
 			"title": "Wind Cries Mary"
 		},
 		{
-			"artistArray": ["Jimi Hendrix", "Bob Dylan"],
+			"artistArray": ["Jimi Hendrix", "Bob Dylan", "Dave Matthews"],
 			"title": "All Along the Watchtower"
 		},
 		{
@@ -1563,10 +1549,6 @@
 		{
 			"artistArray": ["Marc Cohn"],
 			"title": "Walking in Memphis"
-		},
-		{
-			"artistArray": ["Mark Ronson", "Bruno Mars"],
-			"title": "Uptown Funk"
 		},
 		{
 			"artistArray": ["Maroon 5"],
@@ -2136,10 +2118,7 @@
 			"artistArray": ["Scott McReery"],
 			"title": "This Is It"
 		},
-		{
-			"artistArray": ["Screamin' Jay Hawkins", "CCR", "Nina Simone"],
-			"title": "I Put A Spell On You"
-		},
+
 		{
 			"artistArray": ["Script"],
 			"title": "Breakeven (Falling To Pieces)"
@@ -2282,7 +2261,7 @@
 		},
 		{
 			"artistArray": ["Stevie Wonder"],
-			"title": "You Are Sunshine Life"
+			"title": "You Are The Sunshine Of My Life"
 		},
 		{
 			"artistArray": ["Sting"],
