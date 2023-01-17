@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { PUBLIC_BASE_URL } from "$env/static/public";
+
 	import { onMount } from "svelte";
 	let song: any;
 
 	async function getNowPlaying() {
-		song = await fetch("/api/now-playing/").then((res) => res.json());
+		song = await fetch(`${PUBLIC_BASE_URL}/api/now-playing`).then((res) => res.json());
 	}
 
 	onMount(async () => {
@@ -14,17 +16,11 @@
 	// 	getNowPlaying();
 	// }, 5000);
 
-	import CountUp from "$lib/Components/CountUp.svelte";
-	import MusicNotes from "$lib/icons/MusicNotes.svelte";
-	import Diamond from "$lib/icons/Diamond.svelte";
-	import OldMic from "$lib/icons/OldMic.svelte";
-	import CD from "$lib/icons/CD.svelte";
-	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import Spotify from "$lib/icons/Spotify.svelte";
 </script>
 
 <aside
-	class="decoration-none group m-5 inline-flex w-full items-center rounded-md bg-bhm-gray-800 px-3 py-1 text-sm transition-colors dark:bg-bhm-gray-50/10 {song
+	class="decoration-none group m-5 inline-flex w-5/12 items-center rounded-md bg-bhm-gray-800 px-3 py-1 text-sm transition-colors dark:bg-bhm-gray-50/10 {song
 		? 'hover:bg-[#1DB954] dark:hover:bg-[#1DB954]'
 		: ''}"
 >

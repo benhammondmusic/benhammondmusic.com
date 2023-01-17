@@ -1,15 +1,10 @@
-
+import { json, type RequestHandler } from '@sveltejs/kit'
 
 import {VITE_SPOTIFY_CLIENT_ID, VITE_SPOTIFY_CLIENT_SECRET, VITE_SPOTIFY_REFRESH_TOKEN } from '$env/static/private';
+import {PUBLIC_BASE_URL} from '$env/static/public'
 
-console.log({VITE_SPOTIFY_CLIENT_ID, VITE_SPOTIFY_CLIENT_SECRET, VITE_SPOTIFY_REFRESH_TOKEN });
-
-const redirect_uri = "/"
 const token_endpoint = `https://accounts.spotify.com/api/token`;
-
-
-// /** @type {import('./$types').RequestHandler} */
-export async function GET()  {
+export const GET:RequestHandler = async () =>  {
 
 	console.log("getting access token");
 
@@ -21,13 +16,15 @@ export async function GET()  {
 		body: new URLSearchParams({
 			grant_type: 'refresh_token',
 			refresh_token: VITE_SPOTIFY_REFRESH_TOKEN,
-			redirect_uri,
+			redirect_uri: PUBLIC_BASE_URL,
 			client_id: VITE_SPOTIFY_CLIENT_ID,
 			client_secret: VITE_SPOTIFY_CLIENT_SECRET,
 		})
 	}).then(res => res.json());
 
-	return new Response (JSON.stringify(access_token));
+	console.log({access_token});
+
+	return json(access_token)
 
 };
 

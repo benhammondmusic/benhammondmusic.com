@@ -5,7 +5,7 @@
 	import NowPlaying from "./NowPlaying.svelte";
 </script>
 
-<footer class="w-full bg-bhm-blue-800 ">
+<footer class="mb-20 w-full bg-bhm-blue-800">
 	<section
 		class="flex h-48 w-full flex-col items-end justify-end bg-cover bg-center sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem]"
 		style="background-image: url(/images/BenSkyline.jpg)"
@@ -104,7 +104,11 @@
 			<span id="currentYear">2023</span>
 			<script>
 				document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-			</script>. <a href="https://github.com/benhammondmusic/benhammondmusic.com">Edit on GitHub</a>
+			</script>.
+			<a
+				class="hover:text-bhm-sky"
+				href="https://github.com/benhammondmusic/benhammondmusic.com">Edit on GitHub</a
+			>
 		</span>
 	</div>
 </footer>

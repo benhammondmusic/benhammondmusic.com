@@ -1,9 +1,11 @@
+import { json, type RequestHandler } from '@sveltejs/kit'
+import {PUBLIC_BASE_URL} from '$env/static/public';
+
 const now_playing_endpoint = `https://api.spotify.com/v1/me/player/currently-playing`;
 
-export async function GET() {
-	const response = await fetch('/api/access-token/')
-
-	const access_token = await response.json()
+export const GET:RequestHandler = async () =>  {
+	console.log("getting token first");
+	const access_token = await fetch(`${PUBLIC_BASE_URL}/api/access-token`).then(res => res.json());
 
 	console.log(access_token);
 	const res = await fetch(now_playing_endpoint, {
@@ -12,10 +14,11 @@ export async function GET() {
 		}
 	})
 
-	if (res.status === 204 || res.status > 400) {
-		return new Response(JSON.stringify({ isPlaying: false }));
-	}
+	console.log("getting NOW PLAYING response");
 
+	if (res.status === 204 || res.status > 400) {
+		return json({ isPlaying: false });
+	}
 	const song = await res.json();
 	const isPlaying = song.is_playing;
 	const title = song.item.name;
@@ -24,5 +27,7 @@ export async function GET() {
 	const albumImageUrl = song.item.album.images[0].url;
 	const songUrl = song.item.external_urls.spotify;
 
-	return new Response(JSON.stringify({"isPlaying":isPlaying,"title":title,"artist":artist, "album":album, "albumImageUrl":albumImageUrl, "songUrl":songUrl}));
+	
+	return json({"isPlaying":isPlaying,"title":title,"artist":artist, "album":album, "albumImageUrl":albumImageUrl, "songUrl":songUrl});
+
 }
