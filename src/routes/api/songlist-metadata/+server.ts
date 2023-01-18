@@ -17,8 +17,6 @@ export async function GET() {
 	const response = await fetch(`${PUBLIC_BASE_URL}/api/access-token`)
 	const access_token = await response.json()
 
-
-
 	console.log("not in cache; fetching fresh playlist data");
 
 	const allItems = []
@@ -42,7 +40,6 @@ export async function GET() {
 
 	}
 
-
 	// const data = jsonData.tracks.items.map((track:any)=>track.track.name)
 	const data = allItems.map((item:any)=> getEra(item.track.album.release_date))
 
@@ -58,10 +55,12 @@ function getEra(release_date: string){
 
 	const year: number = parseInt(release_date.substring(0,4))
 
-	if (year < 1960) return "Early 20th century"
-	if (year < 1980) return "60's/70's"
+	if (year < 1960) return "Early 20th Century"
+	if (year < 1970) return "60's"
+	if (year < 1980) return "70's"
 	if (year < 1990) return "80's"
 	if (year < 2000) return "90's"
-	return "Early 21st century"
+	if (year < 2010) return "2000's"
+	return "2010's and Today"
 
 }

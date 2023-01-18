@@ -5,6 +5,29 @@
 	import OldMic from "$lib/icons/OldMic.svelte";
 	import CD from "$lib/icons/CD.svelte";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
+
+	import { PUBLIC_BASE_URL } from "$env/static/public";
+
+	import { onMount } from "svelte";
+	let song: any;
+
+	async function getPlayListEras() {
+		const eraList = await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) =>
+			res.json(),
+		);
+
+		let eraDistributionMap: any = {};
+
+		for (let item of eraList.data) {
+			eraDistributionMap[item] = eraDistributionMap[item] ? eraDistributionMap[item] + 1 : 1;
+		}
+
+		console.log(eraDistributionMap);
+	}
+
+	onMount(async () => {
+		getPlayListEras();
+	});
 </script>
 
 <svelte:head>
