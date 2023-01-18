@@ -4,7 +4,7 @@ import {PUBLIC_BASE_URL} from '$env/static/public';
 const top_tracks_endpoint = `https://api.spotify.com/v1/me/top/tracks`;
 
 export async function GET() {
-	const response = await fetch(`${PUBLIC_BASE_URL}/api/access-token1`)
+	const response = await fetch(`${PUBLIC_BASE_URL}/api/access-token`)
 
 	const access_token = await response.json()
 
