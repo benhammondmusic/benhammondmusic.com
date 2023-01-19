@@ -7,32 +7,41 @@
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 
 	import { PUBLIC_BASE_URL } from "$env/static/public";
-
 	import { onMount } from "svelte";
-	let song: any;
 
-	async function getPlayListEras() {
-		const eraList = await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) =>
+	import BarChart from "$lib/Components/BarChart.svelte";
+
+	let song: any;
+	let yearDistribution: any = [];
+
+	async function getPlayListYears() {
+		const fetchedYearList = await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) =>
 			res.json(),
 		);
 
-		let eraDistributionMap: any = {};
+		const yearsScaffold = Array.from({ length: 75 }, (_, i) => i + 1950);
 
-		for (let item of eraList.data) {
-			eraDistributionMap[item] = eraDistributionMap[item] ? eraDistributionMap[item] + 1 : 1;
-		}
-
-		console.log(eraDistributionMap);
+		yearsScaffold.forEach((year: number) => {
+			const count = fetchedYearList.data.filter(
+				(fetchedYear: string) => parseInt(fetchedYear) === year,
+			).length;
+			yearDistribution.push({
+				year,
+				count,
+			});
+		});
 	}
 
 	onMount(async () => {
-		getPlayListEras();
+		getPlayListYears();
 	});
 </script>
 
 <svelte:head>
 	<title>Ben Hammond - Singer-Songbuilder</title>
 </svelte:head>
+
+<BarChart data={yearDistribution} />
 
 <section class="grid grid-cols-12 items-center gap-10 py-10">
 	<img

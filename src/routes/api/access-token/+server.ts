@@ -23,8 +23,6 @@ export const GET:RequestHandler = async () =>  {
 		})
 	}).then(res => res.json());
 
-	console.log({access_token});
-
 	return json(access_token)
 
 };

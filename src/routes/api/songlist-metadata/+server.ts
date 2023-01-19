@@ -55,12 +55,14 @@ function getEra(release_date: string){
 
 	const year: number = parseInt(release_date.substring(0,4))
 
-	if (year < 1960) return "Early 20th Century"
-	if (year < 1970) return "60's"
-	if (year < 1980) return "70's"
-	if (year < 1990) return "80's"
-	if (year < 2000) return "90's"
-	if (year < 2010) return "2000's"
-	return "2010's and Today"
+	return year
+
+	// if (year < 1960) return "Early 20th Century"
+	// if (year < 1970) return "60's"
+	// if (year < 1980) return "70's"
+	// if (year < 1990) return "80's"
+	// if (year < 2000) return "90's"
+	// if (year < 2010) return "2000's"
+	// return "2010's and Today"
 
 }
