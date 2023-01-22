@@ -1,13 +1,13 @@
 <script lang="ts">
-	import '../app.css';
-	import Navbar from '$lib/Components/Navbar.svelte';
-	import Footer from '$lib/Components/Footer.svelte';
+	import "../app.css";
+	import Navbar from "$lib/Components/Layout/Navbar.svelte";
+	import Footer from "$lib/Components/Layout/Footer.svelte";
 </script>
 
-<div class="bg-bhm-gray text-white font-light w-full">
-	<div class="w-full flex flex-col items-center">
+<div class="w-full bg-bhm-gray font-light text-white">
+	<div class="flex w-full flex-col items-center">
 		<Navbar />
-		<main class="py-10 px-20 w-11/12 max-w-8xl ">
+		<main class="max-w-8xl w-11/12 py-10 px-20 ">
 			<slot />
 		</main>
 		<Footer />
