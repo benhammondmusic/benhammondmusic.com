@@ -12,8 +12,8 @@
 		getLowestItems,
 	} from "$lib/utils/songlistUtils";
 
-	import PieChart from "$lib/Components/PieChart.svelte";
-	import DonutChart from "$lib/Components/DonutChart.svelte";
+	import PieChart from "$lib/Components/DataViz/PieChart.svelte";
+	import DonutChart from "$lib/Components/DataViz/DonutChart.svelte";
 
 	let songDataPromise: Promise<{ data: Song[] }> = getPlayListData();
 
