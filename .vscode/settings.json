@@ -1,20 +1,25 @@
 {
 	"workbench.colorTheme": "Winter is Coming (Dark Black - No Italics)",
 	"cSpell.words": [
+		"acousticness",
 		"Aimsel",
 		"benzara",
 		"componentless",
+		"danceability",
 		"danciness",
 		"Deezer",
+		"DONT_CACHE",
 		"Finkelstein",
 		"Gerhardt",
 		"Ghose",
 		"Hostgator",
+		"instrumentalness",
 		"Irina",
 		"Jaimie",
 		"Jost",
 		"Lindhorst",
 		"Mailchimp",
+		"nocheck",
 		"Platten's",
 		"Ponti",
 		"portlandpressherald",
@@ -23,6 +28,8 @@
 		"signups",
 		"Songbuilder",
 		"songlist",
-		"tailwindshades"
+		"speechiness",
+		"tailwindshades",
+		"Vals"
 	]
 }

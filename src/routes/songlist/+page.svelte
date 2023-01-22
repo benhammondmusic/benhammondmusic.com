@@ -25,13 +25,29 @@
 	function filterByArtist(artist: string) {
 		selectedArtist = artist;
 		songs = songsJson.songs.filter((song) => song.artistArray.includes(artist));
-		songs = songs.sort((a, b) => (a.title as any) - (b.title as any));
+		songs = songs.sort((a, b) => a.title.localeCompare(b.title));
 	}
 
 	function resetFilters() {
 		selectedArtist = "";
 		songs = songsJson.songs;
 	}
+
+	let letters: string[] = [];
+
+	function doAddLetterHeader(item: string) {
+		// skip numbers
+		if (!isNaN(parseInt(item[0]))) return false;
+
+		if (!letters.includes(item[0])) {
+			letters.push(item[0]);
+			console.log(letters);
+			return true;
+		}
+		return false;
+	}
+
+	const capitalLetters = [...Array(26)].map((val, i) => String.fromCharCode(i + 65));
 </script>
 
 <svelte:head>
@@ -41,8 +57,34 @@
 <section class="flex flex-col items-center">
 	<FancyHeading text={`Songlist`} />
 
-	<div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-		{#each Object.entries(artistToSongsMap) as [artist, songs] (artist)}
+	<p class="m-10">
+		<span class="p-5">Jump to:</span>
+		<span>
+			{#each capitalLetters as letter (letter)}
+				<a
+					href={`#${letter}`}
+					class="rounded-lg p-2 font-bold underline hover:bg-white hover:text-bhm-sky ">{letter}</a
+				>
+			{/each}
+		</span>
+	</p>
+
+	<div class=" grid gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+		{#each Object.entries(artistToSongsMap).sort() as [artist, songs] (artist)}
+			{#if doAddLetterHeader(artist)}
+				<h4
+					id={artist[0]}
+					class="col-span-full mt-24 flex justify-between"
+				>
+					<span class="text-4xl">
+						{artist[0]}
+					</span>
+					<button
+						class="ml-24"
+						on:click={() => window.scrollTo(0, 0)}>back to top</button
+					>
+				</h4>
+			{/if}
 			<article
 				transition:fade
 				class="rounded-md  p-5 ring-1 ring-bhm-blue-50"

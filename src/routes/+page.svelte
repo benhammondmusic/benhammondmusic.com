@@ -5,43 +5,11 @@
 	import OldMic from "$lib/icons/OldMic.svelte";
 	import CD from "$lib/icons/CD.svelte";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
-
-	import { PUBLIC_BASE_URL } from "$env/static/public";
-	import { onMount } from "svelte";
-
-	import BarChart from "$lib/Components/BarChart.svelte";
-
-	let song: any;
-	let yearDistribution: any = [];
-
-	async function getPlayListYears() {
-		const fetchedYearList = await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) =>
-			res.json(),
-		);
-
-		const yearsScaffold = Array.from({ length: 75 }, (_, i) => i + 1950);
-
-		yearsScaffold.forEach((year: number) => {
-			const count = fetchedYearList.data.filter(
-				(fetchedYear: string) => parseInt(fetchedYear) === year,
-			).length;
-			yearDistribution.push({
-				year,
-				count,
-			});
-		});
-	}
-
-	onMount(async () => {
-		getPlayListYears();
-	});
 </script>
 
 <svelte:head>
 	<title>Ben Hammond - Singer-Songbuilder</title>
 </svelte:head>
-
-<BarChart data={yearDistribution} />
 
 <section class="grid grid-cols-12 items-center gap-10 py-10">
 	<img

@@ -8,3 +8,4 @@ declare namespace App {
 	// interface Platform {}
 }
 
+declare module 'd3-cloud'

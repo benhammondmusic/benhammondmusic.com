@@ -2,7 +2,7 @@
 	import { PUBLIC_BASE_URL } from "$env/static/public";
 
 	import { onMount } from "svelte";
-	let song: any;
+	let song: { isPlaying: boolean; url: string; title: string; artist: string };
 
 	async function getRecentlyPlayed() {
 		const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/now-playing`).then((res) => res.json());

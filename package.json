@@ -19,6 +19,7 @@
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/kit": "^1.0.0",
 		"@types/d3": "^7.4.0",
+		"@types/d3-cloud": "^1.2.5",
 		"@types/d3-scale": "^4.0.3",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
@@ -40,8 +41,13 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@types/d3-shape": "^3.1.1",
+		"canvas": "^2.11.0",
 		"d3": "^7.8.1",
+		"d3-cloud": "^1.2.5",
 		"d3-scale": "^4.0.2",
-		"svelte-carousel": "^1.0.20"
+		"d3-shape": "^3.2.0",
+		"svelte-carousel": "^1.0.20",
+		"svelte-d3-cloud": "^0.0.2"
 	}
 }
