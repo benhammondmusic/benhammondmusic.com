@@ -46,7 +46,6 @@
 	function handleArtistClick(eTarget: EventTarget | null) {
 		const targetEl = eTarget as HTMLElement;
 		selectedArtist = targetEl.textContent ?? "";
-		// console.log(artist);
 	}
 </script>
 

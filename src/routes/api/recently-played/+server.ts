@@ -7,7 +7,6 @@ export const GET:RequestHandler = async () =>  {
 	console.log("getting token first");
 	const access_token = await fetch(`${PUBLIC_BASE_URL}/api/access-token`).then(res => res.json());
 
-	console.log(access_token);
 	const res = await fetch(endpoint, {
 		headers: {
 			Authorization: `Bearer ${access_token}`
@@ -20,13 +19,6 @@ export const GET:RequestHandler = async () =>  {
 		return json({ "error": "Error figuring out what Ben listened to most recently" });
 	}
 	const data = await res.json();
-
-	for (const song of data.items){
-		console.log(song.track.artists[0].name);
-		console.log(song.track.name)
-
-	}
-
 	const artist = data.items[0].track.artists[0].name
 	const title = data.items[0].track.name
 	const url = data.items[0].track.external_urls.spotify

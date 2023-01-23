@@ -7,7 +7,6 @@ export const GET:RequestHandler = async () =>  {
 	console.log("getting token first");
 	const access_token = await fetch(`${PUBLIC_BASE_URL}/api/access-token`).then(res => res.json());
 
-	console.log(access_token);
 	const res = await fetch(now_playing_endpoint, {
 		headers: {
 			Authorization: `Bearer ${access_token}`

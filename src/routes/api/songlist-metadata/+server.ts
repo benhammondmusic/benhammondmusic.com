@@ -16,8 +16,6 @@ export async function GET() {
 
 	const cachedSonglistItems = get(songlistItemsStore)
 
-	// console.log({cachedSonglistItems});
-
 	if (!DONT_CACHE && cachedSonglistItems) {
 		console.log("already cached, skipping fetch");
 		return json({"status": 200,"data": cachedSonglistItems})
@@ -56,9 +54,6 @@ export async function GET() {
 
 
 		const songs = jsonData.items.map((item:{track: Song})=>{
-
-			// console.log("***");
-			// console.log(item.track);
 
 			const { name, popularity, artists, album} = item.track
 

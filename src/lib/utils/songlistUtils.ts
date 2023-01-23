@@ -54,7 +54,6 @@ const keyMap: Record<Key, string> = {
 
 	export function getArtistCounts(data: Song[]){
 
-		console.log(data);
 
 		const allArtists = data.map((song)=>song.artists.map((artist)=>artist.name)).flat().map((artist)=>artist.split(" And The ")[0])
 

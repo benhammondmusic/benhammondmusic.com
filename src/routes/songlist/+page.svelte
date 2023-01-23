@@ -41,7 +41,6 @@
 
 		if (!letters.includes(item[0])) {
 			letters.push(item[0]);
-			console.log(letters);
 			return true;
 		}
 		return false;
