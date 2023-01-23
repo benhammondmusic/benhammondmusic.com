@@ -2,21 +2,20 @@
 	import { quantize, interpolatePlasma, pie, arc } from "d3";
 
 	export let data;
-
-	const width = 900; // the outer width of the chart, in pixels
-	const height = width + 100; // the outer height of the chart, in pixels
+	const width = 1000; // the outer width of the chart, in pixels
+	const height = width + 200; // the outer height of the chart, in pixels
 	const percent = false; // format values as percentages (true/false)
-	const fontSize = 11; // the font size of the x and y values
-	const strokeWidth = 2; // the width of stroke separating wedges
+	const fontSize = 10; // the font size of the x and y values
+	const strokeWidth = 0.1; // the width of stroke separating wedges
 	const strokeLinejoin = "round"; // line join style of stroke separating wedges
-	const outerRadius = Math.min(width, height) * 0.5 - 150; // the outer radius of the circle, in pixels
-	const innerRadius = 166; // the inner radius of the chart, in pixels
-	const labelPosition = 1.3; // the position of the label offset from center
+	const outerRadius = Math.min(width, height) * 0.5 - 280; // the outer radius of the circle, in pixels
+	const innerRadius = 100; // the inner radius of the chart, in pixels
+	const labelPosition = 2; // the position of the label offset from center
 	const labelRadius = innerRadius * labelPosition + outerRadius * 0.3; // center radius of labels
 	const strokeColorWOR = "white"; //stroke color when inner radius is greater than 0
 	const strokeColorWIR = "yellow"; //stroke color when inner radius is 0
 	const stroke = innerRadius > 0 ? strokeColorWIR : strokeColorWOR; // stroke separating widths
-	const padAngle = 10 / outerRadius; // angular separation between wedges
+	const padAngle = 5 / outerRadius; // angular separation between wedges
 
 	const x = Object.keys(data[0])[0]; // given d in data, returns the (ordinal) x-value
 	const y = Object.keys(data[0])[1]; // given d in data, returns the (quantitative) y-value
@@ -31,6 +30,10 @@
 	// colors can be adjusted manually by creating a color array which length matches length of data set.
 	let colors: any[] = quantize((t) => interpolatePlasma(t * 0.7 + 0.3), xVals.length);
 
+	// let artist = "";
+
+	$: selectedArtist = "";
+
 	const wedges: any[] = pie()
 		.padAngle(padAngle)
 		.sort(null)
@@ -39,7 +42,15 @@
 	const arcPath = arc().innerRadius(innerRadius).outerRadius(outerRadius);
 
 	const arcLabel = arc().innerRadius(labelRadius).outerRadius(labelRadius);
+
+	function handleArtistClick(eTarget: EventTarget | null) {
+		const targetEl = eTarget as HTMLElement;
+		selectedArtist = targetEl.textContent ?? "";
+		// console.log(artist);
+	}
 </script>
+
+<b>{selectedArtist}</b>
 
 <svg
 	{width}
@@ -47,6 +58,8 @@
 	viewBox="{-width / 2} {-height / 2} {width} {height}"
 >
 	{#each wedges as wedge, i}
+		{@const wedgeAngle = (wedge.startAngle + wedge.endAngle) / 2}
+
 		<path
 			fill={colors[i]}
 			d={arcPath(wedge)}
@@ -55,14 +68,16 @@
 			stroke-linejoin={strokeLinejoin}
 		/>
 		<g
-			text-anchor={wedge.startAngle < 3 ? "start" : "end"}
+			text-anchor={wedge.startAngle < Math.PI ? "start" : "end"}
 			transform="translate({arcLabel.centroid(wedge)})"
 		>
 			<text
-				transform={wedge.startAngle < 3
-					? `rotate(${((wedge.startAngle + wedge.endAngle) / 2 / 6.282) * 360 - 90})`
-					: `rotate(${((wedge.startAngle + wedge.endAngle) / 2 / 6.282) * 360 + 90})`}
-				font-size={yVals[i] / 2.8 + 13}
+				on:click={(e) => handleArtistClick(e.target)}
+				on:keydown={(e) => handleArtistClick(e.target)}
+				transform={wedge.startAngle < Math.PI
+					? `rotate(${(wedgeAngle / 2 / Math.PI) * 360 - 90})`
+					: `rotate(${(wedgeAngle / 2 / Math.PI) * 360 + 90})`}
+				font-size={yVals[i] / 1.5 + fontSize}
 				fill="white"
 			>
 				<tspan font-weight="bold">{xVals[i]}</tspan>
@@ -119,7 +134,12 @@
 		><text
 			font-size={18}
 			fill="white"
-			transform="matrix(1 0 0 1 -25 50)">top repertoire artists</text
-		></g
-	>
+			transform="matrix(1 0 0 1 -70 50)">artists with multiple songs</text
+		>
+		<text
+			font-size={18}
+			fill="white"
+			transform="matrix(1 0 0 1 -70 65)">in my repertoire</text
+		>
+	</g>
 </svg>

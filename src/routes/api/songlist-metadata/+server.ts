@@ -8,8 +8,8 @@ const BHM_SONGLIST_ENDPOINT = "https://api.spotify.com/v1/playlists/1BGI6ETmEsvh
 const TRACK_FEATURES_BASE_ENDPOINT = "https://api.spotify.com/v1/audio-features?ids="
 
 
-const DONT_CACHE = false 
-// const DONT_CACHE = true 
+// const DONT_CACHE = false 
+const DONT_CACHE = true 
 
 
 export async function GET() {
@@ -81,11 +81,14 @@ export async function GET() {
       duration_ms,
       time_signature } = features
 
+
 			return {
 				name, 
 				popularity, 
 				era: getEra(album.release_date),
-				"artists": artists.join(", "),
+				"artists": artists.map((artist)=> {
+					return {"name":artist.name}
+				}),
 				danceability,
 				energy,
 				key,

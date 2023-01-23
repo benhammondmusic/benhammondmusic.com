@@ -7,7 +7,7 @@ export interface Song {
 	name: string, 
 	popularity: number,
 	era: string,
-	artists: string[],
+	artists: {name:string}[],
 	danceability: number,
 	energy: number,
 	key: Key,
@@ -54,8 +54,9 @@ const keyMap: Record<Key, string> = {
 
 	export function getArtistCounts(data: Song[]){
 
-		const allArtists = data
-		.map((song)=>song.artists).flat()
+		console.log(data);
+
+		const allArtists = data.map((song)=>song.artists.map((artist)=>artist.name)).flat().map((artist)=>artist.split(" And The ")[0])
 
 		const valueCounts: ValueCount[] = []
 	
@@ -77,7 +78,7 @@ const keyMap: Record<Key, string> = {
 		})
 
 
-		return valueCounts.filter((artistCount)=>artistCount.count > 4).sort((a,b)=>b.count - a.count)
+		return valueCounts.filter((artistCount)=>artistCount.count > 1).sort((a,b)=>b.count - a.count)
 
 
 		
