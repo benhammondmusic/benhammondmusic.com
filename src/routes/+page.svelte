@@ -11,13 +11,17 @@
 	<title>Ben Hammond - Singer-Songbuilder</title>
 </svelte:head>
 
-<section class="grid grid-cols-12 items-center gap-10 py-10">
-	<img
-		class="col-span-5 "
-		src="/images/BenSnowyVertical.jpg"
-		alt="ben atop a snowy mountain in a dark suit holding a guitar"
-	/>
-	<div class="col-span-6 m-2">
+<section
+	class="mx-auto grid max-w-7xl grid-cols-1 content-center items-center justify-center md:grid-cols-3 md:gap-10"
+>
+	<div class="col-span-1 flex items-center justify-center py-0 px-10 md:py-10">
+		<img
+			src="/images/BenSnowyVertical.jpg"
+			alt="ben atop a snowy mountain in a dark suit holding a guitar"
+			class="w-1/2 md:w-full"
+		/>
+	</div>
+	<div class="p-10 md:col-span-2">
 		<FancyHeading text={"Singer Songbuilder"} />
 		<p class="py-2">
 			"Funky… guitar-looping, beat-boxing, soul-singing… powerhouse Ben Hammond" (Sarasota Herald
@@ -43,8 +47,9 @@
 	</div>
 </section>
 
-<aside class="grid grid-cols-4 items-center justify-items-center py-10">
+<aside class="mx-auto grid max-w-7xl grid-cols-4 items-center justify-items-center pt-10 pb-20">
 	<CountUp
+		className="col-span-4 sm:col-span-2 lg:col-span-1"
 		targetCount={100}
 		interval={30}
 		suffix={"0+"}
@@ -54,6 +59,7 @@
 	</CountUp>
 
 	<CountUp
+		className="col-span-4 sm:col-span-2 lg:col-span-1"
 		targetCount={3}
 		interval={1000}
 		suffix={"k"}
@@ -62,6 +68,7 @@
 		<OldMic />
 	</CountUp>
 	<CountUp
+		className="col-span-4 sm:col-span-2 lg:col-span-1"
 		targetCount={40}
 		interval={100}
 		suffix={"0+"}
@@ -71,6 +78,7 @@
 	</CountUp>
 
 	<CountUp
+		className="col-span-4 sm:col-span-2 lg:col-span-1"
 		targetCount={15}
 		interval={300}
 		suffix={"k"}

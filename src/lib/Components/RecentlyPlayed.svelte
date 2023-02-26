@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { PUBLIC_BASE_URL } from "$env/static/public";
-
 	import { onMount } from "svelte";
 	let song: { isPlaying: boolean; url: string; title: string; artist: string };
+	export let className: string = "";
 
 	async function getRecentlyPlayed() {
 		const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/now-playing`).then((res) => res.json());
@@ -19,7 +19,7 @@
 	import SpotifyIcon from "$lib/icons/Spotify.svelte";
 </script>
 
-<aside class="flex w-full items-center">
+<aside class={`flex w-full items-center ${className}`}>
 	<div
 		class="decoration-none group mt-5 ml-5 inline-flex w-5/12 items-center rounded-md bg-bhm-gray-800 px-3 py-1 text-sm transition-colors dark:bg-bhm-gray-50/10 {song
 			? 'hover:bg-[#1DB954] dark:hover:bg-[#1DB954]'

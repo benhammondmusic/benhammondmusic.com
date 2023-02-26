@@ -5,9 +5,10 @@
 	import RecentlyPlayed from "../RecentlyPlayed.svelte";
 </script>
 
-<footer class="mb-20 w-full bg-bhm-blue-800">
+<footer class=" w-full bg-bhm-blue-800  pb-20 ">
+	<!-- 	class=" sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem] flex h-32 w-full flex-col items-end justify-end bg-cover bg-center xs:h-48" -->
 	<section
-		class="flex h-48 w-full flex-col items-end justify-end bg-cover bg-center sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem]"
+		class="xs:h-48 mx-auto flex h-32 w-full max-w-7xl flex-col items-end justify-end bg-cover bg-center sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem]"
 		style="background-image: url(/images/BenSkyline.jpg)"
 	>
 		<div>
@@ -15,11 +16,11 @@
 		</div>
 	</section>
 
-	<RecentlyPlayed />
+	<RecentlyPlayed className="mx-auto w-full max-w-7xl" />
 
-	<div class="px-10 pb-10">
-		<nav class="flex py-10">
-			<div class="pr-20">
+	<div class="mx-auto w-full max-w-7xl px-10 pb-10">
+		<nav class="flex justify-between py-10">
+			<div class="pr-10">
 				<div class="py-2 text-2xl">Menu</div>
 				<ul>
 					<li>
@@ -43,7 +44,7 @@
 				</ul>
 			</div>
 
-			<div class="pr-20">
+			<div class="pr-10">
 				<h3 class="py-2 text-2xl">Listen</h3>
 				<ul>
 					<li>
@@ -69,7 +70,7 @@
 				</ul>
 			</div>
 
-			<div class="pr-20">
+			<div class="pr-10">
 				<div class="py-2 text-2xl">More</div>
 				<ul>
 					<li>
@@ -94,7 +95,7 @@
 			</div>
 		</nav>
 	</div>
-	<div class="p-5">
+	<div class="mx-auto w-full max-w-7xl p-5">
 		<span>
 			<a
 				class="hover:text-bhm-sky"
@@ -104,7 +105,8 @@
 			<span id="currentYear">2023</span>
 			<script>
 				document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-			</script>.
+			</script>
+			-
 			<a
 				class="hover:text-bhm-sky"
 				href="https://github.com/benhammondmusic/benhammondmusic.com">Edit on GitHub</a

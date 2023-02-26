@@ -1,4 +1,4 @@
-<header class="w-full p-10">
+<header class="mx-auto w-full max-w-7xl p-10">
 	<h1 class="sr-only">Ben Hammond - Singer-Songbuilder from Denver, CO</h1>
 	<div class="flex justify-between">
 		<img

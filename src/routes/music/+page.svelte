@@ -8,7 +8,7 @@
 	<title>Ben Hammond - Original Music and More</title>
 </svelte:head>
 
-<section>
+<section class="mx-auto w-full max-w-7xl">
 	<FancyHeading text={"Albums"} />
 	<div
 		class="grid grid-cols-1 justify-items-center gap-10 align-top sm:grid-cols-2 2xl:grid-cols-4"
@@ -93,10 +93,10 @@
 	</div>
 </section>
 
-<section class="my-24">
+<section class="my-24 mx-auto w-full max-w-7xl">
 	<FancyHeading text={"Press Quotes"} />
 
-	<div class="grid grid-cols-4 gap-5 pt-10">
+	<div class="grid grid-cols-4 gap-5 px-10 pt-10">
 		<PressQuote
 			quotePic="/images/reviewers/raneelee.jpg"
 			quoteText="His beautiful lyrics, ranging from sensual to exuberance and everything in between come together nicely in a great package of vocal performance and instrumental gifts."
