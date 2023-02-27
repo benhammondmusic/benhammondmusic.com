@@ -1,7 +1,7 @@
 <script>
 	import AlbumItem from "$lib/Components/AlbumItem.svelte";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
-	import PressQuote from "$lib/Components/PressQuote.svelte";
+	import ReviewCard from "$lib/Components/ReviewCard.svelte";
 </script>
 
 <svelte:head>
@@ -96,31 +96,31 @@
 <section class="my-24 mx-auto w-full max-w-7xl">
 	<FancyHeading text={"Press Quotes"} />
 
-	<div class="grid grid-cols-4 gap-5 px-10 pt-10">
-		<PressQuote
-			quotePic="/images/reviewers/raneelee.jpg"
-			quoteText="His beautiful lyrics, ranging from sensual to exuberance and everything in between come together nicely in a great package of vocal performance and instrumental gifts."
-			quoteName="Ranee Lee"
-			quoteOrg="Award-winning Jazz Vocalist"
+	<div class="grid grid-cols-1 gap-10 px-10 pt-10 sm:grid-cols-2 lg:grid-cols-4">
+		<ReviewCard
+			reviewPic="/images/reviewers/raneelee.jpg"
+			reviewText="His beautiful lyrics, ranging from sensual to exuberance and everything in between come together nicely in a great package of vocal performance and instrumental gifts."
+			reviewName="Ranee Lee"
+			reviewSubText="Award-winning Jazz Vocalist"
 		/>
-		<PressQuote
-			quotePic="/images/reviewers/portlandpressherald.png"
-			quoteText="Hammond is a versatile musician who writes memorable originals, delivers when he decides to cover someone, and uses his guitar, voice and gadgets to create a sound that you want to keep hearing."
-			quoteName="Aimsel Ponti"
-			quoteOrg="Portland Press Herald"
+		<ReviewCard
+			reviewPic="/images/reviewers/portlandpressherald.png"
+			reviewText="Hammond is a versatile musician who writes memorable originals, delivers when he decides to cover someone, and uses his guitar, voice and gadgets to create a sound that you want to keep hearing."
+			reviewName="Aimsel Ponti"
+			reviewSubText="Portland Press Herald"
 		/>
-		<PressQuote
-			quotePic="/images/reviewers/moss.jpg"
-			quoteText="He was awesome! His looping and talent with an array of instruments allows him to play anything from background music to dance party... a talented musician and a great guy, highly recommended for a wedding or any other special event."
-			quoteName="Jordan Johnson"
-			quoteOrg="Owner of Moss in Denver"
+		<ReviewCard
+			reviewPic="/images/reviewers/moss.jpg"
+			reviewText="He was awesome! His looping and talent with an array of instruments allows him to play anything from background music to dance party... a talented musician and a great guy, highly recommended for a wedding or any other special event."
+			reviewName="Jordan Johnson"
+			reviewSubText="Owner of Moss in Denver"
 		/>
 
-		<PressQuote
-			quotePic="/images/reviewers/ticket.jpg"
-			quoteText="...one minute he's singer-songwriter smooth, the next breaking into rap-jazzy scats, skillfully co-merging genres within songs."
-			quoteName="Dawn Scire"
-			quoteOrg="Sarasota Herald Tribune (Ticket)"
+		<ReviewCard
+			reviewPic="/images/reviewers/ticket.jpg"
+			reviewText="...one minute he's singer-songwriter smooth, the next breaking into rap-jazzy scats, skillfully co-merging genres within songs."
+			reviewName="Dawn Scire"
+			reviewSubText="Sarasota Herald Tribune (Ticket)"
 		/>
 	</div>
 </section>

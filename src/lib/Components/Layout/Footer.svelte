@@ -3,6 +3,7 @@
 	import MailingListForm from "$lib/Components/MailingListForm.svelte";
 	import LinkArrow from "$lib/Components/LinkArrow.svelte";
 	import RecentlyPlayed from "../RecentlyPlayed.svelte";
+	import EmailIcon from "../EmailIcon.svelte";
 </script>
 
 <footer class=" w-full bg-bhm-blue-800  pb-20 ">
@@ -88,7 +89,7 @@
 					<li>
 						<a
 							class="hover:text-bhm-sky"
-							href="mailto:hello@benhammondmusic.com">Email Me</a
+							href="mailto:hello@benhammondmusic.com">Email Me<EmailIcon /></a
 						>
 					</li>
 				</ul>
