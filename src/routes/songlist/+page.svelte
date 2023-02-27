@@ -3,6 +3,7 @@
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import songsJson from "$lib/data/songs.json";
 	import AlphabetLinks from "$lib/Components/AlphabetLinks.svelte";
+	import LetterHeader from "$lib/Components/LetterHeader.svelte";
 	let songs = songsJson.songs;
 	let artistToSongsMap: Record<string, string[]> = {};
 
@@ -39,8 +40,10 @@
 		const target = e.target as HTMLInputElement;
 		const value: string = target.value;
 		if (value) {
-			songs = songsJson.songs.filter((song) =>
-				song.title.toLowerCase().includes(target.value.toLowerCase()),
+			songs = songsJson.songs.filter(
+				(song) =>
+					song.title.toLowerCase().includes(target.value.toLowerCase()) ||
+					song.artistArray.join(" ").toLowerCase().includes(target.value.toLowerCase()),
 			);
 		} else {
 			isFiltered = false;
@@ -49,14 +52,15 @@
 
 	let letters: string[] = [];
 
-	function doAddLetterHeader(item: string) {
-		// skip numbers
-		if (!isNaN(parseInt(item[0]))) return false;
-
+	/* 
+	Returns boolean whether this item should trigger rendering of a alphanumeric heading or not 
+	*/
+	function getLetterHeader(item: string) {
 		if (!letters.includes(item[0])) {
 			letters.push(item[0]);
 			return true;
 		}
+
 		return false;
 	}
 </script>
@@ -72,7 +76,7 @@
 		<form class="flex items-center">
 			<label
 				class="pr-10"
-				for="text-search">Search:</label
+				for="text-search">Search song title or artist:</label
 			>
 			<input
 				id="text-search"
@@ -82,7 +86,7 @@
 			<button
 				type="reset"
 				class="ml-10 rounded-xl p-3 hover:bg-bhm-copper"
-				on:click={resetFilters}>X</button
+				on:click={resetFilters}>Clear search</button
 			>
 		</form>
 		{#if isFiltered && songs.length}
@@ -95,7 +99,7 @@
 			>
 				<ul class="list-inside list-disc columns-3">
 					{#each songs as song, index (`${song}-${index}`)}
-						<li class="px-2 text-sm font-bold">{song.title}</li>
+						<li class="px-2 text-sm font-bold">{song.title} ({song.artistArray.join(", ")})</li>
 					{/each}
 				</ul>
 			</article>
@@ -107,19 +111,8 @@
 
 		<div class=" grid gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
 			{#each Object.entries(artistToSongsMap).sort() as [artist, songs] (artist)}
-				{#if doAddLetterHeader(artist)}
-					<h4
-						id={artist[0]}
-						class="col-span-full mt-24 flex justify-between"
-					>
-						<span class="text-4xl">
-							{artist[0]}
-						</span>
-						<button
-							class="ml-24 rounded-lg p-2 hover:bg-white hover:text-bhm-sky"
-							on:click={() => window.scrollTo(0, 0)}>back to top</button
-						>
-					</h4>
+				{#if getLetterHeader(artist)}
+					<LetterHeader {artist} />
 				{/if}
 				<article
 					transition:fade

@@ -15,20 +15,18 @@
 
 	<div class="mx-10">
 		<p class="mx-auto w-full max-w-4xl py-2">
-			As a solo artist, I specialize in destination- and other intimate events in the state and
-			around the globe. Often incorporating loop pedals and extended performance techniques, I truly
-			enjoy providing the energy and variety of a full band or DJ with the pricing and space
-			considerations of a single performer. If a larger, more intricate production is in your plans,
-			I work with an amazing assortment of band members including horns, strings, percussion, and
-			much more.
+			As a solo artist, I specialize in destination events and private parties. Often incorporating
+			loop pedals and extended performance techniques, I enjoy providing the energy and variety of a
+			full band with the pricing and space considerations of a single performer. If a larger
+			production is in your plans, I work with an amazing assortment of musicians including horns,
+			strings, percussion, and many more.
 		</p>
 
 		<p class="mx-auto w-full max-w-4xl py-2">
-			My performances are improvised and passionate, shaping themselves in real-time to suit you and
-			your guests, whether that be a romantic ceremony, relaxing over cocktails, or dancing the
-			night away! My services are well suited for clients who are passionate about live music, and
-			who are seeking a fun and memorable way to enhance their celebration. Wherever you might be in
-			your planning, please reach out by email for more info. Let's make some music!
+			My performances are improvised and passionate, shaping themselves in real-time to suit your
+			guests, whether that be a romantic ceremony, relaxing over cocktails, or dancing the night
+			away! My services are well-suited for clients who are passionate about live music, and who are
+			seeking a memorable way to enhance their celebration.
 		</p>
 	</div>
 
