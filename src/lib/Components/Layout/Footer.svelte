@@ -19,9 +19,11 @@
 
 	<RecentlyPlayed className="mx-auto w-full max-w-7xl" />
 
-	<div class="mx-auto w-full max-w-7xl px-10 pb-10">
-		<nav class="flex justify-between py-10">
-			<div class="pr-10">
+	<div class="mx-auto w-full max-w-7xl">
+		<nav
+			class="grid grid-cols-1 justify-between py-10 px-10 pb-10 [@media(min-width:320px)]:grid-cols-3"
+		>
+			<div class="py-2">
 				<div class="py-2 text-2xl">Menu</div>
 				<ul>
 					<li>
@@ -45,7 +47,7 @@
 				</ul>
 			</div>
 
-			<div class="pr-10">
+			<div class="py-2">
 				<h3 class="py-2 text-2xl">Listen</h3>
 				<ul>
 					<li>
@@ -71,7 +73,7 @@
 				</ul>
 			</div>
 
-			<div class="pr-10">
+			<div class="py-2">
 				<div class="py-2 text-2xl">More</div>
 				<ul>
 					<li>
@@ -83,7 +85,7 @@
 					<li>
 						<a
 							class="hover:text-bhm-sky"
-							href="https://benhammond.tech">Developer Portfolio<LinkArrow /></a
+							href="https://benhammond.tech">Dev Portfolio<LinkArrow /></a
 						>
 					</li>
 					<li>

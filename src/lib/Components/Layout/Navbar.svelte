@@ -1,12 +1,14 @@
 <header class="mx-auto w-full max-w-7xl p-10">
 	<h1 class="sr-only">Ben Hammond - Singer-Songbuilder from Denver, CO</h1>
 	<div class="flex justify-between">
-		<img
-			height="80"
-			src="/images/logo.svg"
-			alt="logo"
-			class="h-20"
-		/>
+		<a href="/">
+			<img
+				height="80"
+				src="/images/logo.svg"
+				alt="logo"
+				class="h-20"
+			/>
+		</a>
 		<nav>
 			<ul class="list-none">
 				<li>
