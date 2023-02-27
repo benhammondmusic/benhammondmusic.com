@@ -2,8 +2,8 @@
 	import { fade } from "svelte/transition";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import songsJson from "$lib/data/songs.json";
+	import AlphabetLinks from "$lib/Components/AlphabetLinks.svelte";
 	let songs = songsJson.songs;
-
 	let artistToSongsMap: Record<string, string[]> = {};
 
 	for (let { title, artistArray } of songsJson.songs) {
@@ -12,6 +12,8 @@
 			else artistToSongsMap[artist] = [title];
 		}
 	}
+
+	const songlistCutoff = 6;
 
 	$: isFiltered = songs !== songsJson.songs;
 	$: selectedArtist = "";
@@ -33,6 +35,18 @@
 		songs = songsJson.songs;
 	}
 
+	function handleSearchUpdate(e: Event) {
+		const target = e.target as HTMLInputElement;
+		const value: string = target.value;
+		if (value) {
+			songs = songsJson.songs.filter((song) =>
+				song.title.toLowerCase().includes(target.value.toLowerCase()),
+			);
+		} else {
+			isFiltered = false;
+		}
+	}
+
 	let letters: string[] = [];
 
 	function doAddLetterHeader(item: string) {
@@ -45,56 +59,82 @@
 		}
 		return false;
 	}
-
-	const capitalLetters = [...Array(26)].map((val, i) => String.fromCharCode(i + 65));
 </script>
 
 <svelte:head>
 	<title>Ben Hammond - Original Music and More</title>
 </svelte:head>
 
-<section class="flex flex-col items-center">
-	<FancyHeading text={`Songlist`} />
+<section class="mx-auto flex w-full max-w-7xl">
+	<div class="flex flex-col items-center p-10">
+		<FancyHeading text={`Songlist`} />
 
-	<p class="m-10">
-		<span class="p-5">Jump to:</span>
-		<span>
-			{#each capitalLetters as letter (letter)}
-				<a
-					href={`#${letter}`}
-					class="rounded-lg p-2 font-bold underline hover:bg-white hover:text-bhm-sky ">{letter}</a
-				>
-			{/each}
-		</span>
-	</p>
-
-	<div class=" grid gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-		{#each Object.entries(artistToSongsMap).sort() as [artist, songs] (artist)}
-			{#if doAddLetterHeader(artist)}
-				<h4
-					id={artist[0]}
-					class="col-span-full mt-24 flex justify-between"
-				>
-					<span class="text-4xl">
-						{artist[0]}
-					</span>
-					<button
-						class="ml-24"
-						on:click={() => window.scrollTo(0, 0)}>back to top</button
-					>
-				</h4>
-			{/if}
+		<form class="flex items-center">
+			<label
+				class="pr-10"
+				for="text-search">Search:</label
+			>
+			<input
+				id="text-search"
+				on:input={(e) => handleSearchUpdate(e)}
+				class="w-96 rounded-md px-3 py-1 text-bhm-blue-800"
+			/>
+			<button
+				type="reset"
+				class="ml-10 rounded-xl p-3 hover:bg-bhm-copper"
+				on:click={resetFilters}>X</button
+			>
+		</form>
+		{#if isFiltered && songs.length}
+			<h4 class="col-span-full my-10 flex justify-between">
+				<span class="text-4xl"> Search Results </span>
+			</h4>
 			<article
 				transition:fade
-				class="rounded-md  p-5 ring-1 ring-bhm-blue-50"
+				class="col-span-3 mb-24 w-full rounded-md p-10 ring-1 ring-bhm-blue-50"
 			>
-				<p class="text-xl">{artist}</p>
-				<ul class="list-inside list-disc">
-					{#each songs as song, index (`${song}-${artist}-${index}`)}
-						<li class="px-2 text-sm font-bold">{song}</li>
+				<ul class="list-inside list-disc columns-3">
+					{#each songs as song, index (`${song}-${index}`)}
+						<li class="px-2 text-sm font-bold">{song.title}</li>
 					{/each}
 				</ul>
 			</article>
-		{/each}
+		{:else if isFiltered}
+			<p>No results</p>
+		{/if}
+
+		<AlphabetLinks />
+
+		<div class=" grid gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+			{#each Object.entries(artistToSongsMap).sort() as [artist, songs] (artist)}
+				{#if doAddLetterHeader(artist)}
+					<h4
+						id={artist[0]}
+						class="col-span-full mt-24 flex justify-between"
+					>
+						<span class="text-4xl">
+							{artist[0]}
+						</span>
+						<button
+							class="ml-24 rounded-lg p-2 hover:bg-white hover:text-bhm-sky"
+							on:click={() => window.scrollTo(0, 0)}>back to top</button
+						>
+					</h4>
+				{/if}
+				<article
+					transition:fade
+					class={`rounded-md p-5 ring-1 ring-bhm-blue-50 ${
+						songs.length > songlistCutoff ? "col-span-3" : ""
+					}`}
+				>
+					<p class="text-xl">{artist}</p>
+					<ul class={`list-inside list-disc  ${songs.length > songlistCutoff ? "columns-3" : ""}`}>
+						{#each songs as song, index (`${song}-${artist}-${index}`)}
+							<li class="px-2 text-sm font-bold">{song}</li>
+						{/each}
+					</ul>
+				</article>
+			{/each}
+		</div>
 	</div>
 </section>
