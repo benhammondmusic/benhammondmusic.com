@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let artist: string;
+	export let item: string;
 
 	function handleClick() {
 		history.pushState("", document.title, window.location.pathname + window.location.search);
@@ -8,11 +8,11 @@
 </script>
 
 <h4
-	id={artist[0]}
+	id={item[0]}
 	class="col-span-full mt-24 flex justify-between"
 >
 	<span class="text-4xl">
-		{artist[0]}
+		{item[0]}
 	</span>
 	<button
 		class="ml-24 rounded-lg p-2 hover:bg-white hover:text-bhm-sky"

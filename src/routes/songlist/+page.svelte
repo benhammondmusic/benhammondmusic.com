@@ -1,4 +1,12 @@
 <script lang="ts">
+	import { listViewStore, type ListType } from "$lib/stores";
+	import { get } from "svelte/store";
+	let listViewType: ListType = get(listViewStore);
+
+	listViewStore.subscribe((viewType) => {
+		listViewType = viewType;
+	});
+
 	import { fade } from "svelte/transition";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import songsJson from "$lib/data/songs.json";
@@ -17,22 +25,8 @@
 	const songlistCutoff = 6;
 
 	$: isFiltered = songs !== songsJson.songs;
-	$: selectedArtist = "";
-
-	function getArtistsSongs(artist: string) {
-		return songsJson.songs
-			.filter((song) => song.artistArray.includes(artist))
-			.map((song) => song.title);
-	}
-
-	function filterByArtist(artist: string) {
-		selectedArtist = artist;
-		songs = songsJson.songs.filter((song) => song.artistArray.includes(artist));
-		songs = songs.sort((a, b) => a.title.localeCompare(b.title));
-	}
 
 	function resetFilters() {
-		selectedArtist = "";
 		songs = songsJson.songs;
 	}
 
@@ -69,7 +63,7 @@
 	<title>Ben Hammond - Original Music and More</title>
 </svelte:head>
 
-<section class="mx-auto flex w-full max-w-7xl">
+<section class="mx-auto flex w-full max-w-7xl flex-col items-center">
 	<div class="flex flex-col items-center p-10">
 		<FancyHeading text={`Songlist`} />
 
@@ -97,7 +91,7 @@
 				transition:fade
 				class="col-span-3 mb-24 w-full rounded-md p-10 ring-1 ring-bhm-blue-50"
 			>
-				<ul class="list-inside list-disc columns-3">
+				<ul class="list-inside list-disc columns-2">
 					{#each songs as song, index (`${song}-${index}`)}
 						<li class="px-2 text-sm font-bold">{song.title} ({song.artistArray.join(", ")})</li>
 					{/each}
@@ -109,25 +103,52 @@
 
 		<AlphabetLinks />
 
+		<div class=" mx-auto flex w-full justify-center">
+			<button
+				class={`m-5 rounded-md  px-5 py-1 text-sm hover:cursor-pointer hover:bg-bhm-blue-400 lg:text-lg ${
+					listViewType === "bySong" ? "bg-bhm-sky-600" : "ring-1 ring-bhm-sky"
+				}`}
+				on:click={() => listViewStore.set("bySong")}>by Song</button
+			>
+			<button
+				class={`m-5 rounded-md  px-5 py-1 text-sm hover:cursor-pointer hover:bg-bhm-blue-400 lg:text-lg ${
+					listViewType === "byArtist" ? "bg-bhm-sky-600" : "ring-1 ring-bhm-sky"
+				}`}
+				on:click={() => listViewStore.set("byArtist")}>by Artist</button
+			>
+		</div>
+
 		<div class=" grid gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-			{#each Object.entries(artistToSongsMap).sort() as [artist, songs] (artist)}
-				{#if getLetterHeader(artist)}
-					<LetterHeader {artist} />
-				{/if}
-				<article
-					transition:fade
-					class={`rounded-md p-5 ring-1 ring-bhm-blue-50 ${
-						songs.length > songlistCutoff ? "col-span-3" : ""
-					}`}
-				>
-					<p class="text-xl">{artist}</p>
-					<ul class={`list-inside list-disc  ${songs.length > songlistCutoff ? "columns-3" : ""}`}>
-						{#each songs as song, index (`${song}-${artist}-${index}`)}
-							<li class="px-2 text-sm font-bold">{song}</li>
-						{/each}
-					</ul>
-				</article>
-			{/each}
+			{#if listViewType === "byArtist"}
+				{#each Object.entries(artistToSongsMap).sort() as [artist, songs] (artist)}
+					{#if getLetterHeader(artist)}
+						<LetterHeader item={artist} />
+					{/if}
+					<article
+						transition:fade
+						class={`rounded-md p-5 ring-1 ring-bhm-blue-50 ${
+							songs.length > songlistCutoff ? "col-span-3" : ""
+						}`}
+					>
+						<p class="text-xl">{artist}</p>
+						<ul
+							class={`list-inside list-disc  ${songs.length > songlistCutoff ? "columns-3" : ""}`}
+						>
+							{#each songs as song, index (`${song}-${artist}-${index}`)}
+								<li class="px-2 text-sm font-bold">{song}</li>
+							{/each}
+						</ul>
+					</article>
+				{/each}
+			{/if}
+			{#if listViewType === "bySong"}
+				{#each songs.sort((a, b) => +a.title[0] - +b.title[0]) as { title, artistArray }, i (`${title}-${artistArray.join(", ")}-${i}`)}
+					{#if getLetterHeader(title)}
+						<LetterHeader item={title} />
+					{/if}
+					<p>{title}</p>
+				{/each}
+			{/if}
 		</div>
 	</div>
 </section>
