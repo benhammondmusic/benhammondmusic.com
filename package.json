@@ -17,7 +17,7 @@
 		"@benzara/svelte-animated-counter": "^0.0.3",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^1.0.0",
-		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/kit": "^1.8.5",
 		"@types/d3": "^7.4.0",
 		"@types/d3-cloud": "^1.2.5",
 		"@types/d3-scale": "^4.0.3",
