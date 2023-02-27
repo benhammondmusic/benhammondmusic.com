@@ -16,6 +16,8 @@
 >
 	<div class="col-span-1 flex items-center justify-center py-0 px-10 md:py-10">
 		<img
+			height="910"
+			width="527"
 			src="/images/BenSnowyVertical.jpg"
 			alt="ben atop a snowy mountain in a dark suit holding a guitar"
 			class="w-1/2 md:w-full"
@@ -40,8 +42,8 @@
 
 		<p class="py-2 text-xl">
 			<a
-				class="text-bhm-copper underline hover:bg-bhm-copper-700 hover:text-white "
-				href="/booking">Book music for your event!</a
+				class="underline underline-offset-2 hover:bg-bhm-copper-700 hover:text-white "
+				href="/booking">Book music for your next event!</a
 			>
 		</p>
 	</div>

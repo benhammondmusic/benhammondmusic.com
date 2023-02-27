@@ -3,7 +3,7 @@
 	<div class="flex justify-between">
 		<a href="/">
 			<img
-				height="80"
+				width="163px"
 				src="/images/logo.svg"
 				alt="logo"
 				class="h-20"

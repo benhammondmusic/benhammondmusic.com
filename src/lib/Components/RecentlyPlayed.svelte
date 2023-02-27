@@ -29,15 +29,15 @@
 			<SpotifyIcon />
 		</span>
 		<span class="mr-3">Ben's most recent jam:</span>
-		{#if !song}
-			&nbsp;Loading - <span class="text-bhm-gray-400">&nbsp;Spotify</span>
-		{:else if song}
+		{#if song?.title && song?.artist}
 			<a
 				href={song.url}
 				rel="noopener noreferrer"
 				target="_blank"
 				class="font-bold hover:underline">“{song.title}” by {song.artist}</a
 			>
+		{:else}
+			&nbsp;Loading - <span class="text-bhm-gray-400">&nbsp;Spotify</span>
 		{/if}
 	</div>
 </aside>
