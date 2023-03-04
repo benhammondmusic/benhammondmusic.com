@@ -13,12 +13,12 @@
 	import AlphabetLinks from "$lib/Components/AlphabetLinks.svelte";
 	import LetterHeader from "$lib/Components/LetterHeader.svelte";
 	let songs = songsJson.songs;
-	let artistToSongsMap: Record<string, string[]> = {};
+	let artistToSongTitlesMap: Record<string, string[]> = {};
 
 	for (let { title, artistArray } of songsJson.songs) {
 		for (let artist of artistArray) {
-			if (artistToSongsMap[artist]) artistToSongsMap[artist].push(title);
-			else artistToSongsMap[artist] = [title];
+			if (artistToSongTitlesMap[artist]) artistToSongTitlesMap[artist].push(title);
+			else artistToSongTitlesMap[artist] = [title];
 		}
 	}
 
@@ -46,16 +46,27 @@
 
 	let letters: string[] = [];
 
-	/* 
-	Returns boolean whether this item should trigger rendering of a alphanumeric heading or not 
+	/*
+	Returns boolean whether this item should trigger rendering of a alphanumeric heading or not
 	*/
-	function getLetterHeader(item: string) {
+	function shouldAddLetterHeader(item: string) {
+		console.log({ item });
 		if (!letters.includes(item[0])) {
 			letters.push(item[0]);
 			return true;
 		}
-
 		return false;
+	}
+
+	/* Very long lists of songs (by one artist) should split across multiple outer columns and also the list items should be split into inner columns */
+	function getLongListClass(songs: string[]) {
+		return {
+			colSpan:
+				songs.length > songlistCutoff
+					? "col-span-full sm:col-span-2 lg:col-span-3 2xl:col-span-4"
+					: "",
+			columns: songs.length > songlistCutoff ? "sm:columns-2 lg:columns-3 2xl:columns-4" : "",
+		};
 	}
 </script>
 
@@ -67,19 +78,19 @@
 	<div class="flex flex-col items-center p-10">
 		<FancyHeading text={`Songlist`} />
 
-		<form class="flex items-center">
+		<form class="flex w-full flex-wrap content-center items-center justify-center">
 			<label
-				class="pr-10"
+				class=""
 				for="text-search">Search song title or artist:</label
 			>
 			<input
 				id="text-search"
 				on:input={(e) => handleSearchUpdate(e)}
-				class="w-96 rounded-md px-3 py-1 text-bhm-blue-800"
+				class="mx-5 w-32 rounded-md px-3 py-1 text-bhm-blue-800 sm:w-64 md:w-96"
 			/>
 			<button
 				type="reset"
-				class="ml-10 rounded-xl p-3 hover:bg-bhm-copper"
+				class="rounded-xl p-3 hover:bg-bhm-copper"
 				on:click={resetFilters}>Clear search</button
 			>
 		</form>
@@ -118,22 +129,20 @@
 			>
 		</div>
 
-		<div class=" grid gap-10 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+		<div
+			class="grid w-full grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 2xl:grid-cols-4"
+		>
 			{#if listViewType === "byArtist"}
-				{#each Object.entries(artistToSongsMap).sort() as [artist, songs] (artist)}
-					{#if getLetterHeader(artist)}
+				{#each Object.entries(artistToSongTitlesMap).sort() as [artist, songs] (artist)}
+					{#if shouldAddLetterHeader(artist)}
 						<LetterHeader item={artist} />
 					{/if}
 					<article
 						transition:fade
-						class={`rounded-md p-5 ring-1 ring-bhm-blue-50 ${
-							songs.length > songlistCutoff ? "col-span-3" : ""
-						}`}
+						class={`rounded-md p-5 ring-1 ring-bhm-blue-50 ${getLongListClass(songs).colSpan}`}
 					>
 						<p class="text-xl">{artist}</p>
-						<ul
-							class={`list-inside list-disc  ${songs.length > songlistCutoff ? "columns-3" : ""}`}
-						>
+						<ul class={`list-inside list-disc  ${getLongListClass(songs).columns}`}>
 							{#each songs as song, index (`${song}-${artist}-${index}`)}
 								<li class="px-2 text-sm font-bold">{song}</li>
 							{/each}
@@ -143,7 +152,7 @@
 			{/if}
 			{#if listViewType === "bySong"}
 				{#each songs.sort((a, b) => +a.title[0] - +b.title[0]) as { title, artistArray }, i (`${title}-${artistArray.join(", ")}-${i}`)}
-					{#if getLetterHeader(title)}
+					{#if shouldAddLetterHeader(title)}
 						<LetterHeader item={title} />
 					{/if}
 					<p>{title}</p>

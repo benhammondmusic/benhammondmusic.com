@@ -7,7 +7,7 @@
 </script>
 
 <footer class=" w-full bg-bhm-blue-800  pb-20 ">
-	<!-- 	class=" sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem] flex h-32 w-full flex-col items-end justify-end bg-cover bg-center xs:h-48" -->
+	<!-- class=" sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem] flex h-32 w-full flex-col items-end justify-end bg-cover bg-center xs:h-48" -->
 	<section
 		class="xs:h-48 mx-auto flex h-32 w-full max-w-7xl flex-col items-end justify-end bg-cover bg-center sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem]"
 		style="background-image: url(/images/BenSkyline.jpg)"
