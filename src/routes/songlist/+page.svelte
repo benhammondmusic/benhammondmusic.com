@@ -21,13 +21,12 @@
 	/*
 	Returns boolean whether this item should trigger rendering of a alphanumeric heading or not
 	*/
-	function shouldAddLetterHeader(item: string) {
-		console.log({ item });
-		if (!letters.includes(item[0])) {
+	function addHeaderLetter(item: string) {
+		if (!letters.includes(item[0]) && isNaN(parseInt(item[0]))) {
 			letters.push(item[0]);
-			return true;
+			return item[0];
 		}
-		return false;
+		return "";
 	}
 
 	/* Very long lists of songs (by one artist) should split across multiple outer columns and also the list items should be split into inner columns */
@@ -58,8 +57,8 @@
 			class="grid w-full grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 2xl:grid-cols-4"
 		>
 			{#each Object.entries(artistToSongTitlesMap).sort() as [artist, songs] (artist)}
-				{#if shouldAddLetterHeader(artist)}
-					<LetterHeader item={artist} />
+				{#if addHeaderLetter(artist)}
+					<LetterHeader keyLetter={artist[0]} />
 				{/if}
 				<article
 					transition:fade
