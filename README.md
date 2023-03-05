@@ -13,6 +13,7 @@ Once ready, this site build will replace benhammondmusic.com, but for now the wo
 
 ## TO DO:
 
+- [ ] LAUNCH!
 - [ ] add links in Nav and Footer to `/songlist`
 - [ ] get songlist display working for by artist and by song title
 - [ ] get songlist search function working

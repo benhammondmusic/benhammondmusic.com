@@ -44,6 +44,12 @@
 							href="/booking">Booking</a
 						>
 					</li>
+					<li>
+						<a
+							class="hover:text-bhm-sky"
+							href="/songlist">Songlist</a
+						>
+					</li>
 				</ul>
 			</div>
 
