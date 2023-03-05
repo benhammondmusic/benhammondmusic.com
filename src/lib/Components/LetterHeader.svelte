@@ -9,7 +9,7 @@
 
 <h4
 	id={item[0]}
-	class="col-span-full mt-24 flex justify-between"
+	class="col-span-full mt-10 flex justify-between"
 >
 	<span class="text-4xl">
 		{item[0]}
