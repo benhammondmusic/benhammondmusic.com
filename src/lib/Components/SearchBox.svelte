@@ -26,7 +26,7 @@
 	$: isFiltered = songs !== songsJson.songs;
 </script>
 
-<div class="w-full rounded-md p-5 ring-1 ring-bhm-blue-50">
+<div class="mt-10 w-full rounded-md p-5 ring-1 ring-bhm-blue-50">
 	<form class="flex w-full flex-wrap content-center items-center justify-center">
 		<label
 			class=""

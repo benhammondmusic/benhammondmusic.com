@@ -19,7 +19,7 @@
 	let letters: string[] = [];
 
 	/*
-	Returns boolean whether this item should trigger rendering of a alphanumeric heading or not
+	Returns letter if item should trigger rendering of a alphanumeric heading
 	*/
 	function addHeaderLetter(item: string) {
 		if (!letters.includes(item[0]) && isNaN(parseInt(item[0]))) {
@@ -48,6 +48,11 @@
 <section class="mx-auto flex w-full max-w-7xl flex-col items-center">
 	<div class="flex flex-col items-center p-10">
 		<FancyHeading text={`Songlist`} />
+
+		<h3 class="text-xl">
+			A somewhat complete, searchable list of all the covers, standards, and originals Ben Hammond
+			has performed.
+		</h3>
 
 		<SearchBox />
 

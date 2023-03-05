@@ -1,4 +1,5 @@
 <script lang="ts">
+	import EmailMeButton from "$lib/Components/EmailMeButton.svelte";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import ReviewCard from "$lib/Components/ReviewCard.svelte";
 	import reviewsJson from "$lib/data/reviews.json";
@@ -28,6 +29,8 @@
 			away! My services are well-suited for clients who are passionate about live music, and who are
 			seeking a memorable way to enhance their celebration.
 		</p>
+
+		<EmailMeButton />
 	</div>
 
 	<div class="align-center my-10 mx-24 flex flex-col items-center lg:px-32 2xl:px-48 ">
