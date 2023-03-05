@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section
-	class="mx-auto grid max-w-7xl grid-cols-1 content-center items-center justify-center md:grid-cols-3 md:gap-10"
+	class="mx-auto grid max-w-7xl grid-cols-1 content-center items-center justify-center md:grid-cols-3 "
 >
 	<div class="col-span-1 flex items-center justify-center py-0 px-10 md:py-10">
 		<img
@@ -20,7 +20,7 @@
 			width="527"
 			src="/images/BenSnowyVertical.jpg"
 			alt="ben atop a snowy mountain in a dark suit holding a guitar"
-			class="w-1/2 md:w-full"
+			class="w-1/2 rounded-md md:w-full"
 		/>
 	</div>
 	<div class="p-10 md:col-span-2">

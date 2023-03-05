@@ -7,9 +7,9 @@
 </script>
 
 <footer class=" w-full bg-bhm-blue-800  pb-20 ">
-	<!-- class=" sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem] flex h-32 w-full flex-col items-end justify-end bg-cover bg-center xs:h-48" -->
+	<!-- lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem] -->
 	<section
-		class="xs:h-48 mx-auto flex h-32 w-full max-w-7xl flex-col items-end justify-end bg-cover bg-center sm:h-56 md:h-72 lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem]"
+		class="xs:h-48 md:h-92 mx-auto flex h-32 w-full max-w-7xl flex-col items-end justify-end bg-contain bg-top  bg-no-repeat sm:h-56 lg:h-[28rem] "
 		style="background-image: url(/images/BenSkyline.jpg)"
 	>
 		<div>
@@ -17,7 +17,7 @@
 		</div>
 	</section>
 
-	<RecentlyPlayed className="mx-auto w-full max-w-7xl" />
+	<RecentlyPlayed />
 
 	<div class="mx-auto w-full max-w-7xl">
 		<nav
@@ -104,22 +104,24 @@
 			</div>
 		</nav>
 	</div>
-	<div class="mx-auto w-full max-w-7xl p-5">
-		<span>
-			<a
-				class="hover:text-bhm-sky"
-				href="https://benhammond.tech">benhammond.tech</a
-			>
-			©
-			<span id="currentYear">2023</span>
-			<script>
-				document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-			</script>
-			-
-			<a
-				class="hover:text-bhm-sky"
-				href="https://github.com/benhammondmusic/benhammondmusic.com">Edit on GitHub</a
-			>
-		</span>
+	<div class="mx-auto flex w-full max-w-7xl justify-center p-5 sm:justify-start">
+		<p>
+			<span>
+				<a
+					class="hover:text-bhm-sky"
+					href="https://benhammond.tech">benhammond.tech</a
+				>
+				©
+				<span id="currentYear">2023</span>
+				<script>
+					document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+				</script>
+				-
+				<a
+					class="hover:text-bhm-sky"
+					href="https://github.com/benhammondmusic/benhammondmusic.com">Edit on GitHub</a
+				>
+			</span>
+		</p>
 	</div>
 </footer>
