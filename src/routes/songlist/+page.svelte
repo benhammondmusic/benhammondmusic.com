@@ -45,7 +45,10 @@
 	<title>Ben Hammond - Original Music and More</title>
 </svelte:head>
 
-<section class="mx-auto flex w-full max-w-7xl flex-col items-center">
+<section
+	transition:fade
+	class="mx-auto flex w-full max-w-7xl flex-col items-center"
+>
 	<div class="flex flex-col items-center p-10">
 		<FancyHeading text={`Songlist`} />
 
@@ -66,7 +69,6 @@
 					<LetterHeader keyLetter={artist[0]} />
 				{/if}
 				<article
-					transition:fade
 					class={`rounded-md p-5 ring-1 ring-bhm-blue-50 ${getLongListClass(songs).colSpan}`}
 				>
 					<p class="text-xl">{artist}</p>

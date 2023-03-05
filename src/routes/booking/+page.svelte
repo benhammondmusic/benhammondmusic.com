@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fade } from "svelte/transition";
+
 	import EmailMeButton from "$lib/Components/EmailMeButton.svelte";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import ReviewCard from "$lib/Components/ReviewCard.svelte";
@@ -11,7 +13,10 @@
 	<title>Ben Hammond - Booking Info</title>
 </svelte:head>
 
-<section class="align-center mx-auto w-full max-w-7xl">
+<section
+	transition:fade
+	class="align-center mx-auto w-full max-w-7xl"
+>
 	<FancyHeading text={"Booking Info"} />
 
 	<div class="mx-10">

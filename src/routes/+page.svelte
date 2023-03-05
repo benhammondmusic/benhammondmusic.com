@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fade } from "svelte/transition";
+
 	import CountUp from "$lib/Components/CountUp.svelte";
 	import MusicNotes from "$lib/icons/MusicNotes.svelte";
 	import Diamond from "$lib/icons/Diamond.svelte";
@@ -12,6 +14,7 @@
 </svelte:head>
 
 <section
+	transition:fade
 	class="mx-auto grid max-w-7xl grid-cols-1 content-center items-center justify-center md:grid-cols-3 "
 >
 	<div class="col-span-1 flex items-center justify-center py-0 px-10 md:py-10">

@@ -1,5 +1,8 @@
 <script>
+	import { fade } from "svelte/transition";
+
 	import AlbumItem from "$lib/Components/AlbumItem.svelte";
+	import EmailMeButton from "$lib/Components/EmailMeButton.svelte";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import ReviewCard from "$lib/Components/ReviewCard.svelte";
 </script>
@@ -8,7 +11,10 @@
 	<title>Ben Hammond - Original Music and More</title>
 </svelte:head>
 
-<section class="mx-auto w-full max-w-7xl">
+<section
+	transition:fade
+	class="mx-auto w-full max-w-7xl"
+>
 	<FancyHeading text={"Albums"} />
 	<div
 		class="grid grid-cols-1 justify-items-center gap-10 align-top sm:grid-cols-2 2xl:grid-cols-4"
@@ -123,4 +129,7 @@
 			reviewSubText="Sarasota Herald Tribune (Ticket)"
 		/>
 	</div>
+</section>
+<section class="mb-24">
+	<EmailMeButton />
 </section>
