@@ -1,5 +1,8 @@
 <!-- Begin Mailchimp Signup Form -->
-<div id="mc_embed_signup" class="m-2 lg:m-5">
+<div
+	id="mc_embed_signup"
+	class="m-2 lg:m-5 lg:pb-20 xl:pb-5"
+>
 	<form
 		action="https://benhammondmusic.us6.list-manage.com/subscribe/post?u=24021f91024f3c0e90c50eaf3&amp;id=dc677a6554"
 		method="post"
@@ -9,7 +12,7 @@
 	>
 		<div
 			id="mc_embed_signup_scroll"
-			class="bg-opacity-70 bg-bhm-gray-800 p-3 lg:p-5 rounded-sm lg:rounded-2xl"
+			class="rounded-sm bg-bhm-gray-800 bg-opacity-70 p-3 lg:rounded-2xl lg:p-5"
 		>
 			<label for="mce-EMAIL">
 				<p class="text-sm lg:text-lg ">Your Email Address:</p>
@@ -23,8 +26,16 @@
 				/>
 			</label>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			<div style="position: absolute; left: -5000px" aria-hidden="true">
-				<input type="text" name="b_24021f91024f3c0e90c50eaf3_dc677a6554" tabindex="-1" value="" />
+			<div
+				style="position: absolute; left: -5000px"
+				aria-hidden="true"
+			>
+				<input
+					type="text"
+					name="b_24021f91024f3c0e90c50eaf3_dc677a6554"
+					tabindex="-1"
+					value=""
+				/>
 			</div>
 
 			<input
@@ -32,7 +43,7 @@
 				value="Join mailing list"
 				name="subscribe"
 				id="mc-embedded-subscribe"
-				class="text-sm lg:text-lg hover:bg-bhm-blue-400 hover:cursor-pointer rounded-sm px-5 py-1 bg-bhm-sky-600"
+				class="rounded-sm bg-bhm-sky-600 px-5 py-1 text-sm hover:cursor-pointer hover:bg-bhm-blue-400 lg:text-lg"
 			/>
 		</div>
 	</form>
