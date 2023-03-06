@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { fade } from "svelte/transition";
+	//  @ts-ignore
+	import BenSnowyVertical from "$lib/images/BenSnowyVertical.jpg?w=350&webp";
 
 	import CountUp from "$lib/Components/CountUp.svelte";
 	import MusicNotes from "$lib/icons/MusicNotes.svelte";
@@ -21,7 +23,7 @@
 		<img
 			height="910"
 			width="527"
-			src="/images/BenSnowyVertical.jpg"
+			src={BenSnowyVertical}
 			alt="ben atop a snowy mountain in a dark suit holding a guitar"
 			class="w-1/2 rounded-md md:w-full"
 		/>
