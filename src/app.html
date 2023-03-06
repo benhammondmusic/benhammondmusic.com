@@ -3,7 +3,12 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap">
+		<!-- async load of google fonts -->
+		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="“Funky… guitar-looping, beat-boxing, soul-singing… powerhouse Ben Hammond“ (Sarasota Herald Tribune) performs a wide range of groove-oriented acoustic mashups, original compositions and re-imagined cover songs.">
 		%sveltekit.head%
