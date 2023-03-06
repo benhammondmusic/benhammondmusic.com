@@ -1,2 +1,2 @@
 
-declare module '*.jpg?w=350&webp';
+declare module '*.jpg?w=500&webp';

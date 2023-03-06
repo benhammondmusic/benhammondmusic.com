@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade } from "svelte/transition";
 	//  @ts-ignore
-	import BenSnowyVertical from "$lib/images/BenSnowyVertical.jpg?w=350&webp";
+	import BenSnowyVertical from "$lib/images/BenSnowyVertical.jpg?w=500&webp";
 
 	import CountUp from "$lib/Components/CountUp.svelte";
 	import MusicNotes from "$lib/icons/MusicNotes.svelte";
