@@ -16,6 +16,7 @@
 
 	import PieChart from "$lib/Components/DataViz/PieChart.svelte";
 	import DonutChart from "$lib/Components/DataViz/DonutChart.svelte";
+	import VerticalBarChart from "$lib/Components/DataViz/VerticalBarChart.svelte";
 
 	let songDataPromise: Promise<{ data: Song[] }> = getPlayListData();
 
@@ -85,6 +86,7 @@
 			<div>
 				<DonutChart data={getArtistCounts(songData.data)} />
 				<!-- <PieChart valueCounts={getKeySigsCounts(songData.data)} /> -->
+				<!-- <VerticalBarChart songs={songData.data} /> -->
 			</div>
 		{:catch error}
 			<p style="color: red">{error.message}</p>
