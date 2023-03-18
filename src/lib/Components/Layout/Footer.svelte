@@ -50,6 +50,12 @@
 							href="/songlist">Songlist</a
 						>
 					</li>
+					<li>
+						<a
+							class="hover:text-bhm-sky"
+							href="/playground">Playground</a
+						>
+					</li>
 				</ul>
 			</div>
 

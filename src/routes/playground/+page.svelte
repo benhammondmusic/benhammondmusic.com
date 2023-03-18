@@ -39,9 +39,12 @@
 	<div class="flex flex-col items-center">
 		<p class="max-w-xl pb-10">
 			Below are some ongoing experiments in visualizing the data behind my music career. I have
-			uploaded (most) of my songlist as a Spotify playlist; that data is securely fetched, wrangled,
-			and ultimately displayed below. Much of my data viz experience comes from my full-time job as
-			Senior Software Engineer on the <a
+			uploaded (most) of my songlist as a <a
+				href="https://open.spotify.com/playlist/1BGI6ETmEsvhj0nTv7LOu6?si=7027beba59b4422d"
+				class="underline hover:bg-bhm-sky">Spotify playlist</a
+			>; that data is securely fetched, wrangled, and ultimately displayed below. Much of my data
+			viz experience comes from my full-time job as Senior Software Engineer on the
+			<a
 				href="https://healthequitytracker.org"
 				class="underline hover:bg-bhm-sky">Health Equity Tracker</a
 			>. I will be using this page as a low-stakes way to try new ideas and explore SvelteKit and D3
