@@ -49,15 +49,24 @@
 		return tempoDistributions;
 	}
 
+	function getDurationFromBpm(bpm: number | string) {
+		if (typeof bpm === "string") return 60 / parseInt(bpm);
+
+		return 60 / bpm;
+	}
+
 	const marginTop = 15; // top margin, in pixels
-	const marginRight = 2; // right margin, in pixels
-	const marginBottom = 30; // bottom margin, in pixels
-	const marginLeft = 50; // left margin, in pixels
+	const marginRight = 20; // right margin, in pixels
+	const marginBottom = 50; // bottom margin, in pixels
+	const marginLeft = 100; // left margin, in pixels
 	const width = 800; // width of the chart, in pixels
-	const height = 400; // height of the chart, in pixels
-	const xPadding = 0.2; // padding between bars
+	const height = 600; // height of the chart, in pixels
+	const xPadding = 0.15; // padding between bars
 	const yFormat = " songs"; // unit to display on y-axis ticks
 	const yLabel = "↑ Number of songs per tempo marking"; // label for the y-axis
+	const xLabelLeft = "← Slower";
+	const xLabelRight = "Faster →";
+
 	const yScaleFactor = 2; // number of ticks on y-axis
 
 	$: reactiveXVals = tempoMarkings.map((row) => row[1]);
@@ -77,7 +86,7 @@
 	$: reactiveYTicksFormatted = reactiveYTicks.map((el) => el.toLocaleString("en-US"));
 </script>
 
-<section class="p-5">
+<section class="m-5 p-5">
 	<div
 		class="chart-container"
 		dir="auto"
@@ -110,6 +119,7 @@
 						/>
 						<text
 							y={marginBottom}
+							dy={-25}
 							dx={reactiveXScale.bandwidth() / 4}>{xVal}</text
 						>
 					</g>
@@ -156,7 +166,9 @@
 					/>
 				{/each}
 				{#each reactiveYVals as barLabel, i (barLabel)}
+					{@const maxBpm = tempoMarkings[i][0]}
 					<text
+						style="animation-duration: {getDurationFromBpm(maxBpm)};"
 						class="text-xs italic"
 						x={reactiveXScale(reactiveXVals[i])}
 						y={reactiveYScale(reactiveYVals[i]) - 2}
@@ -164,9 +176,21 @@
 						height={reactiveYScale(0) - reactiveYScale(barLabel)}
 						fill={"white"}
 						animate:flip={{ duration: 1000 }}
-						>{i > 0 ? tempoMarkings[i - 1][0] + "-" : "<"}{tempoMarkings[i][0]} bpm</text
+						>{i > 0 ? tempoMarkings[i - 1][0] + "-" : "<"}{maxBpm} bpm</text
 					>
 				{/each}
+				<text
+					class="italic"
+					x={250}
+					y={height}
+					fill={"white"}>{xLabelLeft}</text
+				>
+				<text
+					class="italic"
+					x={width - 200}
+					y={height}
+					fill={"white"}>{xLabelRight}</text
+				>
 			</g>
 		</svg>
 	</div>
@@ -177,7 +201,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		margin: 1rem;
+		margin: 2rem;
 		padding-right: 100px;
 	}
 
@@ -279,5 +303,8 @@
 	.tick text {
 		fill: white;
 		text-anchor: start;
+		padding-bottom: 2rem;
+		line-height: 4rem;
+		vertical-align: middle;
 	}
 </style>
