@@ -86,7 +86,7 @@
 			<div>
 				<DonutChart data={getArtistCounts(songData.data)} />
 				<!-- <PieChart valueCounts={getKeySigsCounts(songData.data)} /> -->
-				<!-- <VerticalBarChart songs={songData.data} /> -->
+				<VerticalBarChart songs={songData.data} />
 			</div>
 		{:catch error}
 			<p style="color: red">{error.message}</p>
