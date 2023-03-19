@@ -54,10 +54,10 @@
 	const marginBottom = 30; // bottom margin, in pixels
 	const marginLeft = 50; // left margin, in pixels
 	const width = 800; // width of the chart, in pixels
-	const height = 700; // height of the chart, in pixels
+	const height = 400; // height of the chart, in pixels
 	const xPadding = 0.2; // padding between bars
 	const yFormat = " songs"; // unit to display on y-axis ticks
-	const yLabel = "↑ Number of songs per tempo"; // label for the y-axis
+	const yLabel = "↑ Number of songs per tempo marking"; // label for the y-axis
 	const yScaleFactor = 2; // number of ticks on y-axis
 
 	$: reactiveXVals = tempoMarkings.map((row) => row[1]);
@@ -146,6 +146,7 @@
 			<g class="bars">
 				{#each reactiveYVals as bar, i (bar)}
 					<rect
+						class={tempoMarkings[i][1].toString()}
 						x={reactiveXScale(reactiveXVals[i])}
 						y={reactiveYScale(reactiveYVals[i])}
 						width={reactiveXScale.bandwidth()}
@@ -184,6 +185,74 @@
 		max-width: 100%;
 		max-height: 100%;
 		margin: auto;
+	}
+
+	.bars rect.Lento {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 40bpm  */
+		animation: pulse 1.5s infinite;
+	}
+
+	.bars rect.Adagio {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 61bpm  */
+		animation: pulse 1s infinite;
+	}
+
+	.bars rect.Andante {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 79bpm  */
+		animation: pulse 0.76s infinite;
+	}
+
+	.bars rect.Moderato {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 97bpm  */
+		animation: pulse 0.62s infinite;
+	}
+
+	.bars rect.Allegro {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 120bpm  */
+		animation: pulse 0.5s infinite;
+	}
+
+	.bars rect.Vivace {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 141bpm  */
+		animation: pulse 0.43s infinite;
+	}
+
+	.bars rect.Presto {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 165bpm  */
+		animation: pulse 0.36s infinite;
+	}
+
+	.bars rect.Prestissimo {
+		will-change: transform;
+		transform-origin: bottom;
+		/* 60 / 200bpm  */
+		animation: pulse 0.3s infinite;
+	}
+
+	@keyframes pulse {
+		0% {
+			transform: scaleY(0.93);
+			transform-origin: bottom;
+		}
+
+		100% {
+			transform: scaleY(1);
+			transform-origin: bottom;
+		}
 	}
 
 	.y-axis {
