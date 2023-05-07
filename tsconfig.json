@@ -6,6 +6,7 @@
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
+		"ignoreDeprecations": "5.0", // FIX THIS BETTER
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true

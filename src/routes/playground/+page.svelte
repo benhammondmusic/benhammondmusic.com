@@ -6,16 +6,18 @@
 	import {
 		asPct,
 		getAverageOfProperty,
-		getKeySigsCounts,
+		// getKeySigsCounts,
 		getMostCommonKeySigs,
 		getArtistCounts,
 		type Feature,
 		type Song,
-		getLowestItems,
+		getGenreCounts,
+		// getLowestItems,
 	} from "$lib/utils/songlistUtils";
 
-	import PieChart from "$lib/Components/DataViz/PieChart.svelte";
+	// import PieChart from "$lib/Components/DataViz/PieChart.svelte";
 	import DonutChart from "$lib/Components/DataViz/DonutChart.svelte";
+	import BubbleChart from "$lib/Components/DataViz/BubbleChart.svelte";
 	import VerticalBarChart from "$lib/Components/DataViz/VerticalBarChart.svelte";
 
 	let songDataPromise: Promise<{ data: Song[] }> = getPlayListData();
@@ -85,6 +87,8 @@
 			</article>
 			<div>
 				<DonutChart data={getArtistCounts(songData.data)} />
+				<DonutChart data={getGenreCounts(songData.data)} />
+				<BubbleChart data={getGenreCounts(songData.data)} />
 				<!-- <PieChart valueCounts={getKeySigsCounts(songData.data)} /> -->
 				<VerticalBarChart songs={songData.data} />
 			</div>
