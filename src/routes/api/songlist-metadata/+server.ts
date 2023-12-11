@@ -8,8 +8,8 @@ const BHM_SONGLIST_ENDPOINT = "https://api.spotify.com/v1/playlists/1BGI6ETmEsvh
 const TRACK_FEATURES_BASE_ENDPOINT = "https://api.spotify.com/v1/audio-features?ids="
 const SEVERAL_ARTISTS_BASE_ENDPOINT = "https://api.spotify.com/v1/artists?ids="
 
-// const DONT_CACHE = false
-const DONT_CACHE = true
+const DONT_CACHE = false
+// const DONT_CACHE = true
 
 
 export async function GET() {
@@ -31,7 +31,7 @@ export async function GET() {
 	// so keep fetching until there is no next provided and combine items
 	while (songlist_endpoint) {
 
-		console.log("fetching 100 items from", songlist_endpoint);
+		// console.log("fetching 100 items from", songlist_endpoint);
 		// initial json data from 100 song chunk of playlist
 		const jsonData = await fetch(songlist_endpoint, headerOptions).then(res => res.json());
 

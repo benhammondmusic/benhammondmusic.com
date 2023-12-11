@@ -16,11 +16,14 @@
 	import BubbleChart from "$lib/Components/DataViz/BubbleChart.svelte";
 	import VerticalBarChart from "$lib/Components/DataViz/VerticalBarChart.svelte";
 	import MetaDataTable from "$lib/Components/DataViz/MetaDataTable.svelte";
+	import { browser } from "$app/environment";
 
 	let songDataPromise: Promise<{ data: Song[] }> = getPlayListData();
 
 	async function getPlayListData() {
-		return await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) => res.json());
+		return (
+			browser && (await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) => res.json()))
+		);
 	}
 </script>
 
