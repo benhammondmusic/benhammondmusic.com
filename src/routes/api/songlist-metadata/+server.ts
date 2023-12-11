@@ -50,8 +50,8 @@ export async function GET() {
 		for (let i = 0; i < batchArtistIds.length; i += 50) {
 			const artistsBatchUrl = SEVERAL_ARTISTS_BASE_ENDPOINT + batchArtistIds.slice(i, i + 50).join(",")
 			const tracksArtistDetailsJson = await fetch(artistsBatchUrl, headerOptions).then(res => res.json());
-			console.log("******");
-			console.log(i, i + 50);
+			// console.log("******");
+			// console.log(i, i + 50);
 			batchArtistData.push(...tracksArtistDetailsJson.artists)
 		}
 

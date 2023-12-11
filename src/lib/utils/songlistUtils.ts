@@ -65,7 +65,7 @@ export type ValueCount = {
 
 export function getGenres(data: Song[]): string[] {
 
-	console.log(data);
+	// console.log(data);
 
 
 	const genres: string[] = []
@@ -160,23 +160,23 @@ export function getLowestItems(data: Song[]) {
 
 
 
-		// let song: any;
-	// let yearDistribution: any = [];
+// let song: any;
+// let yearDistribution: any = [];
 
-	// async function getPlayListYears() {
-	// 	const fetchedYearList = await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) =>
-	// 		res.json(),
-	// 	);
+// async function getPlayListYears() {
+// 	const fetchedYearList = await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) =>
+// 		res.json(),
+// 	);
 
-	// 	const yearsScaffold = Array.from({ length: 75 }, (_, i) => i + 1950);
+// 	const yearsScaffold = Array.from({ length: 75 }, (_, i) => i + 1950);
 
-	// 	yearsScaffold.forEach((year: number) => {
-	// 		const count = fetchedYearList.data.filter(
-	// 			(fetchedYear: string) => parseInt(fetchedYear) === year,
-	// 		).length;
-	// 		yearDistribution.push({
-	// 			year,
-	// 			count,
-	// 		});
-	// 	});
-	// }
+// 	yearsScaffold.forEach((year: number) => {
+// 		const count = fetchedYearList.data.filter(
+// 			(fetchedYear: string) => parseInt(fetchedYear) === year,
+// 		).length;
+// 		yearDistribution.push({
+// 			year,
+// 			count,
+// 		});
+// 	});
+// }

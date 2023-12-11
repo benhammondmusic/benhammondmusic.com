@@ -9,3 +9,4 @@ src/.env
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+.netlify
