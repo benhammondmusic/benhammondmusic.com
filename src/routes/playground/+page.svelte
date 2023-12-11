@@ -87,7 +87,6 @@
 			</article>
 			<div>
 				<DonutChart data={getArtistCounts(songData.data)} />
-				<DonutChart data={getGenreCounts(songData.data)} />
 				<BubbleChart data={getGenreCounts(songData.data)} />
 				<!-- <PieChart valueCounts={getKeySigsCounts(songData.data)} /> -->
 				<VerticalBarChart songs={songData.data} />
