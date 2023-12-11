@@ -8,8 +8,8 @@ const BHM_SONGLIST_ENDPOINT = "https://api.spotify.com/v1/playlists/1BGI6ETmEsvh
 const TRACK_FEATURES_BASE_ENDPOINT = "https://api.spotify.com/v1/audio-features?ids="
 const SEVERAL_ARTISTS_BASE_ENDPOINT = "https://api.spotify.com/v1/artists?ids="
 
-const DONT_CACHE = false
-// const DONT_CACHE = true
+// const DONT_CACHE = false
+const DONT_CACHE = true
 
 
 export async function GET() {
@@ -55,16 +55,6 @@ export async function GET() {
 			batchArtistData.push(...tracksArtistDetailsJson.artists)
 		}
 
-		// console.log(batchArtistData);
-
-		// if (batchArtistIds.length > 50) {
-		// 	artistsBatchUrl = SEVERAL_ARTISTS_BASE_ENDPOINT + batchArtistIds.slice(50, 100).join(",")
-		// 	const moreTracksArtistDetailsJson = await fetch(artistsBatchUrl, headerOptions).then(res => res.json());
-		// 	tracksArtistDetailsJson = { ...tracksArtistDetailsJson, ...moreTracksArtistDetailsJson }
-		// }
-
-
-
 		// next chunk of 100 or fewer songs
 		songlist_endpoint = jsonData.next
 
@@ -77,14 +67,10 @@ export async function GET() {
 				energy,
 				key,
 				mode,
-				speechiness,
 				acousticness,
-				instrumentalness,
-				liveness,
 				valence,
 				tempo,
 				id,
-				duration_ms,
 				time_signature } = features
 
 
@@ -99,19 +85,14 @@ export async function GET() {
 						"genres": batchArtistData.find((artistItem: { id: string, genres: string[] }) => artistItem.id === artist.id)?.genres
 					}
 				}),
-				// genres: getGenres(artists),
 				danceability,
 				energy,
 				key,
 				mode,
-				speechiness,
 				acousticness,
-				instrumentalness,
-				liveness,
 				valence,
 				tempo,
 				id,
-				duration_ms,
 				time_signature
 			}
 		})
@@ -130,7 +111,6 @@ export async function GET() {
 
 function getEra(release_date: string) {
 	const year: number = parseInt(release_date.substring(0, 4))
-	// return year
 	if (year < 1960) return "Early 20th Century"
 	if (year < 1970) return "60's"
 	if (year < 1980) return "70's"
@@ -141,8 +121,3 @@ function getEra(release_date: string) {
 }
 
 
-// function getGenres(artists: any[]){
-// 	for (const artist of artists){
-
-// 	}
-// }
