@@ -8,8 +8,8 @@ const BHM_SONGLIST_ENDPOINT = "https://api.spotify.com/v1/playlists/1BGI6ETmEsvh
 const TRACK_FEATURES_BASE_ENDPOINT = "https://api.spotify.com/v1/audio-features?ids="
 const SEVERAL_ARTISTS_BASE_ENDPOINT = "https://api.spotify.com/v1/artists?ids="
 
-const DONT_CACHE = false
-// const DONT_CACHE = true
+// const DONT_CACHE = false
+const DONT_CACHE = true
 
 
 export async function GET() {

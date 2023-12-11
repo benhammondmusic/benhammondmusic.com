@@ -3,9 +3,12 @@ import type { UserConfig } from 'vite';
 import { imagetools } from 'vite-imagetools'
 
 const config: UserConfig = {
-	plugins: [sveltekit(),imagetools()],
+	plugins: [sveltekit(), imagetools()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
+	},
+	build: {
+		minify: false
 	}
 };
 
