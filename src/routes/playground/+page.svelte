@@ -61,11 +61,10 @@
 			</article>
 		{:then songData}
 			<div>
+				<VerticalBarChart songs={songData.data} />
 				<MetaDataTable data={songData.data} />
 				<DonutChart data={getArtistCounts(songData.data)} />
 				<BubbleChart data={getGenreCounts(songData.data)} />
-				<!-- <PieChart valueCounts={getKeySigsCounts(songData.data)} /> -->
-				<VerticalBarChart songs={songData.data} />
 			</div>
 		{:catch error}
 			<p style="color: red">{error.message}</p>
