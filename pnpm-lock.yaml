@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@benzara/svelte-animated-counter': ^0.0.3
-  '@playwright/test': ^1.28.1
+  '@playwright/test': ^1.29.2
   '@sveltejs/adapter-auto': ^1.0.0
   '@sveltejs/adapter-netlify': ^2.0.8
   '@sveltejs/kit': ^1.8.5
@@ -10,32 +10,32 @@ specifiers:
   '@types/d3-cloud': ^1.2.5
   '@types/d3-scale': ^4.0.3
   '@types/d3-shape': ^3.1.1
-  '@typescript-eslint/eslint-plugin': ^5.45.0
-  '@typescript-eslint/parser': ^5.45.0
+  '@typescript-eslint/eslint-plugin': ^5.48.0
+  '@typescript-eslint/parser': ^5.48.0
   autoprefixer: ^10.4.13
   canvas: ^2.11.0
   d3: ^7.8.1
   d3-cloud: ^1.2.5
   d3-scale: ^4.0.2
   d3-shape: ^3.2.0
-  eslint: ^8.28.0
-  eslint-config-prettier: ^8.5.0
+  eslint: ^8.31.0
+  eslint-config-prettier: ^8.6.0
   eslint-plugin-svelte3: ^4.0.0
   postcss: ^8.4.21
   prettier: ^2.8.2
-  prettier-plugin-svelte: ^2.8.1
+  prettier-plugin-svelte: ^2.9.0
   prettier-plugin-tailwindcss: ^0.2.1
-  svelte: ^3.54.0
-  svelte-check: ^2.9.2
+  svelte: ^3.55.0
+  svelte-check: ^2.10.3
   svelte-d3-cloud: ^0.0.2
   svelte-loading-spinners: ^0.3.4
   svelte-material-icons: ^3.0.4
   tailwindcss: ^3.2.4
   tslib: ^2.4.1
-  typescript: ^4.9.3
-  vite: ^4.0.0
+  typescript: ^4.9.4
+  vite: ^4.0.4
   vite-imagetools: ^4.0.18
-  vitest: ^0.25.3
+  vitest: ^0.25.8
 
 dependencies:
   '@types/d3-shape': 3.1.1
@@ -1144,7 +1144,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.4
-      caniuse-lite: 1.0.30001442
+      caniuse-lite: 1.0.30001568
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1190,7 +1190,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001442
+      caniuse-lite: 1.0.30001568
       electron-to-chromium: 1.4.284
       node-releases: 2.0.8
       update-browserslist-db: 1.0.10_browserslist@4.21.4
@@ -1224,8 +1224,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /caniuse-lite/1.0.30001442:
-    resolution: {integrity: sha512-239m03Pqy0hwxYPYR5JwOIxRJfLTWtle9FV8zosfV5pHg+/51uD4nxcUlM8+mWWGfwKtt8lJNHnD3cWw9VZ6ow==}
+  /caniuse-lite/1.0.30001568:
+    resolution: {integrity: sha512-vSUkH84HontZJ88MiNrOau1EBrCqEQYgkC5gIySiDlpsm8sGVrhU7Kx4V6h0tnqaHzIHZv08HlJIwPbL4XL9+A==}
     dev: true
 
   /canvas/2.11.0:
@@ -1278,7 +1278,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /chownr/1.1.4:
@@ -2038,8 +2038,8 @@ packages:
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents/2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -2838,7 +2838,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /run-parallel/1.2.0:
@@ -3391,7 +3391,7 @@ packages:
       resolve: 1.22.1
       rollup: 3.9.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vite/4.0.4_@types+node@18.11.18:
@@ -3425,7 +3425,7 @@ packages:
       resolve: 1.22.1
       rollup: 3.9.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vitefu/0.2.4_vite@4.0.4:
