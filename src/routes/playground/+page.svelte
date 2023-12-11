@@ -4,29 +4,24 @@
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
 	import { Wave } from "svelte-loading-spinners";
 	import {
-		asPct,
-		getAverageOfProperty,
-		// getKeySigsCounts,
 		getMostCommonKeySigs,
-		getArtistCounts,
 		type Feature,
 		type Song,
 		getGenreCounts,
-		// getLowestItems,
+		getArtistCounts,
 	} from "$lib/utils/songlistUtils";
 
 	// import PieChart from "$lib/Components/DataViz/PieChart.svelte";
 	import DonutChart from "$lib/Components/DataViz/DonutChart.svelte";
 	import BubbleChart from "$lib/Components/DataViz/BubbleChart.svelte";
 	import VerticalBarChart from "$lib/Components/DataViz/VerticalBarChart.svelte";
+	import MetaDataTable from "$lib/Components/DataViz/MetaDataTable.svelte";
 
 	let songDataPromise: Promise<{ data: Song[] }> = getPlayListData();
 
 	async function getPlayListData() {
 		return await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) => res.json());
 	}
-
-	const featuresToAverage: Feature[] = ["danceability", "energy", "acousticness", "valence"];
 </script>
 
 <svelte:head>
@@ -65,27 +60,8 @@
 				<p>loading songlist metadata from Spotify...</p>
 			</article>
 		{:then songData}
-			<article class="rounded-sm ring-1 ring-bhm-blue p-5">
-				<p>
-					Average tempo:
-					<span class="font-bold"
-						>{Math.round(getAverageOfProperty(songData.data, "tempo"))} bpm</span
-					>
-				</p>
-				{#each featuresToAverage as feature (feature)}
-					<p>
-						Average {feature}:
-						<span class="font-bold">{asPct(getAverageOfProperty(songData.data, feature))} </span>
-					</p>
-				{/each}
-
-				<p>
-					Most common key: <span class="font-bold"
-						>{getMostCommonKeySigs(songData.data).join(", ")}</span
-					>
-				</p>
-			</article>
 			<div>
+				<MetaDataTable data={songData.data} />
 				<DonutChart data={getArtistCounts(songData.data)} />
 				<BubbleChart data={getGenreCounts(songData.data)} />
 				<!-- <PieChart valueCounts={getKeySigsCounts(songData.data)} /> -->
