@@ -2,7 +2,7 @@ import { PUBLIC_BASE_URL } from '$env/static/public';
 import { json } from '@sveltejs/kit';
 import { songlistItemsStore } from '$lib/stores';
 import { get } from 'svelte/store';
-import type { Song } from '$lib/utils/songlistUtils';
+import { getEra, type Song } from '$lib/utils/songlistUtils';
 
 const BHM_SONGLIST_ENDPOINT = "https://api.spotify.com/v1/playlists/1BGI6ETmEsvhj0nTv7LOu6/tracks"
 const TRACK_FEATURES_BASE_ENDPOINT = "https://api.spotify.com/v1/audio-features?ids="
@@ -17,6 +17,7 @@ export async function GET() {
 	const cachedSonglistItems = get(songlistItemsStore)
 	if (!DONT_CACHE && cachedSonglistItems) {
 		console.log("already cached, skipping fetch");
+
 		return json({ "status": 200, "data": cachedSonglistItems })
 	}
 
@@ -106,18 +107,6 @@ export async function GET() {
 
 	return json({ "status": 200, "data": allItems })
 
-}
-
-
-function getEra(release_date: string) {
-	const year: number = parseInt(release_date.substring(0, 4))
-	if (year < 1960) return "Early 20th Century"
-	if (year < 1970) return "60's"
-	if (year < 1980) return "70's"
-	if (year < 1990) return "80's"
-	if (year < 2000) return "90's"
-	if (year < 2010) return "2000's"
-	return "2010's and Today"
 }
 
 

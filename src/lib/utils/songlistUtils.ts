@@ -23,14 +23,10 @@ export interface Song {
 	energy: number,
 	key: Key,
 	mode: Mode,
-	speechiness: number,
 	acousticness: number,
-	instrumentalness: number,
-	liveness: number,
 	valence: number,
 	tempo: number,
 	id: string,
-	duration_ms: number,
 	time_signature: number,
 	album: Album
 }
@@ -60,17 +56,6 @@ const modeMap: Record<Mode, string> = {
 export type ValueCount = {
 	"value": string,
 	"count": number
-}
-
-
-export function getGenres(data: Song[]): string[] {
-
-	// console.log(data);
-
-
-	const genres: string[] = []
-
-	return genres
 }
 
 
@@ -180,3 +165,17 @@ export function getLowestItems(data: Song[]) {
 // 		});
 // 	});
 // }
+
+
+export function getEra(release_date: string) {
+	const year: number = parseInt(release_date.substring(0, 4))
+	if (year < 1960) return "Early 20th Century"
+	if (year < 1970) return "60's"
+	if (year < 1980) return "70's"
+	if (year < 1990) return "80's"
+	if (year < 2000) return "90's"
+	if (year < 2010) return "2000's"
+	return "2010's and Today"
+}
+
+
