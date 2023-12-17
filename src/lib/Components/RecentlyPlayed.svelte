@@ -5,11 +5,13 @@
 	// export let className: string = "";
 
 	async function getRecentlyPlayed() {
-		const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/now-playing`).then((res) => res.json());
+		const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/spotify-now-playing`).then((res) =>
+			res.json(),
+		);
 
 		song = activeSong.isPlaying
 			? activeSong
-			: await fetch(`${PUBLIC_BASE_URL}/api/recently-played`).then((res) => res.json());
+			: await fetch(`${PUBLIC_BASE_URL}/api/spotify-recently-played`).then((res) => res.json());
 	}
 
 	onMount(async () => {
@@ -23,7 +25,7 @@
 	class="mx-auto flex w-full max-w-7xl content-center items-center justify-center sm:justify-start"
 >
 	<div
-		class="decoration-none group mt-5 ml-5 inline-flex  items-center rounded-md bg-bhm-gray-800 px-3 py-1 text-sm transition-colors dark:bg-bhm-gray-50/10 {song
+		class="decoration-none group ml-5 mt-5 inline-flex items-center rounded-md bg-bhm-gray-800 px-3 py-1 text-sm transition-colors dark:bg-bhm-gray-50/10 {song
 			? 'hover:bg-[#1DB954] dark:hover:bg-[#1DB954]'
 			: ''}"
 	>
