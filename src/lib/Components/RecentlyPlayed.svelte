@@ -5,13 +5,21 @@
 	// export let className: string = "";
 
 	async function getRecentlyPlayed() {
-		const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/spotify-now-playing`).then((res) =>
-			res.json(),
-		);
+		const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/spotify-now-playing`)
+			.then((res) => res.json())
+			.catch((err) => {
+				console.error(err);
+				return null;
+			});
 
 		song = activeSong.isPlaying
 			? activeSong
-			: await fetch(`${PUBLIC_BASE_URL}/api/spotify-recently-played`).then((res) => res.json());
+			: await fetch(`${PUBLIC_BASE_URL}/api/spotify-recently-played`)
+					.then((res) => res.json())
+					.catch((err) => {
+						console.error(err);
+						return null;
+					});
 	}
 
 	onMount(async () => {
