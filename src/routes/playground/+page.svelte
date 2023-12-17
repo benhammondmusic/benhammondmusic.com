@@ -22,7 +22,7 @@
 
 	async function getPlayListData() {
 		return (
-			browser && (await fetch(`${PUBLIC_BASE_URL}/api/songlist-metadata`).then((res) => res.json()))
+			browser && (await fetch(`${PUBLIC_BASE_URL}/api/db-read-songlist`).then((res) => res.json()))
 		);
 	}
 </script>
@@ -60,7 +60,7 @@
 				duration="2s"
 			/>
 			<article class="flex justify-center">
-				<p>loading songlist metadata from Spotify...</p>
+				<p>loading songlist metadata...</p>
 			</article>
 		{:then songData}
 			<div>

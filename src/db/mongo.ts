@@ -39,4 +39,10 @@ export function start_mongo() {
 	return client.connect();
 }
 
-export default client.db()
+export async function get_songlist() {
+	const db = client.db("bhm");
+	const collection = db.collection("songlist");
+	const items = collection.find().toArray();
+	return items;
+}
+
