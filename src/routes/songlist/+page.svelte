@@ -46,7 +46,7 @@
 </svelte:head>
 
 <section
-	transition:fade
+	transition:fade|global
 	class="mx-auto flex w-full max-w-7xl flex-col items-center"
 >
 	<div class="flex flex-col items-center p-10">

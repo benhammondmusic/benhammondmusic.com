@@ -32,7 +32,7 @@
 </svelte:head>
 
 <section
-	transition:fade
+	transition:fade|global
 	class="align-center mx-auto w-full max-w-7xl"
 >
 	<FancyHeading text={"Music Data-Viz Playground"} />

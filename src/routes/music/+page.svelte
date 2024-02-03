@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section
-	transition:fade
+	transition:fade|global
 	class="mx-auto w-full max-w-7xl"
 >
 	<FancyHeading text={"Albums"} />

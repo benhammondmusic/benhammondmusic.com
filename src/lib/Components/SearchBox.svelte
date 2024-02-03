@@ -45,7 +45,7 @@
 	</form>
 	{#if isFiltered && songs.length}
 		<article
-			transition:fade
+			transition:fade|global
 			class="col-span-3 mb-5"
 		>
 			<h4 class="col-span-full my-10 flex justify-between">

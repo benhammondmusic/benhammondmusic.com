@@ -16,7 +16,7 @@
 </svelte:head>
 
 <section
-	transition:fade
+	transition:fade|global
 	class="mx-auto grid max-w-7xl grid-cols-1 content-center items-center justify-center md:grid-cols-3 "
 >
 	<div class="col-span-1 flex items-center justify-center py-0 px-10 md:py-10">
