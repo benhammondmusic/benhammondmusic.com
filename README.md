@@ -8,16 +8,16 @@ Codebase for [benhammondmusic.com](https://benhammondmusic.com), Songbuilder && 
 
 Once ready, this site build will replace benhammondmusic.com, but for now the work in progress site is deployed via Netlify:
 
-> https://benhammondmusicdotcom.netlify.app/
+> <https://benhammondmusicdotcom.netlify.app/>
 
-## TO DO:
+## TO DO
 
-- [ ] LAUNCH!
-- [ ] add links in Nav and Footer to `/songlist`
-- [ ] get songlist display working for by artist and by song title
-- [ ] get songlist search function working
-- [ ] get data-viz playground page production ready
-- [ ] link from footer nav (probably not header nav)
+- [x] LAUNCH!
+- [x] add links in Nav and Footer to `/songlist`
+- [x] get songlist display working for by artist and by song title
+- [x] get songlist search function working
+- [x] get data-viz playground page production ready
+- [x] link from footer nav (probably not header nav)
 - [ ] delay CountUp until on screen (not on load)
 - [ ] make NowPlaying component full screen on smaller widths
 - [ ] add "USES" page, music equipment, instruments, software/apps/tools/ add links for private consultation
@@ -35,7 +35,7 @@ Once ready, this site build will replace benhammondmusic.com, but for now the wo
 - I was already able to save myself $12 a month simply moving my site from Hostgator to Netlify (and using a real CI/CD process via GitHub/Netlify instead of just dumping raw files onto the server via FTP like I've done since 2005)
 - My career transition from full-time musician to full-time software engineer has given me the space to slow down on gig promotion, and some flexibility in disrupting my website / online presence
 
-### COLORS:
+### COLORS
 
 These are the base-colors used to generate tailwind color pallettes via [tailwindshades.com](https://www.tailwindshades.com/)
 
@@ -44,7 +44,7 @@ These are the base-colors used to generate tailwind color pallettes via [tailwin
 - bhm-gray: #343a40
 - bhm-blue: #336699
 
-### VOICE:
+### VOICE
 
 - 1st person, conversational but professional
 
@@ -54,7 +54,7 @@ From [benhammond.tech](https://benhammond.tech)
 
 <summary>original create-svelte readme</summary>
 
-# create-svelte
+## create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
