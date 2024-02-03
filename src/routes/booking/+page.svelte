@@ -38,7 +38,7 @@
 		<EmailMeButton />
 	</div>
 
-	<div class="align-center my-10 mx-24 flex flex-col items-center lg:px-32 2xl:px-48 ">
+	<div class="align-center mx-24 my-10 flex flex-col items-center lg:px-32 2xl:px-48">
 		<iframe
 			class="aspect-video w-full rounded-md"
 			src="https://www.youtube.com/embed/e50j1oUjbUY"
@@ -82,8 +82,8 @@
 	</div>
 </section>
 
-<section class="align-center mx-auto flex w-full max-w-4xl flex-col ">
-	<div class="py-10 px-5 ">
+<section class="align-center mx-auto flex w-full max-w-4xl flex-col">
+	<div class="px-5 py-10">
 		<FancyHeading text={"Recent Client Testimonials"}>
 			<a
 				href="https://www.theknot.com/marketplace/redirect-1029657?utm_source=vendor_website&utm_medium=banner&utm_term=e308acc6-f312-445b-82f7-a70f00baa3ff&utm_campaign=vendor_badge_assets"

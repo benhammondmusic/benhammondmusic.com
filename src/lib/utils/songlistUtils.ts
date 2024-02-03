@@ -1,37 +1,36 @@
 // import { PUBLIC_BASE_URL } from "$env/static/public";
 
-type Key = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
-type Mode = 0 | 1
+type Key = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
+type Mode = 0 | 1;
 
 export interface Artist {
-	name: string,
-	id: string,
-	genres: string[]
+	name: string;
+	id: string;
+	genres: string[];
 }
 
 export interface Album {
-	release_date: string
+	release_date: string;
 }
-
 
 export interface Song {
-	name: string,
-	popularity: number,
-	era: string,
-	artists: Artist[],
-	danceability: number,
-	energy: number,
-	key: Key,
-	mode: Mode,
-	acousticness: number,
-	valence: number,
-	tempo: number,
-	id: string,
-	time_signature: number,
-	album: Album
+	name: string;
+	popularity: number;
+	era: string;
+	artists: Artist[];
+	danceability: number;
+	energy: number;
+	key: Key;
+	mode: Mode;
+	acousticness: number;
+	valence: number;
+	tempo: number;
+	id: string;
+	time_signature: number;
+	album: Album;
 }
 
-export type Feature = keyof Song
+export type Feature = keyof Song;
 
 const keyMap: Record<Key, string> = {
 	0: "C",
@@ -54,69 +53,68 @@ const modeMap: Record<Mode, string> = {
 };
 
 export type ValueCount = {
-	"value": string,
-	"count": number
-}
-
+	value: string;
+	count: number;
+};
 
 function getAllArtists(data: Song[]) {
-	return data.map((song) => song.artists.map((artist) => artist.name)).flat().map((artist) => artist.split(" And The ")[0])
+	return data
+		.map((song) => song.artists.map((artist) => artist.name))
+		.flat()
+		.map((artist) => artist.split(" And The ")[0]);
 }
 
 export function getArtistCounts(data: Song[]) {
-	const allArtists = getAllArtists(data)
-	const valueCounts: ValueCount[] = []
+	const allArtists = getAllArtists(data);
+	const valueCounts: ValueCount[] = [];
 	allArtists.forEach((artist) => {
-		const artistCount = valueCounts.find((artistCount) => artistCount.value === artist)
+		const artistCount = valueCounts.find((artistCount) => artistCount.value === artist);
 		if (artistCount) {
-			artistCount.count += 1
-		}
-		else {
+			artistCount.count += 1;
+		} else {
 			valueCounts.push({
 				value: artist,
-				count: 1
-			})
+				count: 1,
+			});
 		}
-	})
-	return valueCounts.filter((artistCount) => artistCount.count > 1).sort((a, b) => b.count - a.count)
+	});
+	return valueCounts
+		.filter((artistCount) => artistCount.count > 1)
+		.sort((a, b) => b.count - a.count);
 }
-
 
 export function getGenreCounts(data: Song[]) {
 	const allGenres = data
 		.map((song: Song) => song.artists)
 		.flat()
 		.map((artist: Artist) => artist.genres)
-		.flat()
-	const valueCounts: ValueCount[] = []
+		.flat();
+	const valueCounts: ValueCount[] = [];
 	allGenres.forEach((genre: string) => {
-		const genreCount = valueCounts.find((genreCount) => genreCount.value === genre)
+		const genreCount = valueCounts.find((genreCount) => genreCount.value === genre);
 		if (genreCount) {
-			genreCount.count += 1
-		}
-		else {
+			genreCount.count += 1;
+		} else {
 			valueCounts.push({
 				value: genre,
-				count: 1
-			})
+				count: 1,
+			});
 		}
-	})
-	return valueCounts.filter((genreCount) => genreCount.count > 1).sort((a, b) => b.count - a.count)
+	});
+	return valueCounts.filter((genreCount) => genreCount.count > 1).sort((a, b) => b.count - a.count);
 }
 
-
 export function getKeySigsCounts(data: Song[]) {
-	const keySigCounts: { [keySig: string]: number } = {}
+	const keySigCounts: { [keySig: string]: number } = {};
 	for (const song of data) {
 		const keySig = `${keyMap[song.key]} ${modeMap[song.mode]}`;
 		keySigCounts[keySig] = keySigCounts[keySig] ? keySigCounts[keySig] + 1 : 1;
 	}
-	return keySigCounts
+	return keySigCounts;
 }
 
-
 export function getMostCommonKeySigs(data: Song[]) {
-	const keySigCounts = getKeySigsCounts(data)
+	const keySigCounts = getKeySigsCounts(data);
 	for (const song of data) {
 		const keySig = `${keyMap[song.key]} ${modeMap[song.mode]}`;
 		keySigCounts[keySig] = keySigCounts[keySig] ? keySigCounts[keySig] + 1 : 1;
@@ -124,26 +122,25 @@ export function getMostCommonKeySigs(data: Song[]) {
 	const highestCount = Math.max(...(Object.values(keySigCounts) as number[]));
 	const mostCommonKeySigs = Object.entries(keySigCounts)
 		.filter(([, count]) => count === highestCount)
-		.map(([keySig,]) => keySig);
+		.map(([keySig]) => keySig);
 	return mostCommonKeySigs;
 }
 
 export function getAverageOfProperty(data: Song[], feature: Feature) {
-	const preciseAverage = data.map((song) => song[feature] as number).reduce((a, b) => a + b) / data.length;
+	const preciseAverage =
+		data.map((song) => song[feature] as number).reduce((a, b) => a + b) / data.length;
 	return Math.round(preciseAverage * 100) / 100;
 }
 export function asPct(floatVal: number) {
 	return Math.round(floatVal * 100) + "%";
 }
 
-
-
 export function getLowestItems(data: Song[]) {
-	const sortedData = data.sort((a, b) => a.popularity - b.popularity).map((song) => `${song.name} by ${song.artists.join(", ")}`)
-	return sortedData
+	const sortedData = data
+		.sort((a, b) => a.popularity - b.popularity)
+		.map((song) => `${song.name} by ${song.artists.join(", ")}`);
+	return sortedData;
 }
-
-
 
 // let song: any;
 // let yearDistribution: any = [];
@@ -166,19 +163,16 @@ export function getLowestItems(data: Song[]) {
 // 	});
 // }
 
-
 export function getEra(release_date: string) {
-	const year: number = parseInt(release_date.substring(0, 4))
-	if (year < 1960) return "Early 20th Century"
-	if (year < 1970) return "60's"
-	if (year < 1980) return "70's"
-	if (year < 1990) return "80's"
-	if (year < 2000) return "90's"
-	if (year < 2010) return "2000's"
-	return "2010's and Today"
+	const year: number = parseInt(release_date.substring(0, 4));
+	if (year < 1960) return "Early 20th Century";
+	if (year < 1970) return "60's";
+	if (year < 1980) return "70's";
+	if (year < 1990) return "80's";
+	if (year < 2000) return "90's";
+	if (year < 2010) return "2000's";
+	return "2010's and Today";
 }
-
-
 
 export function roundNearestIncrementOfN(x: number, n?: number) {
 	n = n || 5;

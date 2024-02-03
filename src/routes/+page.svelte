@@ -17,9 +17,9 @@
 
 <section
 	transition:fade|global
-	class="mx-auto grid max-w-7xl grid-cols-1 content-center items-center justify-center md:grid-cols-3 "
+	class="mx-auto grid max-w-7xl grid-cols-1 content-center items-center justify-center md:grid-cols-3"
 >
-	<div class="col-span-1 flex items-center justify-center py-0 px-10 md:py-10">
+	<div class="col-span-1 flex items-center justify-center px-10 py-0 md:py-10">
 		<img
 			height="910"
 			width="527"
@@ -46,14 +46,14 @@
 
 		<p class="py-2 text-xl">
 			<a
-				class="underline underline-offset-2 hover:bg-bhm-copper-700 hover:text-white "
+				class="underline underline-offset-2 hover:bg-bhm-copper-700 hover:text-white"
 				href="/booking">Book music for your next event!</a
 			>
 		</p>
 	</div>
 </section>
 
-<aside class="mx-auto grid max-w-7xl grid-cols-4 items-center justify-items-center pt-10 pb-20">
+<aside class="mx-auto grid max-w-7xl grid-cols-4 items-center justify-items-center pb-20 pt-10">
 	<CountUp
 		className="col-span-4 sm:col-span-2 lg:col-span-1"
 		targetCount={100}

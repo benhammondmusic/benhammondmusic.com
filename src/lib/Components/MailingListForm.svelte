@@ -15,7 +15,7 @@
 			class="rounded-sm bg-bhm-gray-800 bg-opacity-70 p-3 lg:rounded-2xl lg:p-5"
 		>
 			<label for="mce-EMAIL">
-				<p class="text-sm lg:text-lg ">Your Email Address:</p>
+				<p class="text-sm lg:text-lg">Your Email Address:</p>
 				<input
 					type="email"
 					value=""

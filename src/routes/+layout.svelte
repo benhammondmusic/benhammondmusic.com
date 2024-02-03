@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="border-box flex min-h-screen w-full flex-col   bg-gradient-to-br from-bhm-blue-800 via-bhm-gray-600 to-bhm-gray-800 font-light text-white"
+	class="border-box flex min-h-screen w-full flex-col bg-gradient-to-br from-bhm-blue-800 via-bhm-gray-600 to-bhm-gray-800 font-light text-white"
 >
 	<Navbar />
 	<main class="w-full content-center items-center justify-center">

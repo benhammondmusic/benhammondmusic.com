@@ -6,10 +6,10 @@
 	import EmailIcon from "../EmailIcon.svelte";
 </script>
 
-<footer class=" w-full bg-bhm-blue-800  pb-20 ">
+<footer class=" w-full bg-bhm-blue-800 pb-20">
 	<!-- lg:h-[24rem] lg:justify-center xl:h-[32rem] 2xl:h-[40rem] -->
 	<section
-		class="xs:h-48 md:h-92 mx-auto flex h-32 w-full max-w-7xl flex-col items-end justify-end bg-contain bg-top  bg-no-repeat sm:h-56 lg:h-[28rem] "
+		class="xs:h-48 md:h-92 mx-auto flex h-32 w-full max-w-7xl flex-col items-end justify-end bg-contain bg-top bg-no-repeat sm:h-56 lg:h-[28rem]"
 		style="background-image: url(/images/BenSkyline.jpg)"
 	>
 		<div>
@@ -21,7 +21,7 @@
 
 	<div class="mx-auto w-full max-w-7xl">
 		<nav
-			class="grid grid-cols-1 justify-between py-10 px-10 pb-10 [@media(min-width:320px)]:grid-cols-3"
+			class="grid grid-cols-1 justify-between px-10 py-10 pb-10 [@media(min-width:320px)]:grid-cols-3"
 		>
 			<div class="py-2">
 				<div class="py-2 text-2xl">Menu</div>

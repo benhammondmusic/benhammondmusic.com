@@ -7,7 +7,7 @@
 	const featuresToAverage: Feature[] = ["danceability", "energy", "acousticness", "valence"];
 </script>
 
-<article class="rounded-sm p-5 ring-1 ring-bhm-blue ">
+<article class="rounded-sm p-5 ring-1 ring-bhm-blue">
 	<p>
 		Most common key: <span class="font-bold">{getMostCommonKeySigs(data).join(", ")}</span>
 	</p>

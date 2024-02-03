@@ -99,7 +99,7 @@
 	</div>
 </section>
 
-<section class="my-24 mx-auto w-full max-w-7xl">
+<section class="mx-auto my-24 w-full max-w-7xl">
 	<FancyHeading text={"Press Quotes"} />
 
 	<div class="grid grid-cols-1 gap-10 px-10 pt-10 sm:grid-cols-2 lg:grid-cols-4">

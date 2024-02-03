@@ -9,11 +9,11 @@
 </script>
 
 <article
-	class="mx-auto mt-5 inline-block w-full rounded-lg bg-bhm-sky-50 py-5 px-5 pb-10 text-bhm-gray-800 shadow-lg"
+	class="mx-auto mt-5 inline-block w-full rounded-lg bg-bhm-sky-50 px-5 py-5 pb-10 text-bhm-gray-800 shadow-lg"
 	style="max-width: 500px"
 >
 	{#if reviewPic}
-		<div class="w-full pt-1 pb-5">
+		<div class="w-full pb-5 pt-1">
 			<div class="mx-auto -mt-16 h-20 w-20 overflow-hidden rounded-full shadow-lg">
 				<img
 					src={reviewPic}

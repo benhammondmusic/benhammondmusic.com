@@ -1,12 +1,10 @@
+import { MongoClient } from "mongodb";
+import { MONGODB_ATLAS_URL } from "$env/static/private";
 
-
-import { MongoClient } from 'mongodb';
-import { MONGODB_ATLAS_URL } from '$env/static/private';
-
-const client = new MongoClient(MONGODB_ATLAS_URL)
+const client = new MongoClient(MONGODB_ATLAS_URL);
 
 export function start_mongo() {
-	console.log('Starting mongo...');
+	console.log("Starting mongo...");
 	return client.connect();
 }
 
@@ -16,4 +14,3 @@ export async function get_songlist() {
 	const items = collection.find().toArray();
 	return items;
 }
-

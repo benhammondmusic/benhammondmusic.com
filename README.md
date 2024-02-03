@@ -10,7 +10,6 @@ Once ready, this site build will replace benhammondmusic.com, but for now the wo
 
 > https://benhammondmusicdotcom.netlify.app/
 
-
 ## TO DO:
 
 - [ ] LAUNCH!
@@ -26,8 +25,6 @@ Once ready, this site build will replace benhammondmusic.com, but for now the wo
 - [ ] add lyrics for original songs? chord charts?
 - [ ] add unit tests for helper functions
 - [ ] add e2e playwright tests for some routes
-
-
 
 ## BHM - Design Guide
 
@@ -51,11 +48,7 @@ These are the base-colors used to generate tailwind color pallettes via [tailwin
 
 - 1st person, conversational but professional
 
-
-
-
 From [benhammond.tech](https://benhammond.tech)
-
 
 <details>
 
@@ -99,4 +92,5 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
 </details>
