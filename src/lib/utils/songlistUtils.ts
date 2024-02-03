@@ -179,3 +179,46 @@ export function getEra(release_date: string) {
 }
 
 
+
+export function roundNearestIncrementOfN(x: number, n?: number) {
+	n = n || 5;
+	return Math.ceil(x / n) * n;
+}
+
+export const tempoMarkings: [number, string][] = [
+	[50, "Lento"],
+	[73, "Adagio"],
+	[86, "Andante"],
+	[109, "Moderato"],
+	[132, "Allegro"],
+	[150, "Vivace"],
+	[180, "Presto"],
+	[220, "Prestissimo"],
+];
+
+export function getTempoBucket(tempo: number) {
+	for (const [maxTempo, bucket] of tempoMarkings) {
+		if (tempo <= maxTempo) return bucket;
+	}
+	return "Weird Tempo";
+}
+
+export function getTempoDistributions(songs: Song[]) {
+	const tempoDistributions: Record<string, number> = { Lento: 0 };
+
+	for (const song of songs) {
+		const tempoBucket = getTempoBucket(song.tempo);
+		if (tempoDistributions[tempoBucket]) {
+			tempoDistributions[tempoBucket] += 1;
+		} else {
+			tempoDistributions[tempoBucket] = 1;
+		}
+	}
+	return tempoDistributions;
+}
+
+export function getDurationFromBpm(bpm: number | string) {
+	if (typeof bpm === "string") return 60 / parseInt(bpm);
+
+	return 60 / bpm;
+}

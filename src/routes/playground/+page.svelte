@@ -43,8 +43,9 @@
 			uploaded (most) of my songlist as a <a
 				href="https://open.spotify.com/playlist/1BGI6ETmEsvhj0nTv7LOu6?si=7027beba59b4422d"
 				class="underline hover:bg-bhm-sky">Spotify playlist</a
-			>; that data is securely fetched, wrangled, and ultimately displayed below. Much of my data
-			viz experience comes from my full-time job as Senior Software Engineer on the
+			>; that data is securely fetched, wrangled, cached in a database, and ultimately displayed
+			below. Much of my data viz experience comes from my full-time job as Senior Software Engineer
+			on the
 			<a
 				href="https://healthequitytracker.org"
 				class="underline hover:bg-bhm-sky">Health Equity Tracker</a
