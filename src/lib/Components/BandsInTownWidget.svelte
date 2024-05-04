@@ -5,7 +5,7 @@
 	data-background-color="rgba(0,0,0,0)"
 	data-separator-color="#DDDDDD00"
 	data-text-color="rgba(255,255,255,1)"
-	data-font="Helvetica"
+	data-font="Jost"
 	data-auto-style="true"
 	data-button-label-capitalization="capitalize"
 	data-header-capitalization="undefined"
