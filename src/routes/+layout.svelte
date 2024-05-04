@@ -8,7 +8,7 @@
 
 <div
 	id="whole-page"
-	class="border-box flex bg-[#000002] bg-opacity-50 min-h-screen w-full flex-col font-light text-white"
+	class="border-box flex bg-[#000002] bg-opacity-40 min-h-screen w-full flex-col font-light text-white"
 >
 	<Navbar />
 	<main class="w-full content-center items-center justify-center">
@@ -19,7 +19,6 @@
 
 <style>
 	/* spinning, fuzzy && in the background */
-	/* #whole-page::before { */
 	#whole-page::before {
 		content: "";
 		position: fixed;
@@ -32,20 +31,28 @@
 		pointer-events: none;
 		z-index: -1;
 		transform-origin: center;
-		transform: rotate(0deg) scale(1);
-		filter: blur(6px);
-		animation: focusInOutTexture 300s linear infinite;
+		transform: rotate(20deg) scale(2);
+		filter: blur(2px);
 	}
 
+	/* Keyframes for animation */
 	@keyframes focusInOutTexture {
 		0% {
-			transform: rotate(180deg) scale(1);
+			transform: rotate(20deg) scale(2);
 		}
 		50% {
-			transform: rotate(360deg) scale(1.5); /* Adjust scale */
+			transform: rotate(-160deg) scale(2.5); /* Adjust scale */
 		}
 		100% {
-			transform: rotate(540deg) scale(1);
+			transform: rotate(-340deg) scale(2);
+		}
+	}
+
+	/* Apply animation only on larger screens */
+	@media (min-width: 768px) {
+		#whole-page::before {
+			animation: focusInOutTexture 200s linear infinite;
+			opacity: 0.4;
 		}
 	}
 </style>
