@@ -1,10 +1,14 @@
 <script lang="ts">
-	export let keyLetter: string;
+export let keyLetter: string;
 
-	function handleClick() {
-		history.pushState("", document.title, window.location.pathname + window.location.search);
-		window.scrollTo(0, 0);
-	}
+function handleClick() {
+	history.pushState(
+		"",
+		document.title,
+		window.location.pathname + window.location.search,
+	);
+	window.scrollTo(0, 0);
+}
 </script>
 
 <h4

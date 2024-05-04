@@ -1,29 +1,32 @@
 <script lang="ts">
-	import songsJson from "$lib/data/songs.json";
-	import { fade } from "svelte/transition";
-	let songs = songsJson.songs;
+import songsJson from "$lib/data/songs.json";
+import { fade } from "svelte/transition";
+let songs = songsJson.songs;
 
-	function resetFilters() {
-		songs = songsJson.songs;
+function resetFilters() {
+	songs = songsJson.songs;
+}
+
+function handleSearchUpdate(e: Event) {
+	const target = e.target as HTMLInputElement;
+	const value: string = target.value;
+	if (value) {
+		songs = songsJson.songs
+			.filter(
+				(song) =>
+					song.title.toLowerCase().includes(target.value.toLowerCase()) ||
+					song.artistArray
+						.join(" ")
+						.toLowerCase()
+						.includes(target.value.toLowerCase()),
+			)
+			.sort((a, b) => a.title.localeCompare(b.title));
+	} else {
+		isFiltered = false;
 	}
+}
 
-	function handleSearchUpdate(e: Event) {
-		const target = e.target as HTMLInputElement;
-		const value: string = target.value;
-		if (value) {
-			songs = songsJson.songs
-				.filter(
-					(song) =>
-						song.title.toLowerCase().includes(target.value.toLowerCase()) ||
-						song.artistArray.join(" ").toLowerCase().includes(target.value.toLowerCase()),
-				)
-				.sort((a, b) => a.title.localeCompare(b.title));
-		} else {
-			isFiltered = false;
-		}
-	}
-
-	$: isFiltered = songs !== songsJson.songs;
+$: isFiltered = songs !== songsJson.songs;
 </script>
 
 <div class="mt-10 w-full rounded-md p-5 ring-1 ring-bhm-blue-50">

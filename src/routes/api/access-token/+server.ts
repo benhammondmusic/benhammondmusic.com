@@ -1,4 +1,4 @@
-import { json, type RequestHandler } from "@sveltejs/kit";
+import { type RequestHandler, json } from "@sveltejs/kit";
 
 import {
 	VITE_SPOTIFY_CLIENT_ID,

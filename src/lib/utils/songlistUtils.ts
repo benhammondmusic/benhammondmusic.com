@@ -59,8 +59,7 @@ export type ValueCount = {
 
 function getAllArtists(data: Song[]) {
 	return data
-		.map((song) => song.artists.map((artist) => artist.name))
-		.flat()
+		.flatMap((song) => song.artists.map((artist) => artist.name))
 		.map((artist) => artist.split(" And The ")[0]);
 }
 
@@ -68,7 +67,9 @@ export function getArtistCounts(data: Song[]) {
 	const allArtists = getAllArtists(data);
 	const valueCounts: ValueCount[] = [];
 	allArtists.forEach((artist) => {
-		const artistCount = valueCounts.find((artistCount) => artistCount.value === artist);
+		const artistCount = valueCounts.find(
+			(artistCount) => artistCount.value === artist,
+		);
 		if (artistCount) {
 			artistCount.count += 1;
 		} else {
@@ -85,13 +86,13 @@ export function getArtistCounts(data: Song[]) {
 
 export function getGenreCounts(data: Song[]) {
 	const allGenres = data
-		.map((song: Song) => song.artists)
-		.flat()
-		.map((artist: Artist) => artist.genres)
-		.flat();
+		.flatMap((song: Song) => song.artists)
+		.flatMap((artist: Artist) => artist.genres);
 	const valueCounts: ValueCount[] = [];
 	allGenres.forEach((genre: string) => {
-		const genreCount = valueCounts.find((genreCount) => genreCount.value === genre);
+		const genreCount = valueCounts.find(
+			(genreCount) => genreCount.value === genre,
+		);
 		if (genreCount) {
 			genreCount.count += 1;
 		} else {
@@ -101,7 +102,9 @@ export function getGenreCounts(data: Song[]) {
 			});
 		}
 	});
-	return valueCounts.filter((genreCount) => genreCount.count > 1).sort((a, b) => b.count - a.count);
+	return valueCounts
+		.filter((genreCount) => genreCount.count > 1)
+		.sort((a, b) => b.count - a.count);
 }
 
 export function getKeySigsCounts(data: Song[]) {
@@ -128,7 +131,8 @@ export function getMostCommonKeySigs(data: Song[]) {
 
 export function getAverageOfProperty(data: Song[], feature: Feature) {
 	const preciseAverage =
-		data.map((song) => song[feature] as number).reduce((a, b) => a + b) / data.length;
+		data.map((song) => song[feature] as number).reduce((a, b) => a + b) /
+		data.length;
 	return Math.round(preciseAverage * 100) / 100;
 }
 export function asPct(floatVal: number) {
@@ -164,7 +168,7 @@ export function getLowestItems(data: Song[]) {
 // }
 
 export function getEra(release_date: string) {
-	const year: number = parseInt(release_date.substring(0, 4));
+	const year: number = Number.parseInt(release_date.substring(0, 4));
 	if (year < 1960) return "Early 20th Century";
 	if (year < 1970) return "60's";
 	if (year < 1980) return "70's";
@@ -212,7 +216,7 @@ export function getTempoDistributions(songs: Song[]) {
 }
 
 export function getDurationFromBpm(bpm: number | string) {
-	if (typeof bpm === "string") return 60 / parseInt(bpm);
+	if (typeof bpm === "string") return 60 / Number.parseInt(bpm);
 
 	return 60 / bpm;
 }

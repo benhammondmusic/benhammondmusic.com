@@ -1,14 +1,14 @@
 <script lang="ts">
-	import Amazon from "$lib/icons/Amazon.svelte";
-	import AppleMusic from "$lib/icons/AppleMusic.svelte";
-	import Spotify from "$lib/icons/Spotify.svelte";
+import Amazon from "$lib/icons/Amazon.svelte";
+import AppleMusic from "$lib/icons/AppleMusic.svelte";
+import Spotify from "$lib/icons/Spotify.svelte";
 
-	export let title = "";
-	export let subtitle = "";
-	export let src: string;
-	export let spotifyUrl: string;
-	export let appleMusicUrl: string;
-	export let amazonUrl: string;
+export let title = "";
+export let subtitle = "";
+export let src: string;
+export let spotifyUrl: string;
+export let appleMusicUrl: string;
+export let amazonUrl: string;
 </script>
 
 <article>

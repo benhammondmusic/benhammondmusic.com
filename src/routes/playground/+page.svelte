@@ -1,30 +1,33 @@
 <script lang="ts">
-	import { PUBLIC_BASE_URL } from "$env/static/public";
-	import { fade } from "svelte/transition";
-	import FancyHeading from "$lib/Components/FancyHeading.svelte";
-	import { Wave } from "svelte-loading-spinners";
-	import {
-		getMostCommonKeySigs,
-		type Feature,
-		type Song,
-		getGenreCounts,
-		getArtistCounts,
-	} from "$lib/utils/songlistUtils";
+import { PUBLIC_BASE_URL } from "$env/static/public";
+import FancyHeading from "$lib/Components/FancyHeading.svelte";
+import {
+	type Feature,
+	type Song,
+	getArtistCounts,
+	getGenreCounts,
+	getMostCommonKeySigs,
+} from "$lib/utils/songlistUtils";
+import { Wave } from "svelte-loading-spinners";
+import { fade } from "svelte/transition";
 
-	// import PieChart from "$lib/Components/DataViz/PieChart.svelte";
-	import DonutChart from "$lib/Components/DataViz/DonutChart.svelte";
-	import BubbleChart from "$lib/Components/DataViz/BubbleChart.svelte";
-	import VerticalBarChart from "$lib/Components/DataViz/VerticalBarChart.svelte";
-	import MetaDataTable from "$lib/Components/DataViz/MetaDataTable.svelte";
-	import { browser } from "$app/environment";
+import { browser } from "$app/environment";
+import BubbleChart from "$lib/Components/DataViz/BubbleChart.svelte";
+// import PieChart from "$lib/Components/DataViz/PieChart.svelte";
+import DonutChart from "$lib/Components/DataViz/DonutChart.svelte";
+import MetaDataTable from "$lib/Components/DataViz/MetaDataTable.svelte";
+import VerticalBarChart from "$lib/Components/DataViz/VerticalBarChart.svelte";
 
-	let songDataPromise: Promise<{ data: Song[] }> = getPlayListData();
+let songDataPromise: Promise<{ data: Song[] }> = getPlayListData();
 
-	async function getPlayListData() {
-		return (
-			browser && (await fetch(`${PUBLIC_BASE_URL}/api/db-read-songlist`).then((res) => res.json()))
-		);
-	}
+async function getPlayListData() {
+	return (
+		browser &&
+		(await fetch(`${PUBLIC_BASE_URL}/api/db-read-songlist`).then((res) =>
+			res.json(),
+		))
+	);
+}
 </script>
 
 <svelte:head>

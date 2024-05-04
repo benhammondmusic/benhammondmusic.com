@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { AnimatedCounter } from "@benzara/svelte-animated-counter";
-	export let targetCount: number;
-	export let interval: number;
-	export let suffix: string = "";
-	export let textLabel: string;
-	export let className: string = "";
+import { AnimatedCounter } from "@benzara/svelte-animated-counter";
+export let targetCount: number;
+export let interval: number;
+export let suffix = "";
+export let textLabel: string;
+export let className = "";
 </script>
 
 <div class={`m-2 flex items-center ${className}`}>

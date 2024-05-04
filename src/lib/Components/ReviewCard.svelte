@@ -1,11 +1,11 @@
 <script lang="ts">
-	import FiveStars from "./FiveStars.svelte";
+import FiveStars from "./FiveStars.svelte";
 
-	export let reviewPic: string = "";
-	export let reviewText: string;
-	export let reviewName: string;
-	export let reviewSubText: string;
-	export let showStars = false;
+export let reviewPic = "";
+export let reviewText: string;
+export let reviewName: string;
+export let reviewSubText: string;
+export let showStars = false;
 </script>
 
 <article

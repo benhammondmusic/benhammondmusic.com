@@ -1,5 +1,5 @@
-import { MongoClient } from "mongodb";
 import { MONGODB_ATLAS_URL } from "$env/static/private";
+import { MongoClient } from "mongodb";
 
 const client = new MongoClient(MONGODB_ATLAS_URL);
 

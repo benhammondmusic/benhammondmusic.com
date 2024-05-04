@@ -1,9 +1,9 @@
 <script>
-	// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
-	import MailingListForm from "$lib/Components/MailingListForm.svelte";
-	import LinkArrow from "$lib/Components/LinkArrow.svelte";
-	import RecentlyPlayed from "../RecentlyPlayed.svelte";
-	import EmailIcon from "../EmailIcon.svelte";
+import LinkArrow from "$lib/Components/LinkArrow.svelte";
+// import NewTabArrow from '$lib/icons/NewTabArrow.svelte';
+import MailingListForm from "$lib/Components/MailingListForm.svelte";
+import EmailIcon from "../EmailIcon.svelte";
+import RecentlyPlayed from "../RecentlyPlayed.svelte";
 </script>
 
 <footer class=" w-full bg-bhm-blue-800 pb-20">

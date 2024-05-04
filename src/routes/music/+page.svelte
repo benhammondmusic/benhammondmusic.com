@@ -1,10 +1,10 @@
 <script>
-	import { fade } from "svelte/transition";
+import { fade } from "svelte/transition";
 
-	import AlbumItem from "$lib/Components/AlbumItem.svelte";
-	import EmailMeButton from "$lib/Components/EmailMeButton.svelte";
-	import FancyHeading from "$lib/Components/FancyHeading.svelte";
-	import ReviewCard from "$lib/Components/ReviewCard.svelte";
+import AlbumItem from "$lib/Components/AlbumItem.svelte";
+import EmailMeButton from "$lib/Components/EmailMeButton.svelte";
+import FancyHeading from "$lib/Components/FancyHeading.svelte";
+import ReviewCard from "$lib/Components/ReviewCard.svelte";
 </script>
 
 <svelte:head>

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { fade } from "svelte/transition";
+import { fade } from "svelte/transition";
 
-	import EmailMeButton from "$lib/Components/EmailMeButton.svelte";
-	import FancyHeading from "$lib/Components/FancyHeading.svelte";
-	import ReviewCard from "$lib/Components/ReviewCard.svelte";
-	import reviewsJson from "$lib/data/reviews.json";
-	import type { Review } from "$lib/utils/reviewUtils";
-	const testimonials = reviewsJson.reviews as Review[];
+import EmailMeButton from "$lib/Components/EmailMeButton.svelte";
+import FancyHeading from "$lib/Components/FancyHeading.svelte";
+import ReviewCard from "$lib/Components/ReviewCard.svelte";
+import reviewsJson from "$lib/data/reviews.json";
+import type { Review } from "$lib/utils/reviewUtils";
+const testimonials = reviewsJson.reviews as Review[];
 </script>
 
 <svelte:head>

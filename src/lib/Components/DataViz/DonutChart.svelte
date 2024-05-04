@@ -1,52 +1,55 @@
 <script lang="ts">
-	import { quantize, interpolatePlasma, pie, arc } from "d3";
+import { arc, interpolatePlasma, pie, quantize } from "d3";
 
-	export let data;
-	const width = 1000; // the outer width of the chart, in pixels
-	const height = width + 200; // the outer height of the chart, in pixels
-	const percent = false; // format values as percentages (true/false)
-	const fontSize = 10; // the font size of the x and y values
-	const strokeWidth = 0.1; // the width of stroke separating wedges
-	const strokeLinejoin = "round"; // line join style of stroke separating wedges
-	const outerRadius = Math.min(width, height) * 0.5 - 280; // the outer radius of the circle, in pixels
-	const innerRadius = 100; // the inner radius of the chart, in pixels
-	const labelPosition = 2; // the position of the label offset from center
-	const labelRadius = innerRadius * labelPosition + outerRadius * 0.3; // center radius of labels
-	const strokeColorWOR = "white"; //stroke color when inner radius is greater than 0
-	const strokeColorWIR = "yellow"; //stroke color when inner radius is 0
-	const stroke = innerRadius > 0 ? strokeColorWIR : strokeColorWOR; // stroke separating widths
-	const padAngle = 5 / outerRadius; // angular separation between wedges
+export let data;
+const width = 1000; // the outer width of the chart, in pixels
+const height = width + 200; // the outer height of the chart, in pixels
+const percent = false; // format values as percentages (true/false)
+const fontSize = 10; // the font size of the x and y values
+const strokeWidth = 0.1; // the width of stroke separating wedges
+const strokeLinejoin = "round"; // line join style of stroke separating wedges
+const outerRadius = Math.min(width, height) * 0.5 - 280; // the outer radius of the circle, in pixels
+const innerRadius = 100; // the inner radius of the chart, in pixels
+const labelPosition = 2; // the position of the label offset from center
+const labelRadius = innerRadius * labelPosition + outerRadius * 0.3; // center radius of labels
+const strokeColorWOR = "white"; //stroke color when inner radius is greater than 0
+const strokeColorWIR = "yellow"; //stroke color when inner radius is 0
+const stroke = innerRadius > 0 ? strokeColorWIR : strokeColorWOR; // stroke separating widths
+const padAngle = 5 / outerRadius; // angular separation between wedges
 
-	const x = Object.keys(data[0])[0]; // given d in data, returns the (ordinal) x-value
-	const y = Object.keys(data[0])[1]; // given d in data, returns the (quantitative) y-value
-	const xVals = data.map((el: { [x: string]: any }) => el[x]);
-	let yVals = data.map((el: { [x: string]: any }) => Number(el[y]));
-	if (percent) {
-		const total = yVals.reduce((a: any, b: any) => a + b, 0);
-		yVals = yVals.map((el: number) => el / total);
-	}
-	const iVals = data.map((el: any, i: any) => i);
+const x = Object.keys(data[0])[0]; // given d in data, returns the (ordinal) x-value
+const y = Object.keys(data[0])[1]; // given d in data, returns the (quantitative) y-value
+const xVals = data.map((el: { [x: string]: any }) => el[x]);
+let yVals = data.map((el: { [x: string]: any }) => Number(el[y]));
+if (percent) {
+	const total = yVals.reduce((a: any, b: any) => a + b, 0);
+	yVals = yVals.map((el: number) => el / total);
+}
+const iVals = data.map((el: any, i: any) => i);
 
-	// colors can be adjusted manually by creating a color array which length matches length of data set.
-	let colors: any[] = quantize((t) => interpolatePlasma(t * 0.7 + 0.3), xVals.length);
+// colors can be adjusted manually by creating a color array which length matches length of data set.
+let colors: any[] = quantize(
+	(t) => interpolatePlasma(t * 0.7 + 0.3),
+	xVals.length,
+);
 
-	// let artist = "";
+// let artist = "";
 
-	$: selectedArtist = "";
+$: selectedArtist = "";
 
-	const wedges: any[] = pie()
-		.padAngle(padAngle)
-		.sort(null)
-		.value((i) => yVals[i as number])(iVals);
+const wedges: any[] = pie()
+	.padAngle(padAngle)
+	.sort(null)
+	.value((i) => yVals[i as number])(iVals);
 
-	const arcPath = arc().innerRadius(innerRadius).outerRadius(outerRadius);
+const arcPath = arc().innerRadius(innerRadius).outerRadius(outerRadius);
 
-	const arcLabel = arc().innerRadius(labelRadius).outerRadius(labelRadius);
+const arcLabel = arc().innerRadius(labelRadius).outerRadius(labelRadius);
 
-	function handleArtistClick(eTarget: EventTarget | null) {
-		const targetEl = eTarget as HTMLElement;
-		selectedArtist = targetEl.textContent ?? "";
-	}
+function handleArtistClick(eTarget: EventTarget | null) {
+	const targetEl = eTarget as HTMLElement;
+	selectedArtist = targetEl.textContent ?? "";
+}
 </script>
 
 <b>{selectedArtist}</b>

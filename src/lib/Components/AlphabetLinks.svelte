@@ -1,5 +1,7 @@
 <script>
-	const capitalLetters = [...Array(26)].map((val, i) => String.fromCharCode(i + 65));
+const capitalLetters = [...Array(26)].map((val, i) =>
+	String.fromCharCode(i + 65),
+);
 </script>
 
 <div class="m-10">

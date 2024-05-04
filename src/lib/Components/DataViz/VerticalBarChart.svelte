@@ -1,61 +1,63 @@
 <script lang="ts">
-	import {
-		getDurationFromBpm,
-		getTempoDistributions,
-		roundNearestIncrementOfN,
-		tempoMarkings,
-		type Song,
-	} from "$lib/utils/songlistUtils";
-	export let songs: Song[];
-	import { scaleLinear, scaleBand } from "d3-scale";
-	import { flip } from "svelte/animate";
+import {
+	type Song,
+	getDurationFromBpm,
+	getTempoDistributions,
+	roundNearestIncrementOfN,
+	tempoMarkings,
+} from "$lib/utils/songlistUtils";
+export let songs: Song[];
+import { scaleBand, scaleLinear } from "d3-scale";
+import { flip } from "svelte/animate";
 
-	const colors = [
-		"#336699",
-		"#5b64a0",
-		"#815f9e",
-		"#a15a94",
-		"#ba5681",
-		"#ca5769",
-		"#ce614f",
-		"#c87136",
-	];
+const colors = [
+	"#336699",
+	"#5b64a0",
+	"#815f9e",
+	"#a15a94",
+	"#ba5681",
+	"#ca5769",
+	"#ce614f",
+	"#c87136",
+];
 
-	const data = getTempoDistributions(songs);
+const data = getTempoDistributions(songs);
 
-	let innerWidth = window.innerWidth;
-	let vizWidth = window.innerWidth - 100;
-	let vizHeight = window.innerHeight - 150;
+let innerWidth = window.innerWidth;
+let vizWidth = window.innerWidth - 100;
+let vizHeight = window.innerHeight - 150;
 
-	const marginTop = 5; // top margin, in pixels
-	const marginRight = 5; // right margin, in pixels
-	const marginBottom = 100; // bottom margin, in pixels
-	const marginLeft = 150; // left margin, in pixels
-	// const width = innerWidth; // width of the chart, in pixels
-	// const height = innerHeight; // height of the chart, in pixels
-	const xPadding = 0.05; // padding between bars
-	const yFormat = " songs"; // unit to display on y-axis ticks
-	const yLabel = "Songs per tempo marking in Ben's repertoire"; // label for the y-axis
-	const xLabelLeft = "← Slower";
-	const xLabelRight = "Faster →";
+const marginTop = 5; // top margin, in pixels
+const marginRight = 5; // right margin, in pixels
+const marginBottom = 100; // bottom margin, in pixels
+const marginLeft = 150; // left margin, in pixels
+// const width = innerWidth; // width of the chart, in pixels
+// const height = innerHeight; // height of the chart, in pixels
+const xPadding = 0.05; // padding between bars
+const yFormat = " songs"; // unit to display on y-axis ticks
+const yLabel = "Songs per tempo marking in Ben's repertoire"; // label for the y-axis
+const xLabelLeft = "← Slower";
+const xLabelRight = "Faster →";
 
-	const yScaleFactor = 2; // number of ticks on y-axis
+const yScaleFactor = 2; // number of ticks on y-axis
 
-	$: reactiveXVals = tempoMarkings.map((row) => row[1]);
-	$: reactiveYVals = tempoMarkings.map((row) => data[row[1]]);
+$: reactiveXVals = tempoMarkings.map((row) => row[1]);
+$: reactiveYVals = tempoMarkings.map((row) => data[row[1]]);
 
-	// Compute default domains, and unique the x-domain.
-	$: reactiveXDomain = reactiveXVals; // an array of (ordinal) x-values // sort by descending frequency
-	$: reactiveYDomain = [0, Math.max(...reactiveYVals)]; // [y-min, y-max]
+// Compute default domains, and unique the x-domain.
+$: reactiveXDomain = reactiveXVals; // an array of (ordinal) x-values // sort by descending frequency
+$: reactiveYDomain = [0, Math.max(...reactiveYVals)]; // [y-min, y-max]
 
-	// Construct scales, axes, and formats.
-	const xRange = [marginLeft, innerWidth - marginRight]; // [left, right]
-	const yRange = [innerHeight - marginBottom, marginTop * 4]; // [bottom, top]
-	$: reactiveXScale = scaleBand(reactiveXDomain, xRange).padding(xPadding);
-	$: reactiveYScale = scaleLinear(reactiveYDomain, yRange).nice();
+// Construct scales, axes, and formats.
+const xRange = [marginLeft, innerWidth - marginRight]; // [left, right]
+const yRange = [innerHeight - marginBottom, marginTop * 4]; // [bottom, top]
+$: reactiveXScale = scaleBand(reactiveXDomain, xRange).padding(xPadding);
+$: reactiveYScale = scaleLinear(reactiveYDomain, yRange).nice();
 
-	$: reactiveYTicks = reactiveYScale.ticks(yScaleFactor);
-	$: reactiveYTicksFormatted = reactiveYTicks.map((el) => el.toLocaleString("en-US"));
+$: reactiveYTicks = reactiveYScale.ticks(yScaleFactor);
+$: reactiveYTicksFormatted = reactiveYTicks.map((el) =>
+	el.toLocaleString("en-US"),
+);
 </script>
 
 <svelte:window bind:innerWidth />

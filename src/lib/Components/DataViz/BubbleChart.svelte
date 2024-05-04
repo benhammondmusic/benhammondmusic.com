@@ -1,52 +1,59 @@
 <script lang="ts">
-	import { InternSet, hierarchy, pack, range, scaleOrdinal, schemeTableau10 } from "d3";
+import {
+	InternSet,
+	hierarchy,
+	pack,
+	range,
+	scaleOrdinal,
+	schemeTableau10,
+} from "d3";
 
-	export let data;
+export let data;
 
-	const width = 700; //the margin top, bottom, left, right margin offset relative to the radius
-	const padding = 3; // the all padding all around each circle, in pixels
-	const margin = 1; // the all margin all around, in pixels
-	const textColor = "black"; //the color of the text
-	const fill = "#ccc"; // a static fill color, if no group channel is specified
-	const fillOpacity = 0.9; // the fill opacity of the bubbles
-	const strokeColor = "none"; // a static stroke around the bubbles
-	const strokeWidth = 1; // the stroke width around the bubbles, if any
-	const strokeOpacity = 1; // the stroke opacity around the bubbles, if any
-	const height = width; // the outer height of the chart, in pixels
-	const marginLeft = margin; // the left margin, in pixels
-	const marginRight = margin; // the right margin, in pixels
-	const marginTop = margin; // the top margin, in pixels
-	const marginBottom = margin; // the bottom margin, in pixels
+const width = 700; //the margin top, bottom, left, right margin offset relative to the radius
+const padding = 3; // the all padding all around each circle, in pixels
+const margin = 1; // the all margin all around, in pixels
+const textColor = "black"; //the color of the text
+const fill = "#ccc"; // a static fill color, if no group channel is specified
+const fillOpacity = 0.9; // the fill opacity of the bubbles
+const strokeColor = "none"; // a static stroke around the bubbles
+const strokeWidth = 1; // the stroke width around the bubbles, if any
+const strokeOpacity = 1; // the stroke opacity around the bubbles, if any
+const height = width; // the outer height of the chart, in pixels
+const marginLeft = margin; // the left margin, in pixels
+const marginRight = margin; // the right margin, in pixels
+const marginTop = margin; // the top margin, in pixels
+const marginBottom = margin; // the bottom margin, in pixels
 
-	//update link to the desired address path or remove.
-	// const link = (d) =>
-	// 	`http://localhost:5173/playground/prefuse/Flare/blob/master/flare/src/${d.value.replace(
-	// 		/\./g,
-	// 		"/",
-	// 	)}.as`;
+//update link to the desired address path or remove.
+// const link = (d) =>
+// 	`http://localhost:5173/playground/prefuse/Flare/blob/master/flare/src/${d.value.replace(
+// 		/\./g,
+// 		"/",
+// 	)}.as`;
 
-	// Compute the values.
-	const dVals = data.map((el) => el);
-	const vVals = data.map((el) => el.count);
-	const gVals = dVals; // data.map((el) => el.value.split(" ")[0]);
-	const iVals = range(vVals.length).filter((i) => vVals[i] > 0);
+// Compute the values.
+const dVals = data.map((el) => el);
+const vVals = data.map((el) => el.count);
+const gVals = dVals; // data.map((el) => el.value.split(" ")[0]);
+const iVals = range(vVals.length).filter((i) => vVals[i] > 0);
 
-	let groups = iVals.map((i) => gVals[i]);
-	groups = new InternSet(groups);
+let groups = iVals.map((i) => gVals[i]);
+groups = new InternSet(groups);
 
-	const colorScale = scaleOrdinal(groups, schemeTableau10);
+const colorScale = scaleOrdinal(groups, schemeTableau10);
 
-	// // Compute labels. Split genre on spaces and dashes for line-wrapping
-	const lVals = data.map((el) =>
-		[...el.value.split(/[\s-]+/), el.count.toLocaleString("en")].join("\n"),
-	);
-	const tVals = data.map((el) => `${el.value}\n${el.count.toLocaleString("en")}`);
+// // Compute labels. Split genre on spaces and dashes for line-wrapping
+const lVals = data.map((el) =>
+	[...el.value.split(/[\s-]+/), el.count.toLocaleString("en")].join("\n"),
+);
+const tVals = data.map((el) => `${el.value}\n${el.count.toLocaleString("en")}`);
 
-	const uid = `O-${Math.random().toString(16).slice(2)}`;
+const uid = `O-${Math.random().toString(16).slice(2)}`;
 
-	const root = pack()
-		.size([width - marginLeft - marginRight, height - marginTop - marginBottom])
-		.padding(padding)(hierarchy({ children: iVals }).sum((i) => vVals[i]));
+const root = pack()
+	.size([width - marginLeft - marginRight, height - marginTop - marginBottom])
+	.padding(padding)(hierarchy({ children: iVals }).sum((i) => vVals[i]));
 </script>
 
 <!-- {width}

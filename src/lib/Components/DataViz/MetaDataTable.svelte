@@ -1,10 +1,19 @@
 <script lang="ts">
-	import type { Feature } from "$lib/utils/songlistUtils";
+import type { Feature } from "$lib/utils/songlistUtils";
 
-	import { getAverageOfProperty, asPct, getMostCommonKeySigs } from "$lib/utils/songlistUtils";
+import {
+	asPct,
+	getAverageOfProperty,
+	getMostCommonKeySigs,
+} from "$lib/utils/songlistUtils";
 
-	export let data: any;
-	const featuresToAverage: Feature[] = ["danceability", "energy", "acousticness", "valence"];
+export let data: any;
+const featuresToAverage: Feature[] = [
+	"danceability",
+	"energy",
+	"acousticness",
+	"valence",
+];
 </script>
 
 <article class="rounded-sm p-5 ring-1 ring-bhm-blue">

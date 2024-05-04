@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let text: string;
+export let text: string;
 </script>
 
 <h2 class="text-center text-3xl font-thin uppercase text-bhm-sky">{text}<slot /></h2>

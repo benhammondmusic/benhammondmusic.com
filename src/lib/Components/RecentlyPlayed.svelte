@@ -1,32 +1,32 @@
 <script lang="ts">
-	import { PUBLIC_BASE_URL } from "$env/static/public";
-	import { onMount } from "svelte";
-	let song: { isPlaying: boolean; url: string; title: string; artist: string };
-	// export let className: string = "";
+import { PUBLIC_BASE_URL } from "$env/static/public";
+import { onMount } from "svelte";
+let song: { isPlaying: boolean; url: string; title: string; artist: string };
+// export let className: string = "";
 
-	async function getRecentlyPlayed() {
-		const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/spotify-now-playing`)
-			.then((res) => res.json())
-			.catch((err) => {
-				console.error(err);
-				return null;
-			});
+async function getRecentlyPlayed() {
+	const activeSong = await fetch(`${PUBLIC_BASE_URL}/api/spotify-now-playing`)
+		.then((res) => res.json())
+		.catch((err) => {
+			console.error(err);
+			return null;
+		});
 
-		song = activeSong.isPlaying
-			? activeSong
-			: await fetch(`${PUBLIC_BASE_URL}/api/spotify-recently-played`)
-					.then((res) => res.json())
-					.catch((err) => {
-						console.error(err);
-						return null;
-					});
-	}
+	song = activeSong.isPlaying
+		? activeSong
+		: await fetch(`${PUBLIC_BASE_URL}/api/spotify-recently-played`)
+				.then((res) => res.json())
+				.catch((err) => {
+					console.error(err);
+					return null;
+				});
+}
 
-	onMount(async () => {
-		getRecentlyPlayed();
-	});
+onMount(async () => {
+	getRecentlyPlayed();
+});
 
-	import SpotifyIcon from "$lib/icons/Spotify.svelte";
+import SpotifyIcon from "$lib/icons/Spotify.svelte";
 </script>
 
 <aside

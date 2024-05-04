@@ -1,44 +1,48 @@
 <script lang="ts">
-	import { fade } from "svelte/transition";
-	import FancyHeading from "$lib/Components/FancyHeading.svelte";
-	import songsJson from "$lib/data/songs.json";
-	import AlphabetLinks from "$lib/Components/AlphabetLinks.svelte";
-	import LetterHeader from "$lib/Components/LetterHeader.svelte";
-	import SearchBox from "$lib/Components/SearchBox.svelte";
-	let artistToSongTitlesMap: Record<string, string[]> = {};
+import AlphabetLinks from "$lib/Components/AlphabetLinks.svelte";
+import FancyHeading from "$lib/Components/FancyHeading.svelte";
+import LetterHeader from "$lib/Components/LetterHeader.svelte";
+import SearchBox from "$lib/Components/SearchBox.svelte";
+import songsJson from "$lib/data/songs.json";
+import { fade } from "svelte/transition";
+let artistToSongTitlesMap: Record<string, string[]> = {};
 
-	for (let { title, artistArray } of songsJson.songs) {
-		for (let artist of artistArray) {
-			if (artistToSongTitlesMap[artist]) artistToSongTitlesMap[artist].push(title);
-			else artistToSongTitlesMap[artist] = [title];
-		}
+for (let { title, artistArray } of songsJson.songs) {
+	for (let artist of artistArray) {
+		if (artistToSongTitlesMap[artist])
+			artistToSongTitlesMap[artist].push(title);
+		else artistToSongTitlesMap[artist] = [title];
 	}
+}
 
-	const songlistCutoff = 6;
+const songlistCutoff = 6;
 
-	let letters: string[] = [];
+let letters: string[] = [];
 
-	/*
+/*
 	Returns letter if item should trigger rendering of a alphanumeric heading
 	*/
-	function addHeaderLetter(item: string) {
-		if (!letters.includes(item[0]) && isNaN(parseInt(item[0]))) {
-			letters.push(item[0]);
-			return item[0];
-		}
-		return "";
+function addHeaderLetter(item: string) {
+	if (!letters.includes(item[0]) && isNaN(Number.parseInt(item[0]))) {
+		letters.push(item[0]);
+		return item[0];
 	}
+	return "";
+}
 
-	/* Very long lists of songs (by one artist) should split across multiple outer columns and also the list items should be split into inner columns */
-	function getLongListClass(songs: string[]) {
-		return {
-			colSpan:
-				songs.length > songlistCutoff
-					? "col-span-full sm:col-span-2 lg:col-span-3 2xl:col-span-4"
-					: "",
-			columns: songs.length > songlistCutoff ? "sm:columns-2 lg:columns-3 2xl:columns-4" : "",
-		};
-	}
+/* Very long lists of songs (by one artist) should split across multiple outer columns and also the list items should be split into inner columns */
+function getLongListClass(songs: string[]) {
+	return {
+		colSpan:
+			songs.length > songlistCutoff
+				? "col-span-full sm:col-span-2 lg:col-span-3 2xl:col-span-4"
+				: "",
+		columns:
+			songs.length > songlistCutoff
+				? "sm:columns-2 lg:columns-3 2xl:columns-4"
+				: "",
+	};
+}
 </script>
 
 <svelte:head>

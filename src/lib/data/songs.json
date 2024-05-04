@@ -1083,7 +1083,12 @@
 			"title": "Ripple"
 		},
 		{
-			"artistArray": ["Grateful Dead", "Simon and Garfunkel", "Bob Dylan", "Traditional"],
+			"artistArray": [
+				"Grateful Dead",
+				"Simon and Garfunkel",
+				"Bob Dylan",
+				"Traditional"
+			],
 			"title": "Peggy-O"
 		},
 		{
