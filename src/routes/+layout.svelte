@@ -32,7 +32,7 @@
 		z-index: -1;
 		transform-origin: center;
 		transform: rotate(20deg) scale(2);
-		filter: blur(2px);
+		filter: blur(3px);
 	}
 
 	/* Keyframes for animation */
@@ -41,7 +41,7 @@
 			transform: rotate(20deg) scale(2);
 		}
 		50% {
-			transform: rotate(-160deg) scale(2.5); /* Adjust scale */
+			transform: rotate(-160deg) scale(2.75); /* Adjust scale */
 		}
 		100% {
 			transform: rotate(-340deg) scale(2);
@@ -51,7 +51,7 @@
 	/* Apply animation only on larger screens */
 	@media (min-width: 768px) {
 		#whole-page::before {
-			animation: focusInOutTexture 200s linear infinite;
+			animation: focusInOutTexture 250s linear infinite;
 			opacity: 0.4;
 		}
 	}
