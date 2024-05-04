@@ -1,18 +1,23 @@
 <script lang="ts">
-import BandsInTownWidget from "$lib/Components/BandsInTownWidget.svelte";
-import CountUp from "$lib/Components/CountUp.svelte";
-import FancyHeading from "$lib/Components/FancyHeading.svelte";
-import CD from "$lib/icons/CD.svelte";
-import Diamond from "$lib/icons/Diamond.svelte";
-import MusicNotes from "$lib/icons/MusicNotes.svelte";
-import OldMic from "$lib/icons/OldMic.svelte";
-//  @ts-ignore
-import BenSnowyVertical from "$lib/images/BenSnowyVertical.jpg?w=700&webp";
-import { fade } from "svelte/transition";
+	import BandsInTownWidget from "$lib/Components/BandsInTownWidget.svelte";
+	import CountUp from "$lib/Components/CountUp.svelte";
+	import FancyHeading from "$lib/Components/FancyHeading.svelte";
+	import CD from "$lib/icons/CD.svelte";
+	import Diamond from "$lib/icons/Diamond.svelte";
+	import MusicNotes from "$lib/icons/MusicNotes.svelte";
+	import OldMic from "$lib/icons/OldMic.svelte";
+	//  @ts-ignore
+	import BenSnowyVertical from "$lib/images/BenSnowyVertical.jpg?w=700&webp";
+	import { fade } from "svelte/transition";
 </script>
 
 <svelte:head>
 	<title>Ben Hammond - Singer-Songbuilder</title>
+	<script
+		defer
+		src="https://widgetv3.bandsintown.com/main.min.js"
+	>
+	</script>
 </svelte:head>
 
 <section
@@ -52,11 +57,6 @@ import { fade } from "svelte/transition";
 		</p>
 		<div class="mb-0 pt-10">
 			<FancyHeading text={"Live Performances"} />
-
-			<script
-				charset="utf-8"
-				src="https://widgetv3.bandsintown.com/main.min.js"
-			></script>
 
 			<BandsInTownWidget />
 		</div>

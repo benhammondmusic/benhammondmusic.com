@@ -1,4 +1,7 @@
 {
+	"files.associations": {
+		"*.css": "tailwindcss"
+ },
 	"workbench.colorTheme": "Winter is Coming (Dark Black - No Italics)",
 	"cSpell.words": [
 		"acousticness",
