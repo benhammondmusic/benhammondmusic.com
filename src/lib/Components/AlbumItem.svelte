@@ -3,8 +3,8 @@
 	import AppleMusic from "$lib/icons/AppleMusic.svelte";
 	import Spotify from "$lib/icons/Spotify.svelte";
 
-	export let title: string = "";
-	export let subtitle: string = "";
+	export let title = "";
+	export let subtitle = "";
 	export let src: string;
 	export let spotifyUrl: string;
 	export let appleMusicUrl: string;

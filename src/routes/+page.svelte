@@ -2,13 +2,13 @@
 	import { fade } from "svelte/transition";
 	//  @ts-ignore
 	import BenSnowyVertical from "$lib/images/BenSnowyVertical.jpg?w=700&webp";
-
 	import CountUp from "$lib/Components/CountUp.svelte";
 	import MusicNotes from "$lib/icons/MusicNotes.svelte";
 	import Diamond from "$lib/icons/Diamond.svelte";
 	import OldMic from "$lib/icons/OldMic.svelte";
 	import CD from "$lib/icons/CD.svelte";
 	import FancyHeading from "$lib/Components/FancyHeading.svelte";
+	import BandsInTownWidget from "$lib/Components/BandsInTownWidget.svelte";
 </script>
 
 <svelte:head>
@@ -50,6 +50,16 @@
 				href="/booking">Book music for your next event!</a
 			>
 		</p>
+		<div class="mb-0 pt-10">
+			<FancyHeading text={"Live Performances"} />
+
+			<script
+				charset="utf-8"
+				src="https://widgetv3.bandsintown.com/main.min.js"
+			></script>
+
+			<BandsInTownWidget />
+		</div>
 	</div>
 </section>
 
