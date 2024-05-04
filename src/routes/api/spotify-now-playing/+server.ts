@@ -1,7 +1,8 @@
 import { PUBLIC_BASE_URL } from "$env/static/public";
 import { type RequestHandler, json } from "@sveltejs/kit";
 
-const now_playing_endpoint = `https://api.spotify.com/v1/me/player/currently-playing`;
+const now_playing_endpoint =
+	"https://api.spotify.com/v1/me/player/currently-playing";
 
 export const GET: RequestHandler = async () => {
 	console.log("getting token first");

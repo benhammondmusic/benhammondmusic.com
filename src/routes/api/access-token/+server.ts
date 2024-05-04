@@ -8,7 +8,7 @@ import {
 
 import { PUBLIC_BASE_URL } from "$env/static/public";
 
-const token_endpoint = `https://accounts.spotify.com/api/token`;
+const token_endpoint = "https://accounts.spotify.com/api/token";
 export const GET: RequestHandler = async () => {
 	console.log("getting access token");
 

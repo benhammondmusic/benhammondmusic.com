@@ -136,7 +136,7 @@ export function getAverageOfProperty(data: Song[], feature: Feature) {
 	return Math.round(preciseAverage * 100) / 100;
 }
 export function asPct(floatVal: number) {
-	return Math.round(floatVal * 100) + "%";
+	return `${Math.round(floatVal * 100)}%`;
 }
 
 export function getLowestItems(data: Song[]) {

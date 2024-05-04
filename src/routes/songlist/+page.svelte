@@ -23,7 +23,7 @@ let letters: string[] = [];
 	Returns letter if item should trigger rendering of a alphanumeric heading
 	*/
 function addHeaderLetter(item: string) {
-	if (!letters.includes(item[0]) && isNaN(Number.parseInt(item[0]))) {
+	if (!letters.includes(item[0]) && Number.isNaN(Number.parseInt(item[0]))) {
 		letters.push(item[0]);
 		return item[0];
 	}

@@ -10,7 +10,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
-		"biome": "npx @biomejs/biome check --apply ."
+		"biome": "npx @biomejs/biome check --apply ./src"
 	},
 	"devDependencies": {
 		"@benzara/svelte-animated-counter": "^0.0.3",
