@@ -46,15 +46,13 @@ import { fade } from "svelte/transition";
 			of the most sought after musicians in those places he's called home, including Denver and the
 			Colorado Rocky Mountains since 2016. As noted by the Portland Press Herald: "Hammond is a
 			versatile musician who writes memorable originals, delivers when he decides to cover someone,
-			and uses his guitar, voice and gadgets to create a sound that you want to keep hearing."
-		</p>
-
-		<p class="py-2 text-xl">
-			<a
+			and uses his guitar, voice and gadgets to create a sound that you want to keep hearing." Learn
+			more and <a
 				class="underline underline-offset-2 hover:bg-bhm-copper-700 hover:text-white"
-				href="/booking">Book music for your next event!</a
+				href="/booking">book music for your next event!</a
 			>
 		</p>
+
 		<div class="mb-0 pt-10">
 			<FancyHeading text={"Live Performances"} />
 

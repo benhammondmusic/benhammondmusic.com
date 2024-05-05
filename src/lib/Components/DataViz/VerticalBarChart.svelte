@@ -22,18 +22,19 @@ const colors = [
 ];
 
 const data = getTempoDistributions(songs);
+console.log(data);
 
 let innerWidth = window.innerWidth;
 let vizWidth = window.innerWidth - 100;
 let vizHeight = window.innerHeight - 150;
 
-const marginTop = 5; // top margin, in pixels
-const marginRight = 5; // right margin, in pixels
+const marginTop = 10; // top margin, in pixels
+const marginRight = 100; // right margin, in pixels
 const marginBottom = 100; // bottom margin, in pixels
 const marginLeft = 150; // left margin, in pixels
 // const width = innerWidth; // width of the chart, in pixels
 // const height = innerHeight; // height of the chart, in pixels
-const xPadding = 0.05; // padding between bars
+const xPadding = 0.1; // padding between bars
 const yFormat = " songs"; // unit to display on y-axis ticks
 const yLabel = "Songs per tempo marking in Ben's repertoire"; // label for the y-axis
 const xLabelLeft = "← Slower";
@@ -92,6 +93,7 @@ $: reactiveYTicksFormatted = reactiveYTicks.map((el) =>
 							stroke="white"
 							y2="6"
 						/>
+						<!-- tempo name X bar labels "Andante" etc. -->
 						<text
 							y={marginBottom}
 							dy={innerWidth < 800 ? -reactiveXScale.bandwidth() / 2 + 5 : -50}

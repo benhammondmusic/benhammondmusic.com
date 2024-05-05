@@ -57,8 +57,12 @@ function getLongListClass(songs: string[]) {
 		<FancyHeading text={`Songlist`} />
 
 		<h3 class="text-xl">
-			A somewhat complete, searchable list of all the covers, standards, and originals Ben Hammond
-			has performed.
+			A somewhat complete, searchable list of all the covers, standards, and originals I've
+			performed. To explore this repertoire in some less conventional, more "experimental" ways,
+			check out my data visualization <a
+				href="/playground"
+				class="underline underline-offset-2 hover:bg-bhm-copper-700 hover:text-white">playground</a
+			>.
 		</h3>
 
 		<SearchBox />

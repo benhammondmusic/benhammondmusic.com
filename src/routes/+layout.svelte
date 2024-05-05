@@ -4,11 +4,9 @@ import Footer from "$lib/Components/Layout/Footer.svelte";
 import Navbar from "$lib/Components/Layout/Navbar.svelte";
 </script>
 
-<!-- bg-gradient-to-br from-bhm-blue-800 via-bhm-gray-600 to-bhm-gray-800 -->
-
 <div
 	id="whole-page"
-	class="border-box flex bg-[#000002] bg-opacity-40 min-h-screen w-full flex-col font-light text-white"
+	class="border-box flex bg-black bg-opacity-40 min-h-screen w-full flex-col font-light text-white"
 >
 	<Navbar />
 	<main class="w-full content-center items-center justify-center">
@@ -48,11 +46,17 @@ import Navbar from "$lib/Components/Layout/Navbar.svelte";
 		}
 	}
 
-	/* Apply animation only on larger screens */
+	/* Apply animation only on larger screens and if prefers reduced motion is not set */
 	@media (min-width: 768px) {
 		#whole-page::before {
 			animation: focusInOutTexture 250s linear infinite;
 			opacity: 0.4;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#whole-page::before {
+			animation: none !important;
 		}
 	}
 </style>
