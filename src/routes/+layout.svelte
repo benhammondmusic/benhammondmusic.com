@@ -1,7 +1,7 @@
 <script lang="ts">
-	import "../app.css";
-	import Footer from "$lib/Components/Layout/Footer.svelte";
-	import Navbar from "$lib/Components/Layout/Navbar.svelte";
+import "../app.css";
+import Footer from "$lib/Components/Layout/Footer.svelte";
+import Navbar from "$lib/Components/Layout/Navbar.svelte";
 </script>
 
 <!-- bg-gradient-to-br from-bhm-blue-800 via-bhm-gray-600 to-bhm-gray-800 -->
