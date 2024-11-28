@@ -91,13 +91,13 @@ import RecentlyPlayed from "../RecentlyPlayed.svelte";
 					<li>
 						<a
 							class="hover:text-bhm-sky"
-							href="https://blog.benhammond.tech">Tech Blog<LinkArrow /></a
+							href="https://blog.benhammondmusic.tech">Tech Blog<LinkArrow /></a
 						>
 					</li>
 					<li>
 						<a
 							class="hover:text-bhm-sky"
-							href="https://benhammond.tech">Dev Portfolio<LinkArrow /></a
+							href="https://benhammondmusic.tech">Dev Portfolio<LinkArrow /></a
 						>
 					</li>
 					<li>
@@ -115,7 +115,7 @@ import RecentlyPlayed from "../RecentlyPlayed.svelte";
 			<span>
 				<a
 					class="hover:text-bhm-sky"
-					href="https://benhammond.tech">benhammond.tech</a
+					href="https://benhammondmusic.tech">benhammondmusic.tech</a
 				>
 				©
 				<span id="currentYear">2023</span>

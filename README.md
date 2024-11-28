@@ -45,4 +45,4 @@ These are the base-colors used to generate tailwind color pallettes via [tailwin
 
 - 1st person, conversational but professional
 
-From [benhammond.tech](https://benhammond.tech)
+From [benhammondmusic.tech](https://benhammondmusic.tech)
