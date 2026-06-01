@@ -60,7 +60,7 @@ function getLongListClass(songs: string[]) {
 			A somewhat complete, searchable list of all the covers, standards, and originals I've
 			performed. To explore this repertoire in some less conventional, more "experimental" ways,
 			check out my data visualization <a
-				href="/playground"
+				href="https://benhammondmusic.tech/playground"
 				class="underline underline-offset-2 hover:bg-bhm-copper-700 hover:text-white">playground</a
 			>.
 		</h3>

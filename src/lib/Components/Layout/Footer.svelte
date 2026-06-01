@@ -53,7 +53,7 @@ import RecentlyPlayed from "../RecentlyPlayed.svelte";
 					<li>
 						<a
 							class="hover:text-bhm-sky"
-							href="/playground">Playground</a
+							href="https://benhammondmusic.tech/playground">Data Viz<LinkArrow /></a
 						>
 					</li>
 				</ul>
